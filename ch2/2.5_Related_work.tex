@@ -1,1 +1,13 @@
 \section{Related Work}
+
+In the area of localization research, artificial landmarks have been used widely due to their difficulty detecting and building a system upon natural landmarks. However, artificial landmarks, specifically QR codes, have gained notable attention due to their ease of making and implementation, low cost, and the amount of information that can be encoded on them.
+
+
+
+In the solution proposed by \cite{zhang2015}, an approach for indoor mobile robot localization using QR codes arranged in a grid pattern on the ceiling is presented. The robot is equipped with an industrial camera mounted on top, facing upward to detect these QR codes. The camera captures images of the QR codes, and a recognition algorithm processes the position and orientation of the QR codes within the image. By utilizing the coordinates of each QR code and camera calibration data, the robot can accurately determine its position. This setup allows for real-time, precise localization of the robot, which is crucial for effective navigation in structured indoor environments.
+
+The paper \cite{kim2021} introduces a vision-based indoor positioning system that makes use of QR codes and a smartphone camera to accurately determine a user's location indoors. The system positions QR codes at specific locations, which are then identified by the camera. The two-dimensional coordinates of the QR codes are converted into three-dimensional spatial coordinates using camera calibration. By forming a quadrangle from reference symbols on the QR codes, the system calculates the center of gravity to determine the user's position and direction. Experiments have shown an average error of less than 1 meter.
+
+With high accuracy, the paper \cite{lee2015} proposes a cost-effective localization method for indoor mobile robots using QR codes as artificial landmarks. The QR codes are strategically placed on the ceiling, and a smartphone mounted on the robot detects these codes to determine the robot's position and heading direction. The QR code positions are pre-stored in a database, allowing the robot to calculate its real-world coordinates by processing the image data from the smartphone camera. The accuracy of the system has been confirmed, indicating that the method can produce localization errors ranging from 3.2 cm to 6.55 cm.
+
+\textcolor{blue}{We should mention as a conclusion of this section how our solution will differ from them whether by accuracy, multiple tech integration, targeted audience, real world validation method, etc.}

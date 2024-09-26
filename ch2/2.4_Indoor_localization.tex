@@ -1,5 +1,38 @@
-\section{Indoor Localization System}
+\section{Indoor Localization}
 
-Indoor Localization is the process of calculating the precise position of an/a object/person within an indoor environment, such as a hospital, office, or shopping mall. The most popular localization technology is GPS, which is useful and works very fine in outdoor environments. But when it comes to indoor environments, GPS signals are weak or unavailable, so other technologies and techniques are used for these environments.
+Indoor localization refers to the process of determining the exact position and orientation of an object or person within indoor environments, where traditional GPS signals are often unreliable. This technology is essential for a wide range of applications, from navigation within large buildings to asset tracking in warehouses.
 
-There are various other technologies and techniques that are used for indoor localization, such as Wi-Fi, Bluetooth, RFID, UWB, and the list goes on and on, See [1] for more information. Each one these technologies has its cons and pros, some of them rely on expensive and hard to setup hardware such as sensors, and IMU, while some other use less expensive and complicated hardware such as bluetooth beacons. While a lot of different technologies can give us precise indoor localization results, they usually don't exploit most of the visual information that exist in these environments. Thus, in this project we wanted to provide a system that makes use of these visuals which are information rich. Using only one camera, we will be able to detect landmarks to use them for localization, and extract tons of useful information from the surrounding environment.
+Various technologies are employed for indoor localization, each with its own strengths and limitations. Wi-Fi, Bluetooth, RFID, and Ultra-Wideband (UWB) are some of the most common methods. While some systems rely on expensive and complex hardware like sensors and Inertial Measurement Units (IMUs), others use more cost-effective solutions such as Bluetooth beacons. The choice of technology often depends on the specific needs of the application, balancing factors such as accuracy, cost, and ease of implementation. For more information, see reference \cite{leitch2023}.
+
+As indoor localization continues to evolve, new techniques and innovative approaches are emerging, including the use of QR codes for precise positioning and tracking. 
+
+\subsection{Indoor Localization with QR Codes}
+
+Indoor localization using QR codes is a method to determine a user’s pose. The system works by strategically placing QR codes around the space—on floors, walls, ceilings, or even hanging panels. Each QR code encodes specific positional information, allowing users to understand their location relative to these codes once they are detected.
+
+\paragraph{Grid Pattern QR codes}
+
+A simple QR-based localization method involves dividing a $n\times m$ meter room into $r$ squares, each with a QR code indicating its exact position. A device, such as a hat with a camera, detects the QR codes as the user moves, determining their location by the square they're in. While this approach provides discrete positional data, it's computationally efficient and useful in contexts like robotics. Although effective for coarse localization, it lacks the precision required for continuous positioning. This approach is used in the solution proposed by \cite{zhang2015}.
+
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=5cm]{example-image-A}
+	\caption{Grid Patter Illustration}
+	\label{grid_pattern_illustration}
+\end{figure}
+
+
+
+\paragraph{Pose Estimation with QR codes}
+
+Another approach of indoor localization involves calculating the relative position and orientation (pose) of the QR code in relation to the camera. After detecting a QR code, the camera determines its position and orientation relative to itself, and by combining this information with the known global position of the QR code, the system can estimate the user’s precise, continuous position within the space. Although this method offers significantly higher positional accuracy, it requires more computational resources, as it involves additional steps such as camera calibration to determine intrinsic parameters. This added complexity makes it more resource-intensive compared to grid-based localization, but it delivers continuous localization with greater precision. \textcolor{red} {Cite the papar that use this approach}
+
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=5cm]{example-image-A}
+	\caption{Grid Patter Illustration}
+	\label{pose_estimation_illustration}
+\end{figure}
+
+
+In a well-designed setup, the system's effectiveness remains high, irrespective of the QR codes’ locations. By tailoring the placement and setup of QR codes to suit the environment, the system can deliver robust indoor localization, whether it prioritizes simplicity or precision.

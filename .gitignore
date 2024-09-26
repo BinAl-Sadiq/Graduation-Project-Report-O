@@ -1,0 +1,8 @@
+
+main.aux
+*.lof
+*.aux
+*.lot
+*.log
+*.gz
+*.toc

@@ -3,30 +3,35 @@
 \contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
-\contentsline {section}{\numberline {1.2}Related Work}{2}{}%
-\contentsline {chapter}{\numberline {2}Background}{3}{}%
-\contentsline {section}{\numberline {2.1}Introduction}{4}{}%
-\contentsline {section}{\numberline {2.2}Indoor Localization System}{4}{}%
-\contentsline {section}{\numberline {2.3}Landmarks}{4}{}%
-\contentsline {subsection}{\numberline {2.3.1}Artificial Landmarks}{5}{}%
-\contentsline {subsection}{\numberline {2.3.2}QR Code}{5}{}%
-\contentsline {subsection}{\numberline {2.3.3}QR Code \& Indoor Localization}{6}{}%
-\contentsline {subsection}{\numberline {2.3.4}QR Codes Setup \& Design}{8}{}%
-\contentsline {section}{\numberline {2.4}Customizable Guidance System}{8}{}%
-\contentsline {section}{\numberline {2.5}Objects Detection System}{8}{}%
-\contentsline {section}{\numberline {2.6}Related Work}{8}{}%
-\contentsline {chapter}{\numberline {3}System Design}{9}{}%
-\contentsline {section}{\numberline {3.1}System Design}{10}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{11}{}%
-\contentsline {section}{\numberline {4.1}Results}{12}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{13}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{14}{}%
-\contentsline {chapter}{References}{15}{}%
-\contentsline {chapter}{Appendices}{16}{}%
-\contentsline {chapter}{\numberline {A}}{16}{}%
-\contentsline {section}{\numberline {A.1}Sample Data Tables}{16}{}%
-\contentsline {section}{\numberline {A.2}Sample Figures}{16}{}%
-\contentsline {chapter}{\numberline {B}}{17}{}%
-\contentsline {section}{\numberline {B.1}Additional Information}{17}{}%
-\contentsline {section}{\numberline {B.2}Supplementary Materials}{17}{}%
-\contentsline {section}{\numberline {B.3}Further Explanations}{17}{}%
+\contentsline {section}{\numberline {1.2}Motivation}{2}{}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{2}{}%
+\contentsline {section}{\numberline {1.4}Project Objectives}{3}{}%
+\contentsline {section}{\numberline {1.5}Project Outline}{3}{}%
+\contentsline {chapter}{\numberline {2}Background}{4}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{5}{}%
+\contentsline {section}{\numberline {2.2}Artificial Landmarks}{5}{}%
+\contentsline {section}{\numberline {2.3}QR code}{5}{}%
+\contentsline {subsection}{\numberline {2.3.1}QR Structure}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}QR Code Versions and Types}{7}{}%
+\contentsline {subsection}{\numberline {2.3.3}QR Code Encoding}{8}{}%
+\contentsline {subsection}{\numberline {2.3.4}QR Code Decoding}{9}{}%
+\contentsline {section}{\numberline {2.4}Indoor Localization}{9}{}%
+\contentsline {subsection}{\numberline {2.4.1}Indoor Localization with QR Codes}{10}{}%
+\contentsline {paragraph}{Grid Pattern QR codes}{10}{}%
+\contentsline {paragraph}{Pose Estimation with QR codes}{10}{}%
+\contentsline {section}{\numberline {2.5}Related Work}{11}{}%
+\contentsline {chapter}{\numberline {3}System Design}{13}{}%
+\contentsline {section}{\numberline {3.1}System Design}{14}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{15}{}%
+\contentsline {section}{\numberline {4.1}Results}{16}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{17}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{18}{}%
+\contentsline {chapter}{References}{19}{}%
+\contentsline {chapter}{Appendices}{21}{}%
+\contentsline {chapter}{\numberline {A}}{21}{}%
+\contentsline {section}{\numberline {A.1}Sample Data Tables}{21}{}%
+\contentsline {section}{\numberline {A.2}Sample Figures}{21}{}%
+\contentsline {chapter}{\numberline {B}}{22}{}%
+\contentsline {section}{\numberline {B.1}Additional Information}{22}{}%
+\contentsline {section}{\numberline {B.2}Supplementary Materials}{22}{}%
+\contentsline {section}{\numberline {B.3}Further Explanations}{22}{}%
