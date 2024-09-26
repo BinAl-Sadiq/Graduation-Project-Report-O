@@ -2,32 +2,39 @@
 Quick Response (QR) codes are a type of matrix barcode designed for efficient data encoding and rapid scanning. QR Codes first developed in 1994 by Denso Wave, to track automotive parts in manufacturing. but have since become widely used across various applications due to their versatility, simplicity, and capacity to store significant amounts of information compared to traditional barcodes.
 
 \subsection{QR Structure}
-A QR code is a two-dimensional matrix barcode designed to efficiently store and be readable from any angle. The code consists of black modules (squares) arranged on a white background in a grid pattern, allowing for rapid and error-resistant scanning. All QR Codes have a standard structure composed of the following elements:
+QR Codes can be detected and decoded at various angles and distortion levels due to their unique structure. The code consists of black modules (squares) arranged on a white background in a grid pattern, allowing for rapid and error-resistant scanning. All QR Codes have standard structure as shown in Figure \ref{QR_code_structure}. This structure
+is made out of the following parts:
 
 \begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
 	\centering
-	\includegraphics[width=15cm]{assets/ch2/qr_code_structure}
-	\caption{QR code structure}
+	\includegraphics[width=\textwidth]{assets/ch2/QR Codes Figure.png}
+	\caption{ These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}
 	\label{QR_code_structure}
 \end{figure}
 
-\subsubsection*{Finder Pattern}
-The Finder Pattern is made up of three identical large square shapes positioned in the QR code. These patterns assist the scanning device in rapidly locating and orienting the QR code, regardless of its rotation or angle \cite{Tiwari2016}.
+\begin{itemize}
+\item \textbf{Quiet Zone:}
+This is a white empty area surrounds the QR Code that helps distinguishing it from its surroundings.
 
-\subsubsection*{Alignment Pattern}
-The Alignment Pattern is a smaller square that helps correct distortion and skewing of the QR code when viewed from different angles. It is especially crucial for larger QR codes that may be prone to bending or misalignment. The number of Alignment Patterns increases with the QR code version, such as in \ref{QR_code_structure}, which allows for better positional accuracy in larger codes \cite{Tiwari2016}.
+\item \textbf{Version Information:} QR Codes have different versions/sizes which specified by these two areas.
 
-\subsubsection*{Timing Pattern}
-The Timing Pattern is made up of alternating black and white modules that are arranged in a straight line between the Finder Patterns. Timing Pattern is essential for defining the grid's structure and assists the scanner in establishing the size and coordinate system of the code \cite{Tiwari2016}.
+\item \textbf{Format Information:}
+This part provides details about the error correction level and data mask pattern used.
 
-\subsubsection*{Quiet Zone}
-The Quiet Zone is the clear space around the entire QR code that separates the code from any surrounding graphics or text. This zone is crucial for the scanner to accurately identify the code's boundaries, ensuring reliable detection and reading \cite{Tiwari2016}.
+\item \textbf{Data \& Error Correction:}
+This is where both encoded data \& error correction are. data and error correction are stored together enabling the QR code to recover and reconstruct the stored data, even if up to 30\% of the code is damaged or obscured. Data have different types, such as text, URLs, or other. 
 
-\subsubsection*{Data and Error Correction}
-The Data in a QR code contain encoded information such as text, URLs, or other data types. Error Corrections are created using error correction algorithms and are mixed with the data. These enable the QR code to recover and reconstruct the stored data, even if up to 30\% of the code is damaged or obscured \cite{Tiwari2016}.
+\item \textbf{Timing Patterns:}
+This part is essential for defining the grid's structure and assists the scanner in establishing the size and coordinate system of the code.
 
-\subsubsection*{Format and Version Information}
-The Format Information provides details about the error correction level and data mask pattern used. This allows the decoder to interpret the QR code accurately \cite{Tiwari2016}.
+\item \textbf{Alignment Patterns:}
+The Alignment Patterns help correct distortion and skewing of the QR code when viewed from different angles. It is especially crucial for larger QR codes that may be prone to bending or misalignment.
+
+\item \textbf{Finder Patterns:}
+These patterns assist the scanning device in rapidly locating and orienting the QR code, regardless of its rotation or angle.
+\end{itemize}
+
+See \cite{Tiwari2016}, for more information.
 
 \subsection{QR Code Versions and Types}
 QR codes come in 40 versions, each representing a different size and data capacity. Version 1 contains 21 × 21 modules, while Version 40 has 177 × 177 modules. As the version number increases, so does the data capacity and the complexity of the code, making it capable of storing more information or supporting higher levels of error correction \cite{Tiwari2016}. 
