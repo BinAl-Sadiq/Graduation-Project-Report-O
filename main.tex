@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[a4paper, top=0.98in, bottom=0.98in, left=1.85in, right=0.79in]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}  % For custom headers and footers
+\usepackage{titlesec}  % For customizing title formats
+\usepackage{setspace}  % For line spacing
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{booktabs} % For better-looking tables
+\usepackage{amsmath} 
+\usepackage{url}
+
+% Set up spacing
+\onehalfspacing
+
+% Format chapter titles
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{180pt}{18pt}
+
+
+% let it number up to subsubsection
+\setcounter{secnumdepth}{3}
+
+% Make sure chapter titles appear correctly in the header
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\begin{document}
+
+% Cover page
+\input{cover}
+
+\pagenumbering{roman}
+
+\input{abstract}
+\input{acknowledgements}
+
+% Table of Contents
+\clearpage
+\color{red}
+\tableofcontents
+\color{black}
+
+\clearpage
+\addcontentsline{toc}{chapter}{List of Tables}
+\color{red}
+\listoftables
+\color{black}
+
+\clearpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\color{red}
+\listoffigures
+\color{black}
+
+\clearpage
+\color{red}
+\input{glossary} % Include glossary and list of abbreviations
+\color{black}
+\addcontentsline{toc}{chapter}{Glossary and List of Abbreviations} 
+
+% Reset page numbering and start Arabic numbering
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1} % Start Arabic page numbering from 1
+
+% Set up fancyhdr for custom headers
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\text{Chapter \thechapter{}} - \small{\leftmark}}
+
+\fancyfoot[C]{\thepage} % Centered page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line below the header
+
+\chapter{Introduction}
+
+\newpage
+\input{ch1/1.1_Overview}
+\input{ch1/1.2_background}
+\input{ch1/1.3_related_work.tex}
+
+\chapter{Background}
+\newpage
+\input{ch2/2.1_Introduction}
+\input{ch2/2.4_Indoor_localization}
+\input{ch2/2.00_Landmarks}
+\input{ch2/2.2_Artificial_landmarks}
+\input{ch2/2.3_QR_code}
+\input{ch2/2.3_QR_code_Pose_Estimation}
+\input{ch2/2.5_QR_code_Setup}
+\input{ch2/2.5_Customizable_Guidance_System}
+\input{ch2/2.5_Objects_Detection_System}
+\input{ch2/2.5_Related_work}
+
+
+\chapter{System Design}
+\newpage
+\input{ch3/3.1_Design}
+
+\chapter{Results and Discussion}
+\newpage
+\input{ch4/4.1_Results}
+
+\chapter{Conclusion and Future Work}
+\newpage
+\input{ch5/5.1_Conclusion}
+
+
+\input{references}
+
+\newpage
+\fancyhead[L]{\text{Appendix \thechapter{}}}
+\addcontentsline{toc}{chapter}{Appendices}
+\input{appendices}
+
+\end{document}

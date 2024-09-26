@@ -1,0 +1,65 @@
+\newcommand{\titlefont}{\fontfamily{ptm}\fontsize{18}{22}\selectfont\bfseries}
+
+\begin{titlepage}
+    
+    \begin{tikzpicture}[overlay, remember picture]
+        % Vertical line
+        \draw[thick] (current page.south west) ++(1.7in, 0) -- ++(0, \paperheight - 2.1in); 
+        
+    \end{tikzpicture}
+
+    \begin{textblock*}{1cm}(1.0in, 6in)  % Adjust position as needed
+        \rotatebox{-90}{\textless TITLE OF THE PROJECT\textgreater}
+    \end{textblock*}
+
+    \vspace*{1.2in}
+    \centering
+    
+     % Uni coordinates for the image placement
+    \begin{textblock*}{1.04in}(0.7in,3.3in)
+    \includegraphics[width=0.576in,height=0.7488in]{assets/uni.png}
+    \end{textblock*}
+    
+    % Uni coordinates for the image placement
+    \begin{textblock*}{1.04in}(2.2in,1in)
+    \includegraphics[width=0.8in,height=1.04in]{assets/uni.png}
+    \end{textblock*}
+
+    % Dep. coordinates for the image placement
+    \begin{textblock*}{1.04in}(6in,1.1in)
+    \includegraphics[width=1.4in,height=1.04in]{assets/dep.png}
+    \end{textblock*}
+
+    {\titlefont \textbf{Taibah University}}\\
+    {\titlefont \textbf{College of Computer Science Engineering}}\\
+    {\titlefont \textbf{Computer Engineering Department}}\\
+    
+    \vspace{1.8cm}
+    
+    {\titlefont \textbf{Indoor environments navigation assistant, guidance, and localization system for visually impaired and blind individuals}}
+    
+    \vspace{1.8cm}
+
+    {\titlefont \fontsize{14}{16} \textbf{A Project Submitted in partial fulfilment of the requirements for the Bachelor Degree in Computer Engineering}}
+    \vspace{1.8cm}
+    
+    {\titlefont \textbf{Submitted By}}\\
+    \vspace{1cm}
+
+    {\titlefont \textbf{\textless Name Lastname\textgreater \textless Student ID Number\textgreater}} \\[0.2cm]
+    {\titlefont \textbf{\textless Name Lastname\textgreater \textless Student ID Number\textgreater}} \\[0.2cm]
+    {\titlefont \textbf{\textless Name Lastname\textgreater \textless Student ID Number\textgreater}}
+    \vspace{1.8cm}
+
+    {\fontfamily{ptm}\selectfont\fontsize{14}{16}\normalfont
+    \textbf{Project Advisor}\\
+    \textless Title\textgreater \textless Name Lastname\textgreater
+    }
+    
+    \vspace{2cm}
+
+    {\fontfamily{ptm}\selectfont\fontsize{14}{16}\normalfont
+    2024-Semester 1
+    }
+
+\end{titlepage}
