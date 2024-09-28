@@ -1,48 +1,63 @@
 \section{Indoor Localization}
 
-Indoor localization refers to the process of determining the precise position and orientation of an object or person within indoor environments, where traditional GPS signals are often unreliable. This technology is essential for a wide range of applications, such as navigation within large buildings, asset tracking in warehouses, and other useful and important applications.
+Indoor localization refers to the process of determining the precise position and orientation of an object or individual within indoor environments, where traditional Global Positioning System (GPS) signals are often unreliable. This technology is critical for a wide range of applications, including navigation within large buildings and asset tracking in warehouses.
 
-Various technologies are employed for indoor localization, each with its own cons and pros. Wi-Fi, Bluetooth, RFID, and Ultra-Wideband (UWB) are some of the most common methods. While some systems rely on expensive and complex hardware like sensors and Inertial Measurement Units (IMUs), others use more cost-effective solutions such as Bluetooth beacons, and pose estimation using QR codes. The choice of technology often depends on the specific needs of the application, balancing factors such as accuracy, cost, and ease of implementation. For more information, see reference \cite{leitch2023}.
+Various technologies are employed for indoor localization, each with distinct advantages and limitations. Wi-Fi, Bluetooth, Radio-Frequency Identification (RFID), and Ultra-Wideband (UWB) are among the most widely used methods. Some systems rely on complex and expensive hardware, such as sensors and Inertial Measurement Units (IMUs), while others utilize more cost-effective solutions, including Bluetooth beacons and pose estimation using Quick Response (QR) codes. The selection of the appropriate technology depends on the specific requirements of the application, taking into account factors such as accuracy, cost, and ease of implementation \cite{leitch2023}.
 
-As indoor localization continues to evolve, new techniques and innovative approaches are emerging, including the use of QR codes for precise positioning and tracking. 
+As the field of indoor localization continues to evolve, new techniques and innovative approaches are emerging, such as the use of QR codes for precise positioning and tracking.
 
 \subsection{Indoor Localization with QR Codes}
 
-Indoor localization using QR codes is a method to determine a user’s pose. The system works by strategically placing QR codes around the space—on floors, walls, ceilings, or even hanging panels. Each QR code encodes specific positional information, allowing users to understand their location relative to these codes once they are detected.
+Indoor localization using QR codes enables position determination by detecting QR codes strategically placed throughout an indoor space. These codes can be affixed to floors, walls, ceilings, or suspended on hanging panels, each containing encoded positional information.
 
-\paragraph{The divided environment method}
+\subsubsection{QR Code Placement}
 
-The environment in this method is divided into several pieces(a piece might be a square, triangle, hexagon, and any other shape, depending on the need), each piece has its own QR Code inside of it encoding its position, whether it is put on the floor, ceiling, wall, or even in a hanging panel. See \cite{zhang2015} where they used a similar method.
-
-For better illustration, let us assume that we have a room of 4 meters in width and height, and it is divided into 16 squares with equal sizes so each square has an area of 1m$^2$. If we customized a hat for example, that embeds a camera in its top, the user’s position will get
-determined while navigating in the room wearing the hat.
-
-Although this solution is very computationally cheap, it comes with its own
-downsides. For instance, the position values are always discrete. So if we needed
-a continuous and precise position we should not use this method. But actually,
-this method could be very useful depending on its use, see Appendix A for more details.
-
-\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
-	\centering
-	\includegraphics[width=5cm]{example-image-A}
-	\caption{Grid Patter Illustration}
-	\label{grid_pattern_illustration}
-\end{figure}
+The placement of QR codes plays a critical role in ensuring effective indoor localization. Codes can be positioned in various locations:
 
 
+\begin{itemize}
+	\item \textbf{Ceilings}: QR codes on ceilings are often out of the way and can provide an unobstructed view for overhead cameras, such as those mounted on hats or handheld devices. This placement is ideal for applications where the user’s line of sight remains upward.
+	
+	\item \textbf{Walls}: QR codes can also be positioned on walls at different heights to accommodate various camera angles. This setup is particularly useful when the user or device is at eye level with the code.
+	
+	\item \textbf{Floors}: Placing QR codes on floors can be beneficial in environments where overhead cameras or downward-facing sensors (such as those on a robot or mobility aid) are used. However, codes on floors might be more prone to wear and tear and may require periodic maintenance.
+	
+	\item \textbf{Hanging Panels}: In environments where flexibility is needed, QR codes can be placed on hanging panels suspended from the ceiling. This allows for better visibility while keeping the codes elevated from foot traffic or other obstacles.
+\end{itemize}
 
-\paragraph{Pose Estimation with QR codes}
+\subsubsection{Data Encoding in QR Codes}
 
-Another approach of indoor localization involves calculating the relative position and orientation (pose) of the QR code in relation to the camera. After detecting a QR code, the camera determines its position and orientation relative to itself, and by combining this information with the known global position of the QR code, the system can estimate the user’s precise, continuous position within the space.
+Each QR code encodes essential information for localization purposes, including:
 
-Although this method offers significantly higher positional accuracy, it requires more computational resources, as it involves additional steps such as camera calibration to determine intrinsic parameters. This added complexity makes it more resource-intensive compared to divided environment method, but it delivers continuous localization with greater precision. Thus this method is suitable if continues and precise values are needed. See \cite{Lucag2017} where they used a similar method.
+\begin{itemize}
+	\item \textbf{Coordinates}: The most important data that QR codes can encode are the precise coordinates of their position within the environment. These coordinates are predefined and allow the system to accurately calculate the user’s or object’s location when the QR code is detected. The coordinates might be in terms of x, y, z positions or based on a grid system specific to the environment.
+	
+	\item \textbf{Unique Identifier (ID)}: In addition to coordinates, each QR code will have a unique ID that differentiates it from others in the system. The ID can be referenced in the system’s database to retrieve additional information, such as the room name or floor level.
+	
+	\item \textbf{Orientation Data}: QR codes can also encode information about their orientation, which helps in determining the user’s orientation in relation to the environment (e.g., the angle of the code in reference to a global axis).
+	
+	\item \textbf{Additional Metadata}: If needed, QR codes can encode further metadata, such as room names, nearby landmarks, or points of interest. This is especially useful in environments where additional contextual information enhances the user’s navigation experience.
+\end{itemize}
 
-\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
-	\centering
-	\includegraphics[width=5cm]{example-image-A}
-	\caption{Grid Patter Illustration}
-	\label{pose_estimation_illustration}
-\end{figure}
+\subsubsection{Approaches to Localization with QR Codes}
+
+Several methods exist for implementing indoor localization using QR codes, each with its own benefits and trade-offs. Two common approaches include the divided environment method, which offers simplicity and low computational requirements, and the pose estimation method, which provides higher precision but at the cost of increased computational complexity. These approaches are discussed below.
+
+\paragraph{The Divided Environment Method}
+
+In the divided environment method, the space is partitioned into distinct sections (e.g., squares, triangles, or hexagons), with each section containing a QR code encoding its position. QR codes can be placed on the floor, ceiling, walls, or hanging panels depending on the system's configuration. A similar approach has been demonstrated by Zhang et al. \cite{zhang2015}.
+
+To illustrate this method, consider a room measuring 4 meters in both width and height, divided into 16 equal squares, each with an area of 1m$^2$. A camera mounted on a user’s headgear could detect the QR codes in the room, allowing the system to determine the user’s location as they navigate the space.
+
+Although this method is computationally efficient, it has limitations. The position values are discrete, which may not provide the continuous and precise localization required in certain applications. Nonetheless, this method can be highly effective for specific use cases, as discussed in Appendix A.
 
 
-In a well-designed setup, the system's effectiveness remains high, irrespective of the QR codes’ locations. By tailoring the placement and setup of QR codes to suit the environment, the system can deliver robust indoor localization, whether it prioritizes simplicity or precision.
+\paragraph{Pose Estimation with QR Codes}
+
+Another method for indoor localization involves calculating the relative position and orientation (pose) of the QR code with respect to the camera. Upon detecting a QR code, the system estimates its position and orientation relative to the camera and, by combining this data with the known global position of the QR code, determines the user’s precise and continuous position within the environment.
+
+While this approach offers significantly higher accuracy, it requires greater computational resources due to additional processes, such as camera calibration to determine intrinsic parameters. This increased complexity makes the method more resource-intensive compared to the divided environment approach. However, it is suitable for applications where continuous and precise localization is essential, as demonstrated by Lucag et al. \cite{Lucag2017}.
+
+
+
+In a well-designed system, the effectiveness of localization remains high, regardless of the specific locations of the QR codes. By optimizing QR code placement and system design to match the environment, the indoor localization system can provide robust performance, whether prioritizing simplicity or precision.
