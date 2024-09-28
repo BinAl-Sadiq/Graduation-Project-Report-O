@@ -9,31 +9,29 @@
 \contentsline {section}{\numberline {1.5}Project Outline}{3}{}%
 \contentsline {chapter}{\numberline {2}Background}{4}{}%
 \contentsline {section}{\numberline {2.1}Introduction}{5}{}%
-\contentsline {section}{\numberline {2.2}Landmarks}{5}{}%
-\contentsline {subsection}{\numberline {2.2.1}Natural Landmarks}{5}{}%
-\contentsline {subsection}{\numberline {2.2.2}Artificial Landmarks}{5}{}%
-\contentsline {section}{\numberline {2.3}QR code}{6}{}%
+\contentsline {section}{\numberline {2.2}Landmarks (Natural \& Artificial)}{5}{}%
+\contentsline {section}{\numberline {2.3}QR code}{5}{}%
 \contentsline {subsection}{\numberline {2.3.1}QR Structure}{6}{}%
 \contentsline {subsection}{\numberline {2.3.2}QR Code Versions and Types}{7}{}%
 \contentsline {subsection}{\numberline {2.3.3}QR Code Encoding}{8}{}%
 \contentsline {subsection}{\numberline {2.3.4}QR Code Decoding}{9}{}%
-\contentsline {section}{\numberline {2.4}Indoor Localization}{10}{}%
+\contentsline {section}{\numberline {2.4}Indoor Localization}{9}{}%
 \contentsline {subsection}{\numberline {2.4.1}Indoor Localization with QR Codes}{10}{}%
 \contentsline {subsubsection}{\numberline {2.4.1.1}QR Code Placement}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.1.2}Data Encoding in QR Codes}{11}{}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Data Encoding in QR Codes}{10}{}%
 \contentsline {subsubsection}{\numberline {2.4.1.3}Approaches to Localization with QR Codes}{11}{}%
-\contentsline {paragraph}{The Divided Environment Method}{12}{}%
+\contentsline {paragraph}{The Divided Environment Method}{11}{}%
 \contentsline {paragraph}{Pose Estimation with QR Codes}{12}{}%
-\contentsline {section}{\numberline {2.5}Objects Detection}{13}{}%
-\contentsline {section}{\numberline {2.6}Customizable Guidance}{13}{}%
-\contentsline {section}{\numberline {2.7}Related Work}{13}{}%
-\contentsline {chapter}{\numberline {3}System Design}{15}{}%
-\contentsline {section}{\numberline {3.1}System Design}{16}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{17}{}%
-\contentsline {section}{\numberline {4.1}Results}{18}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{19}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{20}{}%
-\contentsline {chapter}{References}{21}{}%
-\contentsline {chapter}{Appendices}{23}{}%
-\contentsline {chapter}{\numberline {A}}{23}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{23}{}%
+\contentsline {section}{\numberline {2.5}Objects Detection}{12}{}%
+\contentsline {section}{\numberline {2.6}Customizable Guidance}{12}{}%
+\contentsline {section}{\numberline {2.7}Related Work}{12}{}%
+\contentsline {chapter}{\numberline {3}System Design}{14}{}%
+\contentsline {section}{\numberline {3.1}System Design}{15}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{16}{}%
+\contentsline {section}{\numberline {4.1}Results}{17}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{18}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{19}{}%
+\contentsline {chapter}{References}{20}{}%
+\contentsline {chapter}{Appendices}{22}{}%
+\contentsline {chapter}{\numberline {A}}{22}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{22}{}%
