@@ -1,8 +1,8 @@
 \section{Indoor Localization}
 
-Indoor localization refers to the process of determining the exact position and orientation of an object or person within indoor environments, where traditional GPS signals are often unreliable. This technology is essential for a wide range of applications, from navigation within large buildings to asset tracking in warehouses.
+Indoor localization refers to the process of determining the precise position and orientation of an object or person within indoor environments, where traditional GPS signals are often unreliable. This technology is essential for a wide range of applications, such as navigation within large buildings, asset tracking in warehouses, and other useful and important applications.
 
-Various technologies are employed for indoor localization, each with its own strengths and limitations. Wi-Fi, Bluetooth, RFID, and Ultra-Wideband (UWB) are some of the most common methods. While some systems rely on expensive and complex hardware like sensors and Inertial Measurement Units (IMUs), others use more cost-effective solutions such as Bluetooth beacons. The choice of technology often depends on the specific needs of the application, balancing factors such as accuracy, cost, and ease of implementation. For more information, see reference \cite{leitch2023}.
+Various technologies are employed for indoor localization, each with its own cons and pros. Wi-Fi, Bluetooth, RFID, and Ultra-Wideband (UWB) are some of the most common methods. While some systems rely on expensive and complex hardware like sensors and Inertial Measurement Units (IMUs), others use more cost-effective solutions such as Bluetooth beacons, and pose estimation using QR codes. The choice of technology often depends on the specific needs of the application, balancing factors such as accuracy, cost, and ease of implementation. For more information, see reference \cite{leitch2023}.
 
 As indoor localization continues to evolve, new techniques and innovative approaches are emerging, including the use of QR codes for precise positioning and tracking. 
 
@@ -10,9 +10,17 @@ As indoor localization continues to evolve, new techniques and innovative approa
 
 Indoor localization using QR codes is a method to determine a user’s pose. The system works by strategically placing QR codes around the space—on floors, walls, ceilings, or even hanging panels. Each QR code encodes specific positional information, allowing users to understand their location relative to these codes once they are detected.
 
-\paragraph{Grid Pattern QR codes}
+\paragraph{The divided environment method}
 
-A simple QR-based localization method involves dividing a $n\times m$ meter room into $r$ squares, each with a QR code indicating its exact position. A device, such as a hat with a camera, detects the QR codes as the user moves, determining their location by the square they're in. While this approach provides discrete positional data, it's computationally efficient and useful in contexts like robotics. Although effective for coarse localization, it lacks the precision required for continuous positioning. This approach is used in the solution proposed by \cite{zhang2015}.
+The environment in this method is divided into several pieces(a piece might be a square, triangle, hexagon, and any other shape, depending on the need), each piece has its own QR Code inside of it encoding its position, whether it is put on the floor, ceiling, wall, or even in a hanging panel. See \cite{zhang2015} where they used a similar method.
+
+For better illustration, let us assume that we have a room of 4 meters in width and height, and it is divided into 16 squares with equal sizes so each square has an area of 1m$^2$. If we customized a hat for example, that embeds a camera in its top, the user’s position will get
+determined while navigating in the room wearing the hat.
+
+Although this solution is very computationally cheap, it comes with its own
+downsides. For instance, the position values are always discrete. So if we needed
+a continuous and precise position we should not use this method. But actually,
+this method could be very useful depending on its use, see Appendix A for more details.
 
 \begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
 	\centering
@@ -25,7 +33,9 @@ A simple QR-based localization method involves dividing a $n\times m$ meter room
 
 \paragraph{Pose Estimation with QR codes}
 
-Another approach of indoor localization involves calculating the relative position and orientation (pose) of the QR code in relation to the camera. After detecting a QR code, the camera determines its position and orientation relative to itself, and by combining this information with the known global position of the QR code, the system can estimate the user’s precise, continuous position within the space. Although this method offers significantly higher positional accuracy, it requires more computational resources, as it involves additional steps such as camera calibration to determine intrinsic parameters. This added complexity makes it more resource-intensive compared to grid-based localization, but it delivers continuous localization with greater precision. \textcolor{red} {Cite the papar that use this approach}
+Another approach of indoor localization involves calculating the relative position and orientation (pose) of the QR code in relation to the camera. After detecting a QR code, the camera determines its position and orientation relative to itself, and by combining this information with the known global position of the QR code, the system can estimate the user’s precise, continuous position within the space.
+
+Although this method offers significantly higher positional accuracy, it requires more computational resources, as it involves additional steps such as camera calibration to determine intrinsic parameters. This added complexity makes it more resource-intensive compared to divided environment method, but it delivers continuous localization with greater precision. Thus this method is suitable if continues and precise values are needed. See \cite{Lucag2017} where they used a similar method.
 
 \begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
 	\centering

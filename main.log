@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 SEP 2024 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 SEP 2024 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -814,18 +814,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10]
-Overfull \hbox (2.49132pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/12 strengths and lim-i-ta-tions. Wi-Fi, Blue-tooth, RFID, and Ultr
-a-Wideband (UWB)
- []
-
-File: example-image-A.pdf Graphic file (type pdf)
-<use example-image-A.pdf>
-Package pdftex.def Info: example-image-A.pdf  used on input line 19.
-(pdftex.def)             Requested size: 142.26378pt x 106.6984pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -837,9 +825,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [11]
 File: example-image-A.pdf Graphic file (type pdf)
 <use example-image-A.pdf>
-Package pdftex.def Info: example-image-A.pdf  used on input line 32.
+Package pdftex.def Info: example-image-A.pdf  used on input line 27.
 (pdftex.def)             Requested size: 142.26378pt x 106.6984pt.
-) (ch2/2.5_Related_work.tex
+File: example-image-A.pdf Graphic file (type pdf)
+<use example-image-A.pdf>
+Package pdftex.def Info: example-image-A.pdf  used on input line 42.
+(pdftex.def)             Requested size: 142.26378pt x 106.6984pt.
+) (ch2/2.5_Objects_Detection.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -848,13 +840,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12]
+[12]) (ch2/2.6_Customizable_Guidance.tex) (ch2/2.5_Related_work.tex
 Overfull \hbox (3.67783pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/12 With high ac-cu-racy, the pa-per [[]] pro-poses a cost-effect
 ive lo-cal-iza-tion method
  []
 
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -863,9 +854,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13]
+[13])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
 Chapter 3.
-[14
+[15
 
 ] (ch3/3.1_Design.tex)
 
@@ -876,9 +876,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[15]
+[16]
 Chapter 4.
-[16
+[17
 
 ] (ch4/4.1_Results.tex)
 
@@ -889,9 +889,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17]
+[18]
 Chapter 5.
-[18
+[19
 
 ] (ch5/5.1_Conclusion.tex) (references.tex
 
@@ -902,7 +902,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19] [20
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+[]\OT1/cmr/m/n/12 Michail K., Bren-nan C., Sab-rina C., Anand A., Cam-den
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 8--12
+\OT1/cmr/m/n/12 W., & Niko-laos V. (2021). Fidu-cial Mark-ers for Pose Es-ti-ma
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+\OT1/cmr/m/n/12 tion. Jour-nal of In-tel-li-gent & Robotic Sys-tems (2021) 101:
+71.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+[]\OT1/cmr/m/n/12 Luca C., Gion-ata C., Francesco F., Alessan-dro F., Gi-an-luc
+a
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 19--21
+\OT1/cmr/m/n/12 I., An-drea M. Fed-er-ica V. (2017). A QR-code Lo-cal-iza-tion 
+Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+\OT1/cmr/m/n/12 tem for Mo-bile Robots: Ap-pli-ca-tion to Smart Wheelchairs.
+ []
+
+[21
 
 ])
 
@@ -913,13 +947,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21] (appendices.tex
+[22] (appendices.tex
 Appendix A.
-[22
-
-]
-Appendix B.
-[23
+) [23
 
 ] (main.aux)
  ***********
@@ -934,32 +964,30 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 14262 strings out of 474485
- 290067 string characters out of 5743734
- 1934542 words of memory out of 5000000
- 36207 multiletter control sequences out of 15000+600000
+ 14278 strings out of 474485
+ 290620 string characters out of 5743734
+ 1933542 words of memory out of 5000000
+ 36215 multiletter control sequences out of 15000+600000
  569845 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,93p,933b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\NEMFi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
-rm1200.pk><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/NEMFi/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/NEMFi/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/NEMFi/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/NEMFi/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/N
-EMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
-12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
-17.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb
-8a.pfb>
-Output written on main.pdf (31 pages, 849992 bytes).
+ 84i,13n,93p,933b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\NEMFi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmib10.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/NEMFi/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/NEMFi/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/NEMFi/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/NEM
+Fi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
+Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/
+Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
+Output written on main.pdf (31 pages, 841168 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
