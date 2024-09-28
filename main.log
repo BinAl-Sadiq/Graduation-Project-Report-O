@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 SEP 2024 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 SEP 2024 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,7 +938,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
 [21
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+[]\OT1/cmr/m/n/12 https://www.youtube.com/watch?v=-L-WgKMFuhE&list= PLFt
+ []
+
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -966,10 +971,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14278 strings out of 474485
- 290620 string characters out of 5743734
+ 14279 strings out of 474485
+ 290642 string characters out of 5743734
  1933542 words of memory out of 5000000
- 36215 multiletter control sequences out of 15000+600000
+ 36216 multiletter control sequences out of 15000+600000
  569845 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,93p,933b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -985,7 +990,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/NEM
 Fi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
 Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/
 Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-Output written on main.pdf (31 pages, 841168 bytes).
+Output written on main.pdf (31 pages, 841230 bytes).
 PDF statistics:
  176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
