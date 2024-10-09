@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  28 SEP 2024 19:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  10 OCT 2024 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,7 +608,32 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./assets/uni.png> <./assets/dep.png>])
  (abstract.tex) (acknowledgements.tex [1]) [2] (main.toc [3
 
 
-])
+]
+! Misplaced alignment tab character &.
+<argument> \numberline {3.2}Tools &
+                                    Technologies
+l.30 ...umberline {3.2}Tools & Technologies}{15}{}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \numberline {3.8}Testing &
+                                      Evaluation
+l.36 ...umberline {3.8}Testing & Evaluation}{15}{}
+                                                  %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -616,8 +641,7 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./assets/uni.png> <./assets/dep.png>])
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-
-[5
+ [5
 
 
 ] (main.lof)
@@ -769,7 +793,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 3.
 [14
 
-] (ch3/3.1_Design.tex)
+] (ch3/3.1_system_arch_overview.tex) (ch3/3.2_tools_technolgies.tex)
+(ch3/3.3_env_setup.tex) (ch3/3.4_localization_qr.tex)
+(ch3/3.5_obstacle_detection.tex) (ch3/3.6_audio_guidance.tex)
+(ch3/3.7_system_workflow.tex) (ch3/3.8_testing_evaluation.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -873,10 +900,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14266 strings out of 474486
- 286136 string characters out of 5753570
+ 14315 strings out of 474486
+ 287949 string characters out of 5753570
  1934542 words of memory out of 5000000
- 36202 multiletter control sequences out of 15000+600000
+ 36223 multiletter control sequences out of 15000+600000
  569845 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,892b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -889,7 +916,7 @@ lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-Output written on main.pdf (30 pages, 829043 bytes).
+Output written on main.pdf (30 pages, 830155 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

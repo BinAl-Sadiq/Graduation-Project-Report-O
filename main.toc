@@ -25,8 +25,15 @@
 \contentsline {section}{\numberline {2.5}Objects Detection}{12}{}%
 \contentsline {section}{\numberline {2.6}Customizable Guidance}{12}{}%
 \contentsline {section}{\numberline {2.7}Related Work}{12}{}%
-\contentsline {chapter}{\numberline {3}System Design}{14}{}%
-\contentsline {section}{\numberline {3.1}System Design}{15}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{14}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{15}{}%
+\contentsline {section}{\numberline {3.2}Tools \& Technologies}{15}{}%
+\contentsline {section}{\numberline {3.3}Environment Setup}{15}{}%
+\contentsline {section}{\numberline {3.4}Localization with QR Codes}{15}{}%
+\contentsline {section}{\numberline {3.5}Obstacle Detection}{15}{}%
+\contentsline {section}{\numberline {3.6}Customizable Guidance}{15}{}%
+\contentsline {section}{\numberline {3.7}System Workflow}{15}{}%
+\contentsline {section}{\numberline {3.8}Testing \& Evaluation}{15}{}%
 \contentsline {chapter}{\numberline {4}Results and Discussion}{16}{}%
 \contentsline {section}{\numberline {4.1}Results}{17}{}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{18}{}%
