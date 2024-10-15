@@ -25,20 +25,20 @@
 \contentsline {section}{\numberline {2.5}Objects Detection}{12}{}%
 \contentsline {section}{\numberline {2.6}Customizable Guidance}{12}{}%
 \contentsline {section}{\numberline {2.7}Related Work}{12}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{14}{}%
-\contentsline {section}{\numberline {3.1}System Architecture Overview}{15}{}%
-\contentsline {section}{\numberline {3.2}Tools \& Technologies}{15}{}%
-\contentsline {section}{\numberline {3.3}Environment Setup}{15}{}%
-\contentsline {section}{\numberline {3.4}Localization with QR Codes}{15}{}%
-\contentsline {section}{\numberline {3.5}Obstacle Detection}{15}{}%
-\contentsline {section}{\numberline {3.6}Customizable Guidance}{15}{}%
-\contentsline {section}{\numberline {3.7}System Workflow}{15}{}%
-\contentsline {section}{\numberline {3.8}Testing \& Evaluation}{15}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{16}{}%
-\contentsline {section}{\numberline {4.1}Results}{17}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{18}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{19}{}%
-\contentsline {chapter}{References}{20}{}%
-\contentsline {chapter}{Appendices}{22}{}%
-\contentsline {chapter}{\numberline {A}}{22}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{22}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{15}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{16}{}%
+\contentsline {section}{\numberline {3.2}Tools \& Technologies}{16}{}%
+\contentsline {section}{\numberline {3.3}Environment Setup}{16}{}%
+\contentsline {section}{\numberline {3.4}Localization with QR Codes}{16}{}%
+\contentsline {section}{\numberline {3.5}Obstacle Detection}{16}{}%
+\contentsline {section}{\numberline {3.6}Customizable Guidance}{16}{}%
+\contentsline {section}{\numberline {3.7}System Workflow}{16}{}%
+\contentsline {section}{\numberline {3.8}Testing \& Evaluation}{16}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{17}{}%
+\contentsline {section}{\numberline {4.1}Results}{18}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{19}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{20}{}%
+\contentsline {chapter}{References}{21}{}%
+\contentsline {chapter}{Appendices}{24}{}%
+\contentsline {chapter}{\numberline {A}}{24}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{24}{}%

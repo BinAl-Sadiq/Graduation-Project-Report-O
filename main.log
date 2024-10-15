@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  10 OCT 2024 02:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  15 OCT 2024 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,32 +608,7 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./assets/uni.png> <./assets/dep.png>])
  (abstract.tex) (acknowledgements.tex [1]) [2] (main.toc [3
 
 
-]
-! Misplaced alignment tab character &.
-<argument> \numberline {3.2}Tools &
-                                    Technologies
-l.30 ...umberline {3.2}Tools & Technologies}{15}{}
-                                                  %
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> \numberline {3.8}Testing &
-                                      Evaluation
-l.36 ...umberline {3.8}Testing & Evaluation}{15}{}
-                                                  %
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-)
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -641,7 +616,8 @@ might try typing `S' now just to see what is salvageable.
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [5
+
+[5
 
 
 ] (main.lof)
@@ -780,7 +756,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12])
+[12]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -789,9 +765,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13]
+[13])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
 Chapter 3.
-[14
+[15
 
 ] (ch3/3.1_system_arch_overview.tex) (ch3/3.2_tools_technolgies.tex)
 (ch3/3.3_env_setup.tex) (ch3/3.4_localization_qr.tex)
@@ -805,9 +790,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[15]
+[16]
 Chapter 4.
-[16
+[17
 
 ] (ch4/4.1_Results.tex)
 
@@ -818,9 +803,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17]
+[18]
 Chapter 5.
-[18
+[19
 
 ] (ch5/5.1_Conclusion.tex) (references.tex
 
@@ -831,7 +816,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 []\OT1/cmr/m/n/12 Michail K., Bren-nan C., Sab-rina C., Anand A., Cam-den
  []
@@ -849,26 +834,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 []\OT1/cmr/m/n/12 Luca C., Gion-ata C., Francesco F., Alessan-dro F., Gi-an-luc
 a
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 19--21
+Underfull \hbox (badness 4168) in paragraph at lines 24--26
 \OT1/cmr/m/n/12 I., An-drea M. Fed-er-ica V. (2017). A QR-code Lo-cal-iza-tion 
 Sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 \OT1/cmr/m/n/12 tem for Mo-bile Robots: Ap-pli-ca-tion to Smart Wheelchairs.
  []
 
-[20
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 []\OT1/cmr/m/n/12 https://www.youtube.com/watch?v=-L-WgKMFuhE&list= PLFt
  []
 
@@ -881,9 +875,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21] (appendices.tex
+[23] (appendices.tex
 Appendix A.
-) [22
+) [24
 
 ] (main.aux)
  ***********
@@ -900,13 +894,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14315 strings out of 474486
- 287949 string characters out of 5753570
+ 14318 strings out of 474486
+ 287992 string characters out of 5753570
  1934542 words of memory out of 5000000
- 36223 multiletter control sequences out of 15000+600000
+ 36226 multiletter control sequences out of 15000+600000
  569845 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,93p,892b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,93p,1416b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alhar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
@@ -916,9 +910,9 @@ lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-Output written on main.pdf (30 pages, 830155 bytes).
+Output written on main.pdf (32 pages, 834471 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
