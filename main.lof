@@ -5,6 +5,9 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{8}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{17}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture}}{21}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces API Method: Add instruction to entire floor}}{23}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Database Schema for Users and QR Codes}}{23}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
