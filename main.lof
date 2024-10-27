@@ -3,11 +3,14 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}}{6}{}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces QR codes Versions (adapted from \cite {Tiwari2016}).}}{7}{}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{8}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces https://eugene-chian.medium.com/a-single-camera-3d-functions-fdec7ffa9a83}}{13}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{14}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{14}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{16}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{17}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture}}{21}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces API Method: Add instruction to entire floor}}{23}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Database Schema for Users and QR Codes}}{23}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Architecture}}{24}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces API Method: Add instruction to entire floor}}{26}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Database Schema for Users and QR Codes}}{27}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

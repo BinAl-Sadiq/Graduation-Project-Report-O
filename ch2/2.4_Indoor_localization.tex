@@ -52,12 +52,165 @@ To illustrate this method, consider a room measuring 4 meters in both width and 
 Although this method is computationally efficient, it has limitations. The position values are discrete, which may not provide the continuous and precise localization required in certain applications. Nonetheless, this method can be highly effective for specific use cases, as discussed in Appendix A.
 
 
-\paragraph{Pose Estimation with QR Codes}
+\paragraph{Pose Estimation Method}
+\label{Pose Estimation with QR Codes BG}
+Another important and interesting way to calculate the precise and continues values of the user’s pose(position \& orientation) is by detecting and decoding a QR Code using a camera to gain its global pose, then calculate its relative pose to the camera. After that, we will be able to use these two poses to estimate the user’s precise pose as follows:
+\[ user\_global\_pose = QR\_global\_pose - QR\_relative\_pose\]
+See \cite{Lucag2017}, where they used this method(but different implementation) for their localization system.
 
-Another method for indoor localization involves calculating the relative position and orientation (pose) of the QR code with respect to the camera. Upon detecting a QR code, the system estimates its position and orientation relative to the camera and, by combining this data with the known global position of the QR code, determines the user’s precise and continuous position within the environment.
+But calculating the relative pose is not a straight forward process. First, let us explain how cameras work. The basic idea of cameras is to project the real world 3D points into a 2D image, see Figure \ref{camera projection illustration image} for illustration.
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=\textwidth]{assets/ch3/camera projection illustration image.jpg}
+	\caption{https://eugene-chian.medium.com/a-single-camera-3d-functions-fdec7ffa9a83}
+	\label{camera projection illustration image}
+\end{figure}
+The following equation describes the relation between the real world points and the image points:
+\begin{equation}
+x = PX\label{x = PX}
+\end{equation}
+\subparagraph{Where:}
+\begin{itemize}
+	\item \textbf{x = [u, v, 1]$^T$} is the homogeneous coordinate of the 2D point in the image plane.
+	\item \textbf{X = [x$_w$, y$_w$, z$_w$, 1]$^T$} is the homogeneous coordinate of the 3D point in the world coordinate system.
+	\item \textbf{P = K$[R|t]$} is the camera projection matrix.
+	\subparagraph{With:}
+	\begin{itemize}
+		\item \textbf{$[R|t]$} is the camera's extrinsic matrix, which "is a transformation matrix from the world coordinate system to the camera coordinate system" - Aqeel Anwar \cite{Aqeel Anwar}.
+		
+		R is a 3x3 matrix that represents the rotation of the object’s with respect to the camera. t is 3x1 vector describes the object's position relative to the camera.
+		\begin{center} 
+			\[
+			[R|t] = \begin{bmatrix}
+				R_{3\times3} & t_{3\times1}
+			\end{bmatrix}_{(3\times4)}
+			=
+			\begin{bmatrix}
+				r_{11} & r_{12} & r_{13} & t_{x}\\
+				r_{21} & r_{22} & r_{23} & t_{y}\\
+				r_{31} & r_{32} & r_{33} & t_{z}
+			\end{bmatrix}
+			\]
+		\end{center}
+		
+		\item \textbf{K} is the camera's intrinsic matrix, which "is a transformation matrix that converts points from the camera coordinate system to the pixel coordinate system" - Aqeel Anwar \cite{Aqeel Anwar}. It contains camera's focal length(f$_x$, f$_y$) and the principal point(c$_x$, c$_y$) as follows:
+		
+		\begin{center} 
+			$K = \begin{bmatrix}
+				f_x & 0 & c_x\\
+				0 & f_y & c_y\\
+				0 & 0 & 1
+			\end{bmatrix}$
+		\end{center}
+		
+		Notice how the camera's intrinsic matrix cares only about the camera's internal parameters, while the extrinsic matrix does not.
+	\end{itemize}
+\end{itemize}
 
-While this approach offers significantly higher accuracy, it requires greater computational resources due to additional processes, such as camera calibration to determine intrinsic parameters. This increased complexity makes the method more resource-intensive compared to the divided environment approach. However, it is suitable for applications where continuous and precise localization is essential, as demonstrated by Lucag et al. \cite{Lucag2017}.
+Now we can rewrite equation \ref{x = PX} as follows:
+
+\begin{equation}
+	s
+	\begin{bmatrix}
+		u\\v\\1
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		f_x & 0 & c_x\\
+		0 & f_y & c_y\\
+		0 & 0 & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		r_{11} & r_{12} & r_{13} & t_{x}\\
+		r_{21} & r_{22} & r_{23} & t_{y}\\
+		r_{31} & r_{32} & r_{33} & t_{z}
+	\end{bmatrix}
+	\begin{bmatrix}
+		x_w\\y_w\\z_w\\1
+	\end{bmatrix}
+	\label{expanded form of x = PX}
+\end{equation}
+where s is a scale factor due to the homogeneous coordinates.
+
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=\textwidth]{assets/ch3/Aqeel Anwar's camera's projection pipeline.png}
+	\caption{Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite{Aqeel Anwar}.1}
+\end{figure}
+
+After we understood the basics of how cameras project 3D world points into 2D images, we can use this knowledge to calculate the pose of an object, such as a QR code. At least four 3D points at the object need to be known, such as the four corners of a QR code in the world coordinate system. Then, the corresponding 2D projections in the image plane of these points need to be known. See figure \ref{QR code's known points} for illustration.
+
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=330pt]{assets/ch3/QR code's known points/QR code's known points.png}
+	\caption{This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}
+	\label{QR code's known points}
+\end{figure}
+
+For more illustration, let us take the QR code at figure \ref{QR code's known points} as an example. The QR code's width/height is equal to 16.8cm in the real world coordinate system. Using this value, we will be able to extract the four corners 3D points in the real world coordinate system as follows:
+\begin{equation}
+	\begin{matrix}
+		top-left-point = (-16.8/2, 16.8/2, 0) = (-8.4, 8.4, 0)\\
+		top-right-point = (8.4, 8.4, 0)\\
+		bottom-right-point = (-8.4, 8.4, 0)\\
+		bottom-left-point = (-8.4, -8.4, 0)
+	\end{matrix}
+	\label{QR corner points relative to its center}
+\end{equation}
+For the sake of simplicity, the values at \ref{QR corner points relative to its center} are for a QR code with a global position value of (0,0,0).
+
+After choosing some pairs of 3D points with their corresponding 2D projections, use equation \ref{expanded form of x = PX} for each pair as follows:
+
+\begin{equation}
+	s
+	\begin{bmatrix}
+		u_i\\v_i\\1
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		f_x & 0 & c_x\\
+		0 & f_y & c_y\\
+		0 & 0 & 1
+	\end{bmatrix}
+	\begin{bmatrix}
+		r_{11} & r_{12} & r_{13} & t_{x}\\
+		r_{21} & r_{22} & r_{23} & t_{y}\\
+		r_{31} & r_{32} & r_{33} & t_{z}
+	\end{bmatrix}
+	\begin{bmatrix}
+		x_{w,i}\\y_{w,i}\\z_{w,i}\\1
+	\end{bmatrix}
+\nonumber\end{equation}
+This yields two equations per point:
+\begin{equation}
+	u_i = \frac{f_x(r_{11}x_{w,i} + r_{12}y_{w,i} + r_{13}z_{w,i} + t_{x})}{r_{31}x_{w,i} + r_{32}y_{w,i} + r_{33}z_{w,i} + t_{z}} + c_x
+\nonumber\end{equation}
+\begin{equation}
+	v_i = \frac{f_y(r_{21}x_{w,i} + r_{22}y_{w,i} + r_{23}z_{w,i} + t_{y})}{r_{31}x_{w,i} + r_{32}y_{w,i} + r_{33}z_{w,i} + t_{z}} + c_y
+\nonumber\end{equation}
+
+Finally, use the later equations to solve for R and t by using one of the PnP(Perspective-n-Point) algorithms. At the end, we will have the values of R and t which is the camera's extrinsic matrix that describes an object's rotation and translation relative to the camera. So, this is how to get the relative pose.
+
+\subparagraph{PnP}
+PnP is a classic approach in computer vision for determining the pose of a calibrated camera with respect to a set of known 3D points in the real world coordinate system and their corresponding 2D projection points. So in a nutshell a PnP algorithm takes three inputs: 3D points, 2D projection points, and intrinsic matrix to solve the camera's pose. There are several different PnP algorithms such as Direct Linear Transformation(DLT), Efficient PnP(EPnP), and RANSAC-PnP. 
+
+\subparagraph{Camera Calibration}
+\label{Camera Calibration Background}
+Camera Calibration is the process of calculating the camera's focal length, principal point, and distortion coefficients. The basic idea behind camera calibration is to take multiple photos by the camera to a known pattern, then try to accurately locate some points at these photos. Then compare these estimated points to their physical locations of points in the calibration pattern (usually on a flat surface) in the real-world coordinate system. By comparing the 2D points in the images to their known 3D locations in the real-world coordinate system, we will be able to calculate accurate values of the camera's focal length, principal point, and distortion coefficients.
+
+\begin{figure}[h] % [h] forces the figure to be placed exactly here in the text
+	\centering
+	\includegraphics[width=\textwidth]{assets/ch3/calibration illustration image/calibration illustration image.png}
+	\caption{ The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner  points locations. }
+	\label{Calibration_Illustrator}
+\end{figure}
+
+\subparagraph{Libraries}
+\label{localization libraries BG}
+There are several libraries for doing so in Android devices, such as Camera2, and CameraX. It is recommended for most developers to use CameraX library, since it supports the vast majority of Android devices, and provides a simple and easy to use API - unlike Camera2 - that spares users from dealing with compatibility issues and other low level details. See \cite{whichCameraLibToUse} for more info.
+
+
+While the pose estimation approach offers significantly higher accuracy, it requires greater computational resources due to additional processes, such as camera calibration to determine intrinsic parameters. This increased complexity makes the method more resource-intensive compared to the divided environment approach. However, it is suitable for applications where continuous and precise localization is essential.
 
 
 
-In a well-designed system, the effectiveness of localization remains high, regardless of the specific locations of the QR codes. By optimizing QR code placement and system design to match the environment, the indoor localization system can provide robust performance, whether prioritizing simplicity or precision.
