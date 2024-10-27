@@ -205,10 +205,16 @@ Camera Calibration is the process of calculating the camera's focal length, prin
 	\label{Calibration_Illustrator}
 \end{figure}
 
-\subparagraph{Libraries}
+\subparagraph{Libraries:}
 \label{localization libraries BG}
-There are several libraries for doing so in Android devices, such as Camera2, and CameraX. It is recommended for most developers to use CameraX library, since it supports the vast majority of Android devices, and provides a simple and easy to use API - unlike Camera2 - that spares users from dealing with compatibility issues and other low level details. See \cite{whichCameraLibToUse} for more info.
-
+\begin{itemize}
+\item \textbf{Camera Libraries}:
+There are several libraries for cameras in Android devices, such as Camera2, and CameraX. It is recommended for most developers to use CameraX library, since it supports the vast majority of Android devices, and provides a simple and easy to use API - unlike Camera2 - that spares users from dealing with compatibility issues and other low level details. See \cite{whichCameraLibToUse} for more info.
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Computer Vision Libraries}:
+	\color{green}temporarily empty...\color{black}
+\end{itemize}
 
 While the pose estimation approach offers significantly higher accuracy, it requires greater computational resources due to additional processes, such as camera calibration to determine intrinsic parameters. This increased complexity makes the method more resource-intensive compared to the divided environment approach. However, it is suitable for applications where continuous and precise localization is essential.
 
