@@ -1,2 +1,23 @@
-\section{Objects Detection}
 
+\section{Objects Detection}
+A goal of computer vision that tasks a device to identify an object via unique attributes such it's silhouette and perceived shape while accounting illumination and the viewpoint of it and classify it under known predefined categories (such as a car or a trash can) then put a rectangle called a bounding box indicating the name of an object and it's size relative to the  perspective of the pupil of the device.
+
+The approaches that will be covered are: Deformable Parts Model (DPM), R-CNN (Regional Convoluted Neural Networks), and YOLO (You Only Look Once).
+
+\subsection{Deformable Parts Model}
+The main idea of this method is objects are the sum of their parts, with separate dedicated filters for each of the machines employed, these filters are:
+
+\begin{itemize}
+\item \textbf{coarse root filter:} tasked to detect the silhouette of the object without taking
+into account the parts.
+\item \textbf{parts filter:} each distinguishable feature of the silhouette grouped together.
+\item \textbf{Spatial filter model:} Indicates the location of each part in relation to the root.
+\end{itemize}
+
+These filters then feed to the next one in order to end up in a Support Vector Machine (SVM) to decide which object it can be classified under. This method doesn't consider speed or the computational power of the device, which results in it demanding very a capable parallel processor such as a GPU (Graphical Processing Unit) and takes a significant amount of time, thus not being qualified for real-time applications.
+
+\subsection{Regonal-CNN}
+\color{red}Temporarily empty...\color{black}
+
+\subsection{You Only Look Once}
+Opposite to all the above methods, YOLO only views the image once by basing all of the calculations on a single image, eliminating the need of multiple, parallel proc-esses running together which ultimately reduces time wasted on a single calculation. The algorithm takes a two-dimensional input image from a given source, overlay an evenly-spaced square with dimensions n x n on each of the two axis, then take the  bounding boxes present in the grid and the confidence map, where it determines which of the objects in the cells are and categorize them to finally be combined, resulting in a list of detections it made. [REFERENCE IMAGE HERE] It's capable of being put in real-time applications thanks to it's efficiency and low data-processing. See reference [num] for more details.

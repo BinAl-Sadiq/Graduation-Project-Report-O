@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{16}{}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces This ERD, adapted from \cite {visual-paradigm}, represents a bookstore database, with entities like Author, Publisher, Book, Warehouse, Customer, and ShoppingBasket. It shows relationships between entities, such as customers adding books to shopping baskets and warehouses storing book inventory, linked by primary and foreign keys.}}{19}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces This Entity-Relationship Diagram (ERD) of Mosaned database}}{24}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces This Entity-Relationship Diagram (ERD) of Mosaned database}}{25}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

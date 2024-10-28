@@ -32,29 +32,32 @@
 \contentsline {subsection}{\numberline {2.6.1}Entity-Relationship Diagram (ERD)}{18}{}%
 \contentsline {subsection}{\numberline {2.6.2}Structured Query Language (SQL)}{18}{}%
 \contentsline {subsection}{\numberline {2.6.3}SQLite3}{19}{}%
-\contentsline {section}{\numberline {2.7}Customizable Guidance}{20}{}%
-\contentsline {section}{\numberline {2.8}Objects Detection}{20}{}%
-\contentsline {section}{\numberline {2.9}Related Work}{20}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{22}{}%
-\contentsline {section}{\numberline {3.1}System Architecture Overview}{23}{}%
-\contentsline {section}{\numberline {3.2}Database System}{23}{}%
-\contentsline {subsection}{\numberline {3.2.1}Database}{23}{}%
-\contentsline {subsection}{\numberline {3.2.2}Application Programming Interface (API)}{26}{}%
-\contentsline {subsection}{\numberline {3.2.3}Web Server}{26}{}%
-\contentsline {subsection}{\numberline {3.2.4}Building Management Dashboard}{26}{}%
-\contentsline {section}{\numberline {3.3}Mobile Application}{27}{}%
-\contentsline {section}{\numberline {3.4}Localization System}{28}{}%
-\contentsline {subsection}{\numberline {3.4.1}Camera Calibration}{28}{}%
-\contentsline {subparagraph}{Params:}{29}{}%
-\contentsline {subparagraph}{Params:}{29}{}%
-\contentsline {subsection}{\numberline {3.4.2}Camera's Relative Pose}{30}{}%
+\contentsline {section}{\numberline {2.7}Customizable Guidance}{19}{}%
+\contentsline {section}{\numberline {2.8}Objects Detection}{19}{}%
+\contentsline {subsection}{\numberline {2.8.1}Deformable Parts Model}{20}{}%
+\contentsline {subsection}{\numberline {2.8.2}Regonal-CNN}{20}{}%
+\contentsline {subsection}{\numberline {2.8.3}You Only Look Once}{20}{}%
+\contentsline {section}{\numberline {2.9}Related Work}{21}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{23}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{24}{}%
+\contentsline {section}{\numberline {3.2}Database System}{24}{}%
+\contentsline {subsection}{\numberline {3.2.1}Database}{24}{}%
+\contentsline {subsection}{\numberline {3.2.2}Application Programming Interface (API)}{27}{}%
+\contentsline {subsection}{\numberline {3.2.3}Web Server}{27}{}%
+\contentsline {subsection}{\numberline {3.2.4}Building Management Dashboard}{27}{}%
+\contentsline {section}{\numberline {3.3}Mobile Application}{28}{}%
+\contentsline {section}{\numberline {3.4}Localization System}{29}{}%
+\contentsline {subsection}{\numberline {3.4.1}Camera Calibration}{29}{}%
 \contentsline {subparagraph}{Params:}{30}{}%
-\contentsline {section}{\numberline {3.5}Customizable Guidance}{31}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{32}{}%
-\contentsline {section}{\numberline {4.1}Results}{33}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{34}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{35}{}%
-\contentsline {chapter}{References}{36}{}%
-\contentsline {chapter}{Appendices}{39}{}%
-\contentsline {chapter}{\numberline {A}}{39}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{39}{}%
+\contentsline {subparagraph}{Params:}{30}{}%
+\contentsline {subsection}{\numberline {3.4.2}Camera's Relative Pose}{31}{}%
+\contentsline {subparagraph}{Params:}{31}{}%
+\contentsline {section}{\numberline {3.5}Customizable Guidance}{32}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{33}{}%
+\contentsline {section}{\numberline {4.1}Results}{34}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{35}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{36}{}%
+\contentsline {chapter}{References}{37}{}%
+\contentsline {chapter}{Appendices}{40}{}%
+\contentsline {chapter}{\numberline {A}}{40}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{40}{}%
