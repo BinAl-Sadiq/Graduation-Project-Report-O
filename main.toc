@@ -53,11 +53,12 @@
 \contentsline {subsection}{\numberline {3.4.2}Camera's Relative Pose}{31}{}%
 \contentsline {subparagraph}{Params:}{31}{}%
 \contentsline {section}{\numberline {3.5}Customizable Guidance}{32}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{33}{}%
-\contentsline {section}{\numberline {4.1}Results}{34}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{35}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{36}{}%
-\contentsline {chapter}{References}{37}{}%
-\contentsline {chapter}{Appendices}{40}{}%
-\contentsline {chapter}{\numberline {A}}{40}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{40}{}%
+\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{32}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{34}{}%
+\contentsline {section}{\numberline {4.1}Results}{35}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{36}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{37}{}%
+\contentsline {chapter}{References}{38}{}%
+\contentsline {chapter}{Appendices}{41}{}%
+\contentsline {chapter}{\numberline {A}}{41}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{41}{}%

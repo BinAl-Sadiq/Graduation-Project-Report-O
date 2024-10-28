@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 OCT 2024 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  28 OCT 2024 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,6 +1093,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31]) (ch3/3.4_customazible_guidance.tex)
+(ch3/3.4_QR_Code_Placement_and_Camera_Orientation.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1101,9 +1102,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32]
+[32])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[33]
 Chapter 4.
-[33
+[34
 
 ] (ch4/4.1_Results.tex)
 
@@ -1114,9 +1124,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34]
+[35]
 Chapter 5.
-[35
+[36
 
 ] (ch5/5.1_Conclusion.tex) (references.tex
 
@@ -1127,7 +1137,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 8--12
 []\OT1/cmr/m/n/12 Michail K., Bren-nan C., Sab-rina C., Anand A., Cam-den
  []
@@ -1162,7 +1172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 agram/.
  []
 
-[37
+[38
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 32--34
@@ -1213,7 +1223,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[38]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 78--80
 []\OT1/cmr/m/n/12 https://www.youtube.com/watch?v=-L-WgKMFuhE&list= PLFt
  []
@@ -1227,9 +1237,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39] (appendices.tex
+[40] (appendices.tex
 Appendix A.
-) [40
+) [41
 
 ] (main.aux)
  ***********
@@ -1242,10 +1252,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16088 strings out of 474485
- 317569 string characters out of 5743734
+ 16096 strings out of 474485
+ 318013 string characters out of 5743734
  1942542 words of memory out of 5000000
- 37993 multiletter control sequences out of 15000+600000
+ 37997 multiletter control sequences out of 15000+600000
  569487 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,93p,1416b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1264,9 +1274,9 @@ fb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb><C:/Users/NEMFi/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmb8a.pfb>
-Output written on main.pdf (48 pages, 2165782 bytes).
+Output written on main.pdf (49 pages, 2167515 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
