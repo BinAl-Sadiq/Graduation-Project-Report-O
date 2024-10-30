@@ -1,13 +1,34 @@
 \section{Customizable Guidance}
 
-The Customizable Guidance system provides tailored navigation assistance to visually impaired users, implemented directly within the mobile application. This system enables the mobile app to retrieve specific navigation instructions from a central database upon scanning a QR code, offering personalized guidance to the user. Each QR code corresponds to a unique set of instructions, allowing users to receive context-aware information as they move throughout the building.
+The Customizable Guidance system provides tailored navigation assistance to visually impaired users, implemented directly within the mobile application. This system enables the mobile app to retrieve specific navigation instructions from a central database upon scanning a QR code offering personalized guidance to the users, such as guiding users following paths to their destinations, and reading to users unique set of instructions/information based on their locations, allowing users to receive context-aware guidance as they move throughout the building.
 
-The guidance system operates as follows:
+\subparagraph{Locations-based instructions/information}
 \begin{itemize}
 	\item \textbf{QR Code Scanning:} When a user scans a QR code, the application identifies the QR code's unique ID.
 	\item \textbf{Instruction Retrieval:} Based on the ID, the system fetches the relevant instructions from a remote database.
 	\item \textbf{Audio or Visual Feedback:} The retrieved instructions can be provided as audio guidance, but the system can also present information in other forms, depending on user preferences and context.
 	\item \textbf{Voice Commands:} Users can interact with the system using voice commands through the mobile application. For instance, they can request notifications for specific scenarios, such as “notify me when someone with a red shirt is nearby.”
 \end{itemize}
+
+\subparagraph{Destination path guidance}
+Since the user's exact position and rotation are known because of the localization system(See \ref{Localization System Methodology}), the guidance system is able to determine the path between the user and the desired destination. The way this work is as follows:
+\begin{enumerate}
+	\item The user asks the system using a microphone to guide him/her navigating to a certain destination.
+	\item The system will search the database for any that matches the decryption.
+	\item If the destination was determined, the path is fragmented into several milestones, starting from the user, and ending at the destination.
+	\item Calculate the distance and angle between the user current and the next milestone:
+	\begin{equation}
+		difference = milestone\_position - user\_global\_position
+	\nonumber\end{equation}
+	\begin{equation}
+		distance = \sqrt{difference.x^2 + difference.y^2}
+	\nonumber\end{equation}
+	\begin{equation}
+		angle = tan^{-1}(\frac{difference.y}{difference.x})
+	\nonumber\end{equation}
+	\item Based on the later calculations, the guidance system will inform the user - using a speaker - to move in a certain direction for a specific distance.
+	\item After reaching the milestone, if the next milestone was on another floor, the system will inform the user that he/she is standing in front of the stairs/elevator and ask him/her to go to the correct floor.
+	\item If the user did not reach the destination, steps 3 to 5 will be repeated.
+\end{enumerate}
 
 This approach ensures that users receive accurate and timely navigation information tailored to their environment while also allowing for interactive communication with the system.
