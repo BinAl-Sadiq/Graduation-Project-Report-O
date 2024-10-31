@@ -1,6 +1,6 @@
-\contentsline {chapter}{List of Tables}{v}{}%
-\contentsline {chapter}{List of Figures}{vi}{}%
-\contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
+\contentsline {chapter}{List of Tables}{vi}{}%
+\contentsline {chapter}{List of Figures}{vii}{}%
+\contentsline {chapter}{Glossary and List of Abbreviations}{ix}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -37,30 +37,42 @@
 \contentsline {subsection}{\numberline {2.8.1}Deformable Parts Model}{20}{}%
 \contentsline {subsection}{\numberline {2.8.2}Regonal-CNN}{20}{}%
 \contentsline {subsection}{\numberline {2.8.3}You Only Look Once}{21}{}%
-\contentsline {section}{\numberline {2.9}Related Work}{21}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{24}{}%
-\contentsline {section}{\numberline {3.1}System Architecture Overview}{25}{}%
-\contentsline {section}{\numberline {3.2}Database System}{25}{}%
-\contentsline {subsection}{\numberline {3.2.1}Database}{25}{}%
-\contentsline {subsection}{\numberline {3.2.2}Application Programming Interface (API)}{28}{}%
-\contentsline {subsection}{\numberline {3.2.3}Web Server}{28}{}%
-\contentsline {subsection}{\numberline {3.2.4}Building Management Dashboard}{28}{}%
-\contentsline {section}{\numberline {3.3}Mobile Application}{29}{}%
-\contentsline {section}{\numberline {3.4}Localization System}{30}{}%
-\contentsline {subsection}{\numberline {3.4.1}Camera Calibration}{30}{}%
-\contentsline {subparagraph}{Params:}{31}{}%
-\contentsline {subparagraph}{Params:}{31}{}%
-\contentsline {subsection}{\numberline {3.4.2}Camera's Relative Pose}{32}{}%
-\contentsline {subparagraph}{Params:}{32}{}%
-\contentsline {section}{\numberline {3.5}Customizable Guidance}{33}{}%
-\contentsline {subparagraph}{Locations-based instructions/information}{33}{}%
-\contentsline {subparagraph}{Destination path guidance}{33}{}%
-\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{34}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{36}{}%
-\contentsline {section}{\numberline {4.1}Results}{37}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{38}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{39}{}%
-\contentsline {chapter}{References}{40}{}%
-\contentsline {chapter}{Appendices}{43}{}%
-\contentsline {chapter}{\numberline {A}}{43}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{43}{}%
+\contentsline {section}{\numberline {2.9}Camera Module}{21}{}%
+\contentsline {subsection}{\numberline {2.9.1}OV2640}{21}{}%
+\contentsline {subsection}{\numberline {2.9.2}OV7670}{22}{}%
+\contentsline {subsection}{\numberline {2.9.3}OV5640}{23}{}%
+\contentsline {section}{\numberline {2.10}Audio Amplification Modules \& Speakers}{23}{}%
+\contentsline {subsection}{\numberline {2.10.1}Speakers}{24}{}%
+\contentsline {subsection}{\numberline {2.10.2}Audio Modules}{24}{}%
+\contentsline {section}{\numberline {2.11}Related Work}{25}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{28}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{29}{}%
+\contentsline {section}{\numberline {3.2}Database System}{29}{}%
+\contentsline {subsection}{\numberline {3.2.1}Database}{29}{}%
+\contentsline {subsection}{\numberline {3.2.2}Application Programming Interface (API)}{32}{}%
+\contentsline {subsection}{\numberline {3.2.3}Web Server}{32}{}%
+\contentsline {subsection}{\numberline {3.2.4}Building Management Dashboard}{32}{}%
+\contentsline {section}{\numberline {3.3}Mobile Application}{33}{}%
+\contentsline {section}{\numberline {3.4}I/O Devices}{35}{}%
+\contentsline {subsection}{\numberline {3.4.1}Camera Integration}{35}{}%
+\contentsline {subsection}{\numberline {3.4.2}Audio Output Integration}{36}{}%
+\contentsline {subsection}{\numberline {3.4.3}Microphone Integration}{37}{}%
+\contentsline {subsection}{\numberline {3.4.4}Smart White Cane}{38}{}%
+\contentsline {section}{\numberline {3.5}Localization System}{39}{}%
+\contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{40}{}%
+\contentsline {subparagraph}{Params:}{40}{}%
+\contentsline {subparagraph}{Params:}{41}{}%
+\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{41}{}%
+\contentsline {subparagraph}{Params:}{42}{}%
+\contentsline {section}{\numberline {3.6}Customizable Guidance}{42}{}%
+\contentsline {subparagraph}{Locations-based instructions/information}{43}{}%
+\contentsline {subparagraph}{Destination path guidance}{43}{}%
+\contentsline {section}{\numberline {3.7}QR Code Placement \& Camera Orientation}{44}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{45}{}%
+\contentsline {section}{\numberline {4.1}Results}{46}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{47}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{48}{}%
+\contentsline {chapter}{References}{49}{}%
+\contentsline {chapter}{Appendices}{52}{}%
+\contentsline {chapter}{\numberline {A}}{52}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{52}{}%
