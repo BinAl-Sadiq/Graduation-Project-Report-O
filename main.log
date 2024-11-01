@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  31 OCT 2024 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.10)  1 NOV 2024 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,9 +498,36 @@ File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
+(C:\Users\Alhar\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:\Users\Alhar\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Alhar\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen295
+\captionmargin=\dimen296
+\caption@leftmargin=\dimen297
+\caption@rightmargin=\dimen298
+\caption@width=\dimen299
+\caption@indent=\dimen300
+\caption@parindent=\dimen301
+\caption@hangindent=\dimen302
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count310
+\c@continuedfloat=\count311
+Package caption Info: listings package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count312
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count313
+)
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
+\l__color_backend_stack_int=\count314
 \l__pdf_internal_box=\box69
 ) (main.aux
 
@@ -509,20 +536,20 @@ LaTeX Warning: Label `Tiwari2016' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -560,16 +587,16 @@ LaTeX Font Info:    ... okay on input line 34.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen295
+\scratchcounter=\count315
+\scratchdimen=\dimen303
 \scratchbox=\box70
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count316
+\nofMParguments=\count317
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen296
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen304
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
 \everyMPtoPDFconversion=\toks40
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -579,7 +606,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count317
+\c@lstlisting=\count321
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  (cover.tex
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
 8.
@@ -782,8 +811,8 @@ sed on input line 64.
 (pdftex.def)             Requested size: 406.71513pt x 270.46794pt.
 
 Underfull \hbox (badness 1558) in paragraph at lines 65--65
-[]\OT1/cmr/m/n/12 Figure 2.4: https://eugene-chian.medium.com/a-single-camera-3
-d-functions-
+[]\OT1/cmr/m/n/12 Figure 2.4: |https://eugene-chian.medium.com/a-single-camera-
+3d-functions-
  []
 
 
@@ -920,20 +949,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20]
-<assets/ch2/OV2640.png, id=132, 602.25pt x 602.25pt>
-File: assets/ch2/OV2640.png Graphic file (type png)
-<use assets/ch2/OV2640.png>
-Package pdftex.def Info: assets/ch2/OV2640.png  used on input line 9.
-(pdftex.def)             Requested size: 203.35756pt x 203.35628pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+<assets/ch2/OV5640.png, id=132, 752.8125pt x 752.8125pt>
+File: assets/ch2/OV5640.png Graphic file (type png)
+<use assets/ch2/OV5640.png>
+Package pdftex.def Info: assets/ch2/OV5640.png  used on input line 11.
+(pdftex.def)             Requested size: 122.01578pt x 122.01468pt.
 <assets/ch2/OV7670.png, id=133, 170.13562pt x 167.87718pt>
 File: assets/ch2/OV7670.png Graphic file (type png)
 <use assets/ch2/OV7670.png>
-Package pdftex.def Info: assets/ch2/OV7670.png  used on input line 19.
-(pdftex.def)             Requested size: 203.35756pt x 200.66776pt.
+Package pdftex.def Info: assets/ch2/OV7670.png  used on input line 18.
+(pdftex.def)             Requested size: 122.01578pt x 120.39758pt.
+<assets/ch2/OV2640.png, id=134, 602.25pt x 602.25pt>
+File: assets/ch2/OV2640.png Graphic file (type png)
+<use assets/ch2/OV2640.png>
+Package pdftex.def Info: assets/ch2/OV2640.png  used on input line 25.
+(pdftex.def)             Requested size: 122.01578pt x 122.01009pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -942,7 +973,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21]
+[21 <./assets/ch2/OV5640.png> <./assets/ch2/OV7670.png> <./assets/ch2/OV2640.pn
+g>]) (ch3/2.x_audio_modules.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -951,54 +983,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22 <./assets/ch2/OV2640.png> <./assets/ch2/OV7670.png>]
-<assets/ch2/OV5640.png, id=143, 752.8125pt x 752.8125pt>
-File: assets/ch2/OV5640.png Graphic file (type png)
-<use assets/ch2/OV5640.png>
-Package pdftex.def Info: assets/ch2/OV5640.png  used on input line 30.
-(pdftex.def)             Requested size: 203.35756pt x 203.35399pt.
-)
-(ch3/2.x_audio_modules.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[23 <./assets/ch2/OV5640.png>]
-<assets/ch2/PAM8403.png, id=148, 385.44pt x 256.70906pt>
+[22]
+<assets/ch2/PAM8403.png, id=145, 385.44pt x 256.70906pt>
 File: assets/ch2/PAM8403.png Graphic file (type png)
 <use assets/ch2/PAM8403.png>
-Package pdftex.def Info: assets/ch2/PAM8403.png  used on input line 25.
-(pdftex.def)             Requested size: 122.01578pt x 81.2633pt.
-<assets/ch2/TPA3116D2.png, id=149, 752.8125pt x 623.32875pt>
+Package pdftex.def Info: assets/ch2/PAM8403.png  used on input line 22.
+(pdftex.def)             Requested size: 89.47781pt x 59.59023pt.
+<assets/ch2/TPA3116D2.png, id=146, 752.8125pt x 623.32875pt>
 File: assets/ch2/TPA3116D2.png Graphic file (type png)
 <use assets/ch2/TPA3116D2.png>
-Package pdftex.def Info: assets/ch2/TPA3116D2.png  used on input line 35.
-(pdftex.def)             Requested size: 122.01578pt x 101.02815pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<assets/ch2/LM386.png, id=150, 169.38281pt x 169.38281pt>
+Package pdftex.def Info: assets/ch2/TPA3116D2.png  used on input line 29.
+(pdftex.def)             Requested size: 89.47781pt x 74.08287pt.
+<assets/ch2/LM386.png, id=147, 169.38281pt x 169.38281pt>
 File: assets/ch2/LM386.png Graphic file (type png)
 <use assets/ch2/LM386.png>
-Package pdftex.def Info: assets/ch2/LM386.png  used on input line 43.
-(pdftex.def)             Requested size: 122.01578pt x 122.02013pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<assets/ch2/MAX9744.png, id=151, 169.38281pt x 169.38281pt>
+Package pdftex.def Info: assets/ch2/LM386.png  used on input line 36.
+(pdftex.def)             Requested size: 89.47781pt x 89.4804pt.
+<assets/ch2/MAX9744.png, id=148, 169.38281pt x 169.38281pt>
 File: assets/ch2/MAX9744.png Graphic file (type png)
 <use assets/ch2/MAX9744.png>
-Package pdftex.def Info: assets/ch2/MAX9744.png  used on input line 51.
-(pdftex.def)             Requested size: 122.01578pt x 122.02013pt.
+Package pdftex.def Info: assets/ch2/MAX9744.png  used on input line 43.
+(pdftex.def)             Requested size: 89.47781pt x 89.4804pt.
+) (ch3/2.x_esp32.tex
+<assets/ch2/esp32.png, id=149, 770.88pt x 578.16pt>
+File: assets/ch2/esp32.png Graphic file (type png)
+<use assets/ch2/esp32.png>
+Package pdftex.def Info: assets/ch2/esp32.png  used on input line 7.
+(pdftex.def)             Requested size: 162.68356pt x 122.00826pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (ch2/2.9_Related_work.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1007,7 +1022,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24 <./assets/ch2/PAM8403.png>]
+[23 <./assets/ch2/PAM8403.png> <./assets/ch2/TPA3116D2.png> <./assets/ch2/LM386
+.png> <./assets/ch2/MAX9744.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1016,8 +1032,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[25 <./assets/ch2/TPA3116D2.png> <./assets/ch2/LM386.png> <./assets/ch2/MAX9744
-.png>]
+[24 <./assets/ch2/esp32.png>]) (ch2/2.9_Related_work.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1026,7 +1041,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26])
+[25])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[26]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1040,7 +1064,7 @@ Chapter 3.
 [28
 
 ] (ch3/3.1_system_arch_overview.tex) (ch3/3.2_backend_inf.tex
-<assets/ch3/our_ERD.pdf, id=172, 1927.2pt x 1084.05pt>
+<assets/ch3/our_ERD.pdf, id=174, 1927.2pt x 1084.05pt>
 File: assets/ch3/our_ERD.pdf Graphic file (type pdf)
 <use assets/ch3/our_ERD.pdf>
 Package pdftex.def Info: assets/ch3/our_ERD.pdf  used on input line 10.
@@ -1109,7 +1133,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-<example-image-a.pdf, id=204, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=206, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 12.
@@ -1138,7 +1162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [36]
-<example-image-b.pdf, id=217, 321.2pt x 240.9pt>
+<example-image-b.pdf, id=219, 321.2pt x 240.9pt>
 File: example-image-b.pdf Graphic file (type pdf)
 <use example-image-b.pdf>
 Package pdftex.def Info: example-image-b.pdf  used on input line 58.
@@ -1158,7 +1182,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [37 <C:/Users/Alhar/AppData/Roaming/MiKTeX/tex/latex/mwe/example-image-b.pdf>]
-<example-image-c.pdf, id=225, 321.2pt x 240.9pt>
+<example-image-c.pdf, id=227, 321.2pt x 240.9pt>
 File: example-image-c.pdf Graphic file (type pdf)
 <use example-image-c.pdf>
 Package pdftex.def Info: example-image-c.pdf  used on input line 78.
@@ -1382,13 +1406,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16246 strings out of 474486
- 317846 string characters out of 5753570
+ 17730 strings out of 474486
+ 346569 string characters out of 5753570
  1940542 words of memory out of 5000000
- 38134 multiletter control sequences out of 15000+600000
+ 39605 multiletter control sequences out of 15000+600000
  569487 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,93p,1416b,1716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,93p,1416b,1720s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alhar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
@@ -1401,9 +1425,9 @@ s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss17
 .pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-Output written on main.pdf (62 pages, 5018839 bytes).
+Output written on main.pdf (62 pages, 5760503 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
+ 339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

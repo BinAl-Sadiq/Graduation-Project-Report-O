@@ -38,13 +38,13 @@
 \contentsline {subsection}{\numberline {2.8.2}Regonal-CNN}{20}{}%
 \contentsline {subsection}{\numberline {2.8.3}You Only Look Once}{21}{}%
 \contentsline {section}{\numberline {2.9}Camera Module}{21}{}%
-\contentsline {subsection}{\numberline {2.9.1}OV2640}{21}{}%
-\contentsline {subsection}{\numberline {2.9.2}OV7670}{22}{}%
-\contentsline {subsection}{\numberline {2.9.3}OV5640}{23}{}%
-\contentsline {section}{\numberline {2.10}Audio Amplification Modules \& Speakers}{23}{}%
-\contentsline {subsection}{\numberline {2.10.1}Speakers}{24}{}%
-\contentsline {subsection}{\numberline {2.10.2}Audio Modules}{24}{}%
-\contentsline {section}{\numberline {2.11}Related Work}{25}{}%
+\contentsline {section}{\numberline {2.10}Audio Amplification Modules \& Speakers}{22}{}%
+\contentsline {subsection}{\numberline {2.10.1}Speakers}{22}{}%
+\contentsline {subsection}{\numberline {2.10.2}Audio Modules}{23}{}%
+\contentsline {section}{\numberline {2.11}ESP32}{23}{}%
+\contentsline {subsection}{\numberline {2.11.1}ESP Series Overview}{24}{}%
+\contentsline {subsection}{\numberline {2.11.2}Key Features of ESP Modules}{24}{}%
+\contentsline {section}{\numberline {2.12}Related Work}{25}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{28}{}%
 \contentsline {section}{\numberline {3.1}System Architecture Overview}{29}{}%
 \contentsline {section}{\numberline {3.2}Database System}{29}{}%
