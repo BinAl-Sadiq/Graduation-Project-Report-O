@@ -1,6 +1,6 @@
-\contentsline {chapter}{List of Tables}{vi}{}%
-\contentsline {chapter}{List of Figures}{vii}{}%
-\contentsline {chapter}{Glossary and List of Abbreviations}{ix}{}%
+\contentsline {chapter}{List of Tables}{v}{}%
+\contentsline {chapter}{List of Figures}{vi}{}%
+\contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -38,42 +38,44 @@
 \contentsline {subsection}{\numberline {2.8.2}Deformable Parts Model}{20}{}%
 \contentsline {subsection}{\numberline {2.8.3}You Only Look Once (YOLO)}{21}{}%
 \contentsline {section}{\numberline {2.9}Camera Module}{22}{}%
-\contentsline {subsection}{\numberline {2.9.1}OV2640}{22}{}%
-\contentsline {subsection}{\numberline {2.9.2}OV7670}{23}{}%
-\contentsline {subsection}{\numberline {2.9.3}OV5640}{23}{}%
-\contentsline {section}{\numberline {2.10}Audio Amplification Modules \& Speakers}{24}{}%
-\contentsline {subsection}{\numberline {2.10.1}Speakers}{24}{}%
-\contentsline {subsection}{\numberline {2.10.2}Audio Modules}{25}{}%
-\contentsline {section}{\numberline {2.11}Related Work}{25}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{29}{}%
-\contentsline {section}{\numberline {3.1}System Architecture Overview}{30}{}%
-\contentsline {section}{\numberline {3.2}Database System}{30}{}%
-\contentsline {subsection}{\numberline {3.2.1}Database}{30}{}%
+\contentsline {section}{\numberline {2.10}Audio Amplification Modules \& Speakers}{22}{}%
+\contentsline {subsection}{\numberline {2.10.1}Speakers}{23}{}%
+\contentsline {subsection}{\numberline {2.10.2}Audio Modules}{23}{}%
+\contentsline {section}{\numberline {2.11}ESP32}{24}{}%
+\contentsline {subsection}{\numberline {2.11.1}ESP Series Overview}{24}{}%
+\contentsline {subsection}{\numberline {2.11.2}Key Features of ESP Modules}{25}{}%
+\contentsline {section}{\numberline {2.12}Related Work}{25}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{28}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{29}{}%
+\contentsline {subsection}{\numberline {3.1.1}High-Level View of Components}{29}{}%
+\contentsline {subsection}{\numberline {3.1.2}Data Flow}{30}{}%
+\contentsline {subsection}{\numberline {3.1.3}Technology Stack}{30}{}%
+\contentsline {section}{\numberline {3.2}Database System}{31}{}%
+\contentsline {subsection}{\numberline {3.2.1}Database}{31}{}%
 \contentsline {subsection}{\numberline {3.2.2}Application Programming Interface (API)}{33}{}%
-\contentsline {subsection}{\numberline {3.2.3}Web Server}{33}{}%
-\contentsline {subsection}{\numberline {3.2.4}Building Management Dashboard}{33}{}%
+\contentsline {subsection}{\numberline {3.2.3}Building Management Dashboard}{34}{}%
 \contentsline {section}{\numberline {3.3}Mobile Application}{34}{}%
 \contentsline {section}{\numberline {3.4}I/O Devices}{36}{}%
 \contentsline {subsection}{\numberline {3.4.1}Camera Integration}{36}{}%
 \contentsline {subsection}{\numberline {3.4.2}Audio Output Integration}{37}{}%
 \contentsline {subsection}{\numberline {3.4.3}Microphone Integration}{38}{}%
 \contentsline {subsection}{\numberline {3.4.4}Smart White Cane}{39}{}%
-\contentsline {section}{\numberline {3.5}Localization System}{40}{}%
+\contentsline {section}{\numberline {3.5}Localization System}{41}{}%
 \contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{41}{}%
-\contentsline {subparagraph}{Params:}{41}{}%
 \contentsline {subparagraph}{Params:}{42}{}%
-\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{42}{}%
+\contentsline {subparagraph}{Params:}{42}{}%
+\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{43}{}%
 \contentsline {subparagraph}{Params:}{43}{}%
-\contentsline {section}{\numberline {3.6}Customizable Guidance}{43}{}%
+\contentsline {section}{\numberline {3.6}Customizable Guidance}{44}{}%
 \contentsline {subparagraph}{Locations-based instructions/information}{44}{}%
 \contentsline {subparagraph}{Destination path guidance}{44}{}%
 \contentsline {section}{\numberline {3.7}QR Code Placement \& Camera Orientation}{45}{}%
-\contentsline {section}{\numberline {3.8}Object Detection and Identification}{45}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{46}{}%
-\contentsline {section}{\numberline {4.1}Results}{47}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{48}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{49}{}%
-\contentsline {chapter}{References}{50}{}%
-\contentsline {chapter}{Appendices}{53}{}%
-\contentsline {chapter}{\numberline {A}}{53}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{53}{}%
+\contentsline {section}{\numberline {3.8}Object Detection and Identification}{46}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{47}{}%
+\contentsline {section}{\numberline {4.1}Results}{48}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{49}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{50}{}%
+\contentsline {chapter}{References}{51}{}%
+\contentsline {chapter}{Appendices}{54}{}%
+\contentsline {chapter}{\numberline {A}}{54}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{54}{}%

@@ -17,13 +17,16 @@
 
 
 
+% Format chapter titles
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{18pt} % Set the first number to 0pt for top spacing
+
+
 % Set up spacing
 \onehalfspacing
 
-% Format chapter titles
-\titleformat{\chapter}[display]
-  {\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{180pt}{18pt}
+
 
 
 % let it number up to subsubsection
@@ -44,27 +47,28 @@
 
 % Table of Contents
 \clearpage
-\color{red}
+\vspace{0pt} % Remove any vertical spacing
 \tableofcontents
-\color{black}
 
-\color{red}
+
+
+
 \clearpage
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 \color{black}
 
-\color{red}
+
 \clearpage
 \addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 \color{black}
 
-\color{red}
+
 \clearpage
 \input{glossary} % Include glossary and list of abbreviations
 \addcontentsline{toc}{chapter}{Glossary and List of Abbreviations} 
-\color{black}
+
 
 % Reset page numbering and start Arabic numbering
 
@@ -79,6 +83,11 @@
 
 \fancyfoot[C]{\thepage} % Centered page number in the footer
 \renewcommand{\headrulewidth}{0.4pt} % Line below the header
+
+% Format chapter titles
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{180pt}{18pt}
 
 \chapter{Introduction}
 
