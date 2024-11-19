@@ -1,30 +1,26 @@
+Here’s the rewritten version focusing solely on the mobile device:
+
+---
+
 \section{Mobile Application}
 
-The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application performs core tasks of localization, guidance, and real-time feedback, integrating seamlessly with backend services, text-to-speech audio, external audio devices, and sensors. Each of these components works together to ensure accurate, immediate navigation support.
+The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application independently performs core tasks of localization, guidance, and real-time feedback, eliminating the need for external devices. This self-contained design ensures accurate and immediate navigation support.
 
 The application’s functionality includes:
 
 \begin{itemize}
-	\item \textbf{QR Code Scanning and Camera Feed Processing:} The mobile application receives a camera feed from an external camera sensor connected to the ESP32, which streams real-time video to the app. The app detects and decodes QR codes within the feed, using each code’s unique ID to fetch corresponding navigation instructions from the backend database.
+	\item \textbf{QR Code Scanning and Camera Feed Processing:} The mobile application utilizes the phone’s built-in camera to capture real-time video feeds. It detects and decodes QR codes within the feed, using each code’s unique ID to fetch corresponding navigation instructions from the backend database.
 	
-	\item \textbf{Localization and Guidance System Implementation:} The mobile application performs the core tasks of localization and guidance by analyzing data from the QR codes and determining the user’s position within the environment. Based on this information, the app generates tailored guidance instructions to assist users in navigating indoor spaces.
+	\item \textbf{Localization and Guidance System Implementation:} The application performs core localization and guidance tasks by analyzing data from QR codes and determining the user’s position within the environment. Based on this information, it generates tailored guidance instructions to assist users in navigating indoor spaces.
 	
-	\item \textbf{Backend Connectivity:} The application connects to a backend server to retrieve necessary data, such as navigation instructions and location updates. This server connection allows the application to pull the latest guidance information, providing users with accurate and up-to-date directions.
+	\item \textbf{Backend Connectivity:} The application connects to a backend server to retrieve necessary data, such as navigation instructions and location updates. This connection allows the app to pull the latest guidance information, ensuring users receive accurate and up-to-date directions.
 	
-	\item \textbf{Text-to-Speech Audio Integration:} The app converts navigation instructions into audio format using a text-to-speech (TTS) module. This audio output is generated in real time, ensuring users receive immediate feedback while navigating.
+	\item \textbf{Text-to-Speech Audio Integration:} The application converts navigation instructions into audio format using a text-to-speech (TTS) module. This audio output is generated in real time, ensuring users receive immediate verbal feedback while navigating.
 	
-	\item \textbf{Audio Transmission to ESP32:} Generated audio instructions are transmitted to the ESP32 via Bluetooth, where they are played through an external speaker connected to the ESP32. This setup provides clear, hands-free audio guidance, ensuring that users receive continuous and accessible navigation support.
+	\item \textbf{Objects Avoidance Alerts:} 
 	
-	\item \textbf{Microphone Input for Voice Commands:} The mobile application also receives audio input from the microphone connected to the ESP32, enabling users to issue voice commands. These commands are processed by the app to provide specific navigation instructions or respond to user queries, enhancing interactivity and hands-free operation.
+	\item \textbf{User-Friendly Interface:} The app’s accessible interface simplifies interaction for visually impaired users, allowing them to focus on their surroundings while receiving timely audio and vibration feedback.
 	
-	\item \textbf{Objects Avoidance Alerts:} The ESP32 is connected to an ultrasonic sensor that is placed one the blind's white cane which detects nearby objects. When an object is detected within a close range, the ESP32 sends a signal to the mobile application, which triggers a vibration alert. This tactile feedback warns the user of obstacles, helping them avoid collisions and navigate safely.
-	
-	\item \textbf{User-Friendly Interface:} The app’s accessible interface simplifies interaction for visually impaired users, allowing them to focus on their surroundings while receiving timely audio and vibration feedback. Users can configure settings, issue voice commands, and access navigation assistance with minimal manual input.
-	
-	\textcolor{blue}{
-		\begin{itemize}
-			\item Mobile-APP interfaces to be ADDED
-	\end{itemize}}
 \end{itemize}
 
-This integrated design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application serves as the core processing unit, coordinating localization, guidance, backend data, camera feed processing, text-to-speech audio output, proximity-based vibration alerts, and Bluetooth communication with the ESP32, providing seamless and responsive navigation assistance.
+This integrated design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application functions as a standalone solution, coordinating all aspects of localization, guidance, backend data, camera feed processing, text-to-speech audio output, and proximity-based alerts to provide seamless and responsive navigation assistance.

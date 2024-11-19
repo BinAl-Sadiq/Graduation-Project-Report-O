@@ -7,16 +7,10 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{14}{}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{14}{}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{16}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces This ERD, adapted from \cite {visual-paradigm}, represents a bookstore database, with entities like Author, Publisher, Book, Warehouse, Customer, and ShoppingBasket. It shows relationships between entities, such as customers adding books to shopping baskets and warehouses storing book inventory, linked by primary and foreign keys.}}{19}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Camera Modules: (a) OV5640, (b) OV7670, and (c) OV2640}}{22}{}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Audio Amplification Modules: (a) PAM8403, (b) TPA3116D2, (c) LM386, and (d) MAX9744.}}{23}{}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces ESP32-WROOM Development board}}{24}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces This ERD, adapted from \cite {visual-paradigm}, represents a bookstore database, with entities like Author, Publisher, Book, Warehouse, Customer, and ShoppingBasket. It shows relationships between entities, such as customers adding books to shopping baskets and warehouses storing book inventory, linked by primary and foreign keys.}}{18}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{19}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces This Entity-Relationship Diagram (ERD) of Mosaned database}}{31}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic of OV5640 connection with the ESP32}}{37}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of PAM8403 amplifier connection with the ESP32}}{38}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematic of MAX4466 microphone connection with the ESP32}}{39}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic of ultrasonic sensor placement on the smart white cane}}{40}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces This Entity-Relationship Diagram (ERD) of Mosaned database}}{26}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -59,20 +59,6 @@ Figure \ref{fig:our_ERD} illustrates our database structure which is composed ou
 	\end{itemize}
 \end{itemize}
 
-\subsection{Application Programming Interface (API)}
-
-The API serves as the bridge between the mobile app, the database, and the building management dashboard. Its primary responsibilities are:
-\begin{itemize}
-	\item \textbf{Data Retrieval and Delivery:} When a QR code is scanned, the API retrieves the associated information from the database and sends it to the mobile app for processing.
-	\item \textbf{Instruction Updates:} The API also handles data updates from the dashboard, ensuring the latest QR code instructions are accessible to users in real time.
-	\item \textbf{User Authentication:} Manages secure access to both the dashboard and the mobile app, allowing only authenticated users to modify or retrieve data.
-\end{itemize}
-
-\textcolor{blue}{
-	\begin{itemize}
-		\item ADD one example of API Endpoints, and the rest on Appendix 
-\end{itemize}}
-
 
 \subsection{Building Management Dashboard}
 
@@ -84,10 +70,5 @@ Key features include:
 	\item \textbf{Building and Floor Management:} Displays a list of buildings and their respective floors, allowing administrators to organize and view all QR codes assigned to each area.
 	\item \textbf{QR Code Instruction Editing:} Administrators can add, update, or delete instructions for each QR code in the building, tailoring guidance to specific areas and ensuring data accuracy.
 \end{itemize}
-
-\textcolor{blue}{
-	\begin{itemize}
-		\item Web Dashboard interfaces to be ADDED
-\end{itemize}}
 
 The dashboard enables efficient oversight and maintenance of QR code-based navigation, allowing real-time updates without modifying the physical QR codes.

@@ -6,9 +6,8 @@ The Customizable Guidance system provides tailored navigation assistance to visu
 \begin{itemize}
 	\item \textbf{QR Code Scanning:} When a user scans a QR code, the application identifies the QR code's unique ID.
 	\item \textbf{Instruction Retrieval:} Based on the ID, the system fetches the relevant instructions from a remote database.
-	\item \textbf{Audio or Visual Feedback:} The retrieved instructions can be provided as audio guidance, but the system can also present information in other forms, depending on user preferences and context.
-	\item \textbf{Voice Commands:} Users can interact with the system using voice commands through the mobile application. For instance, they can request notifications for specific scenarios, such as “notify me when someone with a red shirt is nearby.”
-\end{itemize}
+	\item \textbf{Audio Feedback:} The retrieved instructions can be provided as audio guidance the user, some instruction are only played once, such as an instruction that describe the building. 
+	\item \textbf{Commands:} Users can interact with the system by setting a destination, and the system will guide them through the building to the desired destination. 
 
 \subparagraph{Destination path guidance}
 Since the user's exact position and rotation are known because of the localization system(See \ref{Localization System Methodology}), the guidance system is able to determine the path between the user and the desired destination. The way this work is as follows:
