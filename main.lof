@@ -5,12 +5,20 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{8}{}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces https://eugene-chian.medium.com/a-single-camera-3d-functions-fdec7ffa9a83}}{13}{}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{14}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{14}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{15}{}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{16}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces This ERD, adapted from \cite {visual-paradigm}, represents a bookstore database, with entities like Author, Publisher, Book, Warehouse, Customer, and ShoppingBasket. It shows relationships between entities, such as customers adding books to shopping baskets and warehouses storing book inventory, linked by primary and foreign keys.}}{18}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{19}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces ESP32-WROOM Development board}}{17}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces HC-SR04 Module}}{19}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces C1026B Series Coin Vibration Motor}}{19}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces This Entity-Relationship Diagram (ERD) of Mosaned database}}{26}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram of Mosaned System}}{25}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture Diagram of Mosaned System}}{26}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{27}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Schematics of ESP32 and Ultrasonic Sensors}}{34}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematics of ESP32 and Vibration Motors}}{36}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Mobile Phone Mounted on Adjustable Stand}}{37}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces QR Code Placement on Wall}}{37}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Wearable Obstacle Detection System with Integrated Belt}}{37}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,40 +1,41 @@
 \section{System Architecture Overview}
 
-This section provides an overview of the architecture of our indoor navigation system, designed to assist visually impaired users with real-time, context-aware guidance within indoor environments. The system leverages a combination of mobile technology, backend services, and sensory input devices to deliver seamless and accessible navigation. Below, we present the key components, data flow, technology stack, and a system diagram to illustrate the complete structure of the system.
+This section provides an overview of the architecture of our indoor navigation system, designed to assist visually impaired users with real-time, context-aware guidance within indoor environments. The system leverages mobile technology, backend services, and sensory input devices to deliver seamless and accessible navigation. Below, we briefly introduce the key components and their roles, supported by a use case diagram and system architecture illustration.
 
 \subsection{High-Level View of Components}
 
-The system is composed of several interacting components:
+The system comprises four main components, each explained briefly below. Detailed descriptions of each component are provided in subsequent sections.
 
 \begin{itemize}
-	\item \textbf{Mobile Application}: The main user interface for visually impaired users. This application handles QR code scanning, voice command processing, navigation feedback (both audio and vibration), and integration with external devices (e.g., camera, microphone).
-	\item \textbf{QR Code Scanner and Object Detection}: The mobile app uses a camera sensor connected to an ESP32 microcontroller to scan QR codes and detect key objects, such as trashcans and chairs, within the environment. YOLOv10 is employed for efficient object detection, while Google’s ML Kit is used for QR code scanning.
-	\item \textbf{Navigation and Guidance System}: This module within the mobile application provides real-time navigation assistance based on the user’s location, direction, and desired destination. It uses data from QR codes and object detection to inform users about nearby obstacles and paths.
-	\item \textbf{Backend and Database}: A cloud-based backend server and database store user and navigation data, such as QR code global positions, custom instructions, and map layouts. The server processes requests for location-specific information and delivers relevant navigation instructions to the app.
-	\item \textbf{I/O Devices and ESP32 Microcontroller}: An ESP32 microcontroller manages additional components, including a camera module for QR code scanning, an ultrasonic sensor for obstacle detection, and a speaker for audio output. The ESP32 also transmits audio and tactile feedback to guide users.
+	\item \textbf{Mobile Application}: The mobile application acts as the central interface for users and the processing unit for the system. It facilitates QR code scanning, provides navigation instructions via TalkBack, processes obstacle detection data, and communicates with the backend server to retrieve location-specific data.
+	
+	\item \textbf{Localization System}: The localization system determines the user’s global position and orientation within the environment. It uses QR code scanning and positional data retrieval from the backend to calculate the user’s current position relative to the environment.
+	
+	\item \textbf{Guidance System}: The guidance system provides real-time navigation assistance by retrieving and delivering location-based instructions. It allows users to select destinations and offers step-by-step guidance through TalkBack, dynamically updating as the user progresses along the path.
+	
+	\item \textbf{Obstacle Detection System}: The obstacle detection system ensures safety by alerting users to nearby obstacles. Using four ultrasonic sensors and vibration motors, it delivers tactile feedback proportional to the proximity of detected obstacles, enhancing the user's awareness of their surroundings.
 \end{itemize}
 
-\subsection{Data Flow}
+\subsection{Use Case Diagram}
 
-The system’s data flow is designed for efficient and seamless interactions across components. Below is an outline of the primary data flow:
+The following use case diagram (see Figure~\ref{fig:use_case_diagram}) illustrates the interactions between the user and the system components, including QR code scanning, destination selection, navigation guidance, and obstacle detection:
 
-\begin{enumerate}
-	\item \textbf{QR Code Scanning and Localization}: The camera captures a frame containing a QR code, which the app decodes using ML Kit. The app then retrieves the global position of the QR code from the backend, which provides a reference point for the user’s current location.
-	\item \textbf{Navigation Instruction Retrieval}: After the QR code is decoded, the mobile app queries the backend for location-specific instructions, which are returned in real-time and provided to the user as audio guidance.
-	\item \textbf{Voice Command Processing}: Users can interact with the navigation system via voice commands. The app processes these commands locally and may query the backend if needed for contextual information (e.g., “Guide me to the nearest exit”).
-	\item \textbf{Object Detection and Proximity Alerts}: The ESP32 detects nearby obstacles using the ultrasonic sensor and sends alerts to the mobile app, which provides vibration feedback to notify users.
-	\item \textbf{Customizable Guidance Updates}: When users reach specific points (QR codes or predefined milestones), the app provides updated instructions tailored to the current context, based on backend data.
-\end{enumerate}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{example-image-a}
+	\caption{Use Case Diagram of Mosaned System}
+	\label{fig:use_case_diagram}
+\end{figure}
 
-\subsection{Technology Stack}
+\subsection{System Architecture Diagram}
 
-The following tools and technologies were selected for each component of the system:
+The system architecture diagram (see Figure~\ref{fig:system_architecture}) provides a high-level view of how the components are connected and interact, including the role of the backend, mobile application, and obstacle detection system:
 
-\begin{itemize}
-	\item \textbf{Mobile Application Development}: Developed using Kotlin.
-	\item \textbf{QR Code Scanning and Object Detection}: Google ML Kit is used for QR code detection and decoding, while YOLOv10 (converted to TensorFlow Lite) performs real-time object detection.
-	\item \textbf{Navigation and Guidance Logic}: Implemented with OpenCV for pose estimation and CameraX for real-time camera access.
-	\item \textbf{Backend and Database}: SQLite3 for lightweight database, FastAPI for quick and easy to deploy API, Python for other services such as QR code generation. 
-	\item \textbf{ESP32 Microcontroller and Sensors}: The ESP32 is programmed to control the camera, ultrasonic sensor, and speaker, utilizing TensorFlow Lite for lightweight operations on embedded devices.
-\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{example-image-a}
+	\caption{System Architecture Diagram of Mosaned System}
+	\label{fig:system_architecture}
+\end{figure}
 
+This high-level overview introduces the core components and their functions within the system. Subsequent sections provide detailed explanations of each component, their implementation, and integration.

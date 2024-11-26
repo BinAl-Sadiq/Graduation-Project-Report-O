@@ -20,45 +20,58 @@
 \contentsline {subsubsection}{\numberline {2.4.1.1}QR Code Placement}{10}{}%
 \contentsline {subsubsection}{\numberline {2.4.1.2}Data Encoding in QR Codes}{11}{}%
 \contentsline {subsubsection}{\numberline {2.4.1.3}Approaches to Localization with QR Codes}{11}{}%
-\contentsline {paragraph}{The Divided Environment Method}{11}{}%
+\contentsline {paragraph}{The Divided Environment Method}{12}{}%
 \contentsline {paragraph}{Pose Estimation Method}{12}{}%
 \contentsline {subparagraph}{Where:}{12}{}%
-\contentsline {subparagraph}{With:}{12}{}%
-\contentsline {subparagraph}{PnP}{15}{}%
-\contentsline {subparagraph}{Camera Calibration}{15}{}%
+\contentsline {subparagraph}{With:}{13}{}%
+\contentsline {subparagraph}{PnP}{16}{}%
+\contentsline {subparagraph}{Camera Calibration}{16}{}%
 \contentsline {subparagraph}{Libraries:}{16}{}%
-\contentsline {section}{\numberline {2.5}Databases}{17}{}%
-\contentsline {subsection}{\numberline {2.5.1}Entity-Relationship Diagram (ERD)}{17}{}%
-\contentsline {subsection}{\numberline {2.5.2}Structured Query Language (SQL)}{17}{}%
-\contentsline {subsection}{\numberline {2.5.3}SQLite3}{18}{}%
-\contentsline {section}{\numberline {2.6}ESP32}{19}{}%
-\contentsline {subsection}{\numberline {2.6.1}ESP Series Overview}{19}{}%
-\contentsline {subsection}{\numberline {2.6.2}Key Features of ESP Modules}{20}{}%
-\contentsline {section}{\numberline {2.7}Related Work}{20}{}%
+\contentsline {section}{\numberline {2.5}ESP32}{17}{}%
+\contentsline {subsection}{\numberline {2.5.1}ESP Series Overview}{17}{}%
+\contentsline {subsection}{\numberline {2.5.2}Key Features of ESP Modules}{18}{}%
+\contentsline {section}{\numberline {2.6}Ultrasonic Ranging Module}{18}{}%
+\contentsline {paragraph}{Working Principle}{19}{}%
+\contentsline {section}{\numberline {2.7}Coin Vibration Motor}{19}{}%
+\contentsline {paragraph}{Operating Conditions}{20}{}%
+\contentsline {paragraph}{Working Principle}{20}{}%
+\contentsline {paragraph}{Performance Characteristics}{20}{}%
+\contentsline {section}{\numberline {2.8}Related Work}{20}{}%
 \contentsline {chapter}{\numberline {3}Methodology}{23}{}%
 \contentsline {section}{\numberline {3.1}System Architecture Overview}{24}{}%
 \contentsline {subsection}{\numberline {3.1.1}High-Level View of Components}{24}{}%
-\contentsline {subsection}{\numberline {3.1.2}Data Flow}{25}{}%
-\contentsline {subsection}{\numberline {3.1.3}Technology Stack}{25}{}%
-\contentsline {section}{\numberline {3.2}Database System}{26}{}%
-\contentsline {subsection}{\numberline {3.2.1}Database}{26}{}%
-\contentsline {subsection}{\numberline {3.2.2}Building Management Dashboard}{28}{}%
-\contentsline {section}{\numberline {3.3}Mobile Application}{29}{}%
-\contentsline {section}{\numberline {3.4}Localization System}{30}{}%
-\contentsline {subsection}{\numberline {3.4.1}Camera Calibration}{30}{}%
+\contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{24}{}%
+\contentsline {subsection}{\numberline {3.1.3}System Architecture Diagram}{25}{}%
+\contentsline {section}{\numberline {3.2}Database System}{25}{}%
+\contentsline {section}{\numberline {3.3}Building Management Dashboard}{26}{}%
+\contentsline {section}{\numberline {3.4}Mobile Application}{27}{}%
+\contentsline {section}{\numberline {3.5}Localization System}{28}{}%
+\contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{29}{}%
+\contentsline {subparagraph}{Params:}{29}{}%
+\contentsline {subparagraph}{Params:}{30}{}%
+\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{30}{}%
 \contentsline {subparagraph}{Params:}{31}{}%
-\contentsline {subparagraph}{Params:}{31}{}%
-\contentsline {subsection}{\numberline {3.4.2}Camera's Relative Pose}{32}{}%
-\contentsline {subparagraph}{Params:}{32}{}%
-\contentsline {section}{\numberline {3.5}Customizable Guidance}{33}{}%
-\contentsline {subparagraph}{Locations-based instructions/information}{33}{}%
-\contentsline {subparagraph}{Destination path guidance}{33}{}%
-\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{34}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{36}{}%
-\contentsline {section}{\numberline {4.1}Results}{37}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{38}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{39}{}%
-\contentsline {chapter}{References}{40}{}%
-\contentsline {chapter}{Appendices}{43}{}%
-\contentsline {chapter}{\numberline {A}}{43}{}%
-\contentsline {section}{\numberline {A.1}The divided environment method}{43}{}%
+\contentsline {section}{\numberline {3.6}Customizable Guidance}{31}{}%
+\contentsline {subsection}{\numberline {3.6.1}Location-Based Instructions and Information}{32}{}%
+\contentsline {subparagraph}{Destination Path Guidance}{32}{}%
+\contentsline {section}{\numberline {3.7}Obstacle Detection}{33}{}%
+\contentsline {subsection}{\numberline {3.7.1}System Overview}{33}{}%
+\contentsline {subsection}{\numberline {3.7.2}Ultrasonic Sensor Data Collection}{34}{}%
+\contentsline {subsection}{\numberline {3.7.3}Data Processing and Mobile Application}{34}{}%
+\contentsline {subsection}{\numberline {3.7.4}Vibration Feedback Mechanism}{35}{}%
+\contentsline {section}{\numberline {3.8}Experiment Setup}{36}{}%
+\contentsline {subsection}{\numberline {3.8.1}Mobile Phone and Stand Configuration}{36}{}%
+\contentsline {subsection}{\numberline {3.8.2}QR Code Placement}{37}{}%
+\contentsline {subsection}{\numberline {3.8.3}Wearable Obstacle Detection System}{37}{}%
+\contentsline {subsection}{\numberline {3.8.4}Back-end Infrastructure Hosting}{38}{}%
+\contentsline {subsection}{\numberline {3.8.5}Power Supply and Connectivity}{38}{}%
+\contentsline {section}{\numberline {3.9}Test \& Evaluation}{39}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{40}{}%
+\contentsline {section}{\numberline {4.1}Results}{41}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{42}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{43}{}%
+\contentsline {chapter}{References}{44}{}%
+\contentsline {chapter}{Appendices}{48}{}%
+\contentsline {chapter}{\numberline {A}}{48}{}%
+\contentsline {section}{\numberline {A.1}The divided environment method}{48}{}%
+\contentsline {section}{\numberline {A.2}Metadata and Features of the Database}{48}{}%

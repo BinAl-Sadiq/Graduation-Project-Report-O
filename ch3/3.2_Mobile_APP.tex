@@ -1,26 +1,20 @@
-Here’s the rewritten version focusing solely on the mobile device:
-
----
-
 \section{Mobile Application}
 
-The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application independently performs core tasks of localization, guidance, and real-time feedback, eliminating the need for external devices. This self-contained design ensures accurate and immediate navigation support.
+The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application performs core tasks of localization, guidance, and real-time feedback, integrating seamlessly with backend services and onboard device features. The application is designed to use the mobile device's native camera, speakers, and microphone, ensuring simplicity and ease of use.
 
 The application’s functionality includes:
 
 \begin{itemize}
-	\item \textbf{QR Code Scanning and Camera Feed Processing:} The mobile application utilizes the phone’s built-in camera to capture real-time video feeds. It detects and decodes QR codes within the feed, using each code’s unique ID to fetch corresponding navigation instructions from the backend database.
+	\item \textbf{QR Code Scanning and Camera Processing:} The mobile application uses the phone's integrated camera to capture frames and detect QR codes in real time. Upon detecting a QR code, the app decodes its unique ID and retrieves corresponding navigation instructions from the backend database.
 	
-	\item \textbf{Localization and Guidance System Implementation:} The application performs core localization and guidance tasks by analyzing data from QR codes and determining the user’s position within the environment. Based on this information, it generates tailored guidance instructions to assist users in navigating indoor spaces.
+	\item \textbf{Localization and Guidance System Implementation:} The mobile application determines the user’s position by analyzing the data from detected QR codes. Based on this information, the app provides step-by-step navigation guidance to assist users in navigating indoor spaces effectively.
 	
-	\item \textbf{Backend Connectivity:} The application connects to a backend server to retrieve necessary data, such as navigation instructions and location updates. This connection allows the app to pull the latest guidance information, ensuring users receive accurate and up-to-date directions.
+	\item \textbf{Backend Connectivity:} The application connects to a backend server to retrieve necessary data, such as navigation instructions and location updates. This ensures users receive accurate and up-to-date directions in real time.
 	
-	\item \textbf{Text-to-Speech Audio Integration:} The application converts navigation instructions into audio format using a text-to-speech (TTS) module. This audio output is generated in real time, ensuring users receive immediate verbal feedback while navigating.
+	\item \textbf{Objects Avoidance Alerts:} The application integrates with an obstacle detection system that uses ultrasonic sensors. Alerts are generated as vibration feedback when nearby obstacles are detected, enabling users to avoid collisions and navigate safely.
 	
-	\item \textbf{Objects Avoidance Alerts:} 
-	
-	\item \textbf{User-Friendly Interface:} The app’s accessible interface simplifies interaction for visually impaired users, allowing them to focus on their surroundings while receiving timely audio and vibration feedback.
+	\item \textbf{User-Friendly Interface:} The application interface is designed to be accessible for visually impaired users, incorporating features like TalkBack compatibility. The app provides audio feedback for navigation and tactile feedback for alerts. It ensures intuitive interaction by using larger buttons, high-contrast visual elements, and minimal manual input requirements. All critical features are accessible via simple touch-based navigation, supporting ease of use for individuals with visual impairments.
 	
 \end{itemize}
 
-This integrated design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application functions as a standalone solution, coordinating all aspects of localization, guidance, backend data, camera feed processing, text-to-speech audio output, and proximity-based alerts to provide seamless and responsive navigation assistance.
+This design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application serves as the core processing unit, coordinating localization, guidance, backend connectivity, and proximity-based vibration alerts, while leveraging accessible design principles to maximize usability.

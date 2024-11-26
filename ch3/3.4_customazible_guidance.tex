@@ -1,33 +1,42 @@
 \section{Customizable Guidance}
 
-The Customizable Guidance system provides tailored navigation assistance to visually impaired users, implemented directly within the mobile application. This system enables the mobile app to retrieve specific navigation instructions from a central database upon scanning a QR code offering personalized guidance to the users, such as guiding users following paths to their destinations, and reading to users unique set of instructions/information based on their locations, allowing users to receive context-aware guidance as they move throughout the building.
+The Customizable Guidance system provides navigation assistance to visually impaired users through the mobile application. By utilizing location-specific data, the system retrieves tailored navigation instructions from a central database when a QR code is scanned. This allows users to receive context-aware guidance, such as directions to their destination or specific information relevant to their current location. The system ensures an intuitive and accessible experience as users move throughout a building.
 
-\subparagraph{Locations-based instructions/information}
+\subsection{Location-Based Instructions and Information}
+
+The Customizable Guidance system operates through the following steps:
+
 \begin{itemize}
-	\item \textbf{QR Code Scanning:} When a user scans a QR code, the application identifies the QR code's unique ID.
-	\item \textbf{Instruction Retrieval:} Based on the ID, the system fetches the relevant instructions from a remote database.
-	\item \textbf{Audio Feedback:} The retrieved instructions can be provided as audio guidance the user, some instruction are only played once, such as an instruction that describe the building. 
-	\item \textbf{Commands:} Users can interact with the system by setting a destination, and the system will guide them through the building to the desired destination. 
+	\item \textbf{QR Code Scanning:} When a user scans a QR code using the mobile application's camera, the system identifies the QR code's unique ID.
+	\item \textbf{Instruction Retrieval:} The unique ID is sent to a remote database, where it is used to fetch specific instructions or information associated with the QR code's location.
+	\item \textbf{Accessible Presentation:} The retrieved instructions are displayed on the mobile screen and are accessible through assistive features like TalkBack, ensuring visually impaired users can hear the information read aloud.
+\end{itemize}
 
-\subparagraph{Destination path guidance}
-Since the user's exact position and rotation are known because of the localization system(See \ref{Localization System Methodology}), the guidance system is able to determine the path between the user and the desired destination. The way this work is as follows:
+This approach allows visually impaired users to navigate buildings with ease, offering real-time, location-specific assistance that is both customizable and intuitive.
+
+
+\subparagraph{Destination Path Guidance}
+
+Since the user's exact position and rotation are known through the localization system (See \ref{Localization System Methodology}), the guidance system can determine the optimal path between the user and their desired destination. The system works as follows:
+
 \begin{enumerate}
-	\item The user asks the system using a microphone to guide him/her navigating to a certain destination.
-	\item The system will search the database for any that matches the decryption.
-	\item If the destination was determined, the path is fragmented into several milestones, starting from the user, and ending at the destination.
-	\item Calculate the distance and angle between the user current and the next milestone:
+	\item The user selects a destination from a displayed list of zones within the building. The list is navigable and selectable using TalkBack, allowing visually impaired users to choose their destination as they typically interact with their phones.
+	\item Once a destination is selected, the system searches the database for its corresponding location and determines the optimal path.
+	\item The path is fragmented into several milestones, starting from the user's current position and ending at the selected destination.
+	\item For each milestone, the system calculates the distance and angle between the user's current position and the next milestone:
 	\begin{equation}
-		difference = milestone\_position - user\_global\_position
-	\nonumber\end{equation}
+		\text{difference} = \text{milestone\_position} - \text{user\_global\_position}
+		\nonumber\end{equation}
 	\begin{equation}
-		distance = \sqrt{difference.x^2 + difference.y^2}
-	\nonumber\end{equation}
+		\text{distance} = \sqrt{\text{difference.x}^2 + \text{difference.y}^2}
+		\nonumber\end{equation}
 	\begin{equation}
-		angle = tan^{-1}(\frac{difference.y}{difference.x})
-	\nonumber\end{equation}
-	\item Based on the later calculations, the guidance system will inform the user - using a speaker - to move in a certain direction for a specific distance.
-	\item After reaching the milestone, if the next milestone was on another floor, the system will inform the user that he/she is standing in front of the stairs/elevator and ask him/her to go to the correct floor.
-	\item If the user did not reach the destination, steps 3 to 5 will be repeated.
+		\text{angle} = \tan^{-1}\left(\frac{\text{difference.y}}{\text{difference.x}}\right)
+		\nonumber\end{equation}
+	\item Based on these calculations, the guidance system informs the user, via TalkBack, to move in a specific direction and for a specified distance.
+	\item If the next milestone is on a different floor, the system informs the user that they are standing in front of the stairs or elevator and instructs them to proceed to the correct floor.
+	\item The system continues to guide the user by repeating steps 3 to 5 until the destination is reached.
 \end{enumerate}
 
-This approach ensures that users receive accurate and timely navigation information tailored to their environment while also allowing for interactive communication with the system.
+This method ensures a seamless and accessible experience for visually impaired users by leveraging their familiarity with TalkBack for destination selection and providing step-by-step guidance to navigate the path effectively.
+

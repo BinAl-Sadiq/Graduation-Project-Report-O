@@ -15,3 +15,53 @@ points. Different path finding algorithms can be used, but the most popular and
 simple one is A* algorithm. See this \cite{SebastianLague_AStar} incredible youtube tutorial made by
 Sebastian Lague, that explain an implementation of the A* algorithm and how
 it can be optimized.
+
+\section{Metadata and Features of the Database}
+\label{appendix:db_metadata}
+
+The database system is composed of five main tables, each designed to manage specific elements of the Mosaned system. This section details the metadata and features associated with each table.
+
+\begin{itemize}
+	\item \textbf{BuildingAdmin:}
+	\begin{itemize}
+		\item \textbf{user\_id (Primary Key)}: A unique identifier for each user of the system, enabling individual management of buildings and associated data.
+		\item \textbf{username}: The name chosen by the user for login purposes.
+		\item \textbf{password\_hash}: A secure hash of the user's password used for authentication.
+		\item \textbf{email}: The user's email address, utilized for notifications and account recovery.
+		\item \textbf{created\_at}: A timestamp indicating when the user account was created.
+	\end{itemize}
+	
+	\item \textbf{Buildings:}
+	\begin{itemize}
+		\item \textbf{building\_id (Primary Key)}: A unique identifier for each building within the system.
+		\item \textbf{user\_id (Foreign Key)}: Links the building to the associated user in the \texttt{BuildingAdmin} table, ensuring that each building is managed by the correct user.
+		\item \textbf{building\_name}: The name of the building.
+		\item \textbf{location}: The physical address or description of the building's location.
+		\item \textbf{instructions}: General instructions related to the building, providing contextual information for navigation and management.
+	\end{itemize}
+	
+	\item \textbf{Floors:}
+	\begin{itemize}
+		\item \textbf{floor\_id (Primary Key)}: A unique identifier for each floor within a building.
+		\item \textbf{building\_id (Foreign Key)}: Associates the floor with its corresponding building, establishing a clear hierarchical structure.
+		\item \textbf{floor\_number}: Indicates the number of the floor (e.g., 1 for the first floor, 2 for the second, etc.).
+		\item \textbf{instructions}: Specific instructions related to that floor, assisting users with effective navigation.
+	\end{itemize}
+	
+	\item \textbf{Sections:}
+	\begin{itemize}
+		\item \textbf{section\_id (Primary Key)}: A unique identifier for each section on a floor.
+		\item \textbf{floor\_id (Foreign Key)}: Links the section to its respective floor, maintaining the organizational hierarchy.
+		\item \textbf{section\_name}: The name or description of the section within the floor.
+		\item \textbf{instructions}: Instructions specific to the section, enhancing the user’s ability to navigate the area.
+	\end{itemize}
+	
+	\item \textbf{QR\_Codes:}
+	\begin{itemize}
+		\item \textbf{qr\_id (Primary Key)}: A unique identifier for each QR code, ensuring no duplicates exist within the system.
+		\item \textbf{section\_id (Foreign Key)}: Connects the QR code to its specific section.
+		\item \textbf{global\_position\_x}: The X-coordinate representing the global position of the QR code.
+		\item \textbf{global\_position\_y}: The Y-coordinate indicating the QR code's position, further aiding in navigation.
+		\item \textbf{instructions}: Specific instructions directly linked to the QR code, providing targeted guidance for users when the QR code is scanned.
+	\end{itemize}
+\end{itemize}

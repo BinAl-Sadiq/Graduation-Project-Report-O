@@ -1,0 +1,101 @@
+\section{Obstacle Detection}
+
+The obstacle detection system is designed to enhance the safety and navigation capabilities of visually impaired users by alerting them to nearby obstacles in real time. This system combines ultrasonic sensors, vibration motors, and ESP32 microcontrollers, enabling a seamless flow of information between hardware components and the mobile application. By utilizing the powerful processing capabilities of the mobile, this system can also be expanded to include additional hardware in the future.
+
+\subsection{System Overview}
+
+The obstacle detection system comprises the following components:
+
+\begin{itemize}
+	\item Four ultrasonic sensors, each facing a specific direction: forward, backward, right, and left.
+	\item Four vibration motors, placed in corresponding positions: forward, backward, right, and left.
+	\item Two ESP32 microcontrollers:
+	\begin{itemize}
+		\item The first ESP32 is responsible for collecting raw data from the ultrasonic sensors.
+		\item The second ESP32 is responsible for controlling the intensity of vibration motors based on instructions from the mobile application.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Ultrasonic Sensor Data Collection}
+
+The first ESP32 is connected to the four ultrasonic sensors, each positioned to monitor one direction (forward, backward, right, and left). The sensors capture raw data by recording the time it takes for an ultrasonic pulse to travel to an obstacle and reflect back. This raw time-of-flight data is sent directly to the mobile application for processing via Bluetooth Low Energy (BLE).
+
+This approach ensures that the mobile can leverage its processing power to calculate distances and perform additional analyses if required.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{example-image-a}
+	\caption{Schematics of ESP32 and Ultrasonic Sensors}
+	\label{fig:schematic_esp_ultrasonic}
+\end{figure}
+
+\subsection{Data Processing and Mobile Application}
+
+Upon receiving the raw time-of-flight data from the first ESP32, the mobile application processes the data to compute the distance to obstacles in each direction. The distance is calculated using the following equation:
+
+\[
+d = \frac{v \cdot t}{2}
+\]
+
+Where:
+\begin{itemize}
+	\item \(d\): Distance to the obstacle (in meters).
+	\item \(v\): Speed of sound in air (approximately \(343 \, \text{m/s}\)).
+	\item \(t\): Round-trip time of the ultrasonic pulse (in seconds).
+\end{itemize}
+
+The division by 2 accounts for the fact that the pulse travels to the obstacle and back.
+
+The mobile application determines whether the distance is within the actionable range (default is less than 2 meters). If the obstacle is within range, the application calculates the intensity level for the corresponding vibration motors. The intensity \(I\) varies linearly with distance \(d\), using the following equation:
+
+\[
+I = 
+\begin{cases} 
+	3.3 \cdot \left(1 - \frac{d}{2}\right), & \text{if } d \leq 2 \\ 
+	0, & \text{if } d > 2
+\end{cases}
+\]
+
+Where:
+\begin{itemize}
+	\item \(I\): Intensity of vibration (ranges from 0 to 3.3).
+	\item \(d\): Distance to the obstacle (in meters).
+	\item \(3.3\): Maximum vibration intensity.
+	\item \(2\): Maximum actionable distance.
+\end{itemize}
+
+This equation ensures that:
+\begin{itemize}
+	\item When the obstacle is at the minimum measurable distance of \(d = 0.03 \, \text{m}\), the vibration intensity is at its maximum: \(I = 3.3\).
+	\item When the obstacle is at the maximum actionable distance of \(d = 2 \, \text{m}\), the vibration intensity is \(I = 0\).
+\end{itemize}
+
+The application sends these calculated intensity values to the second ESP32 via BLE for further processing.
+
+\subsection{Vibration Feedback Mechanism}
+
+The second ESP32 receives the vibration intensity data from the mobile application and controls the four vibration motors accordingly. Each motor corresponds to one of the ultrasonic sensors' directional readings. The vibration intensity increases as the obstacle gets closer, providing the user with clear and intuitive feedback about their surroundings.
+
+The received intensity values, ranging from 0 to 3.3 for each direction, are mapped to an analog voltage using Pulse Width Modulation (PWM). The ESP32 translates the intensity value \(I\) to a corresponding duty cycle for the PWM signal, effectively controlling the voltage supplied to the vibration motor. The mapping is as follows:
+
+\[
+\text{Analog Voltage} = I \quad \text{(where \(0 \leq I \leq 3.3\))}.
+\]
+
+Using PWM, the ESP32 writes this analog voltage to the vibration motor, ensuring smooth and proportional vibration feedback. For example:
+\begin{itemize}
+	\item If \(I = 3.3\), the PWM signal generates the maximum voltage (3.3V), resulting in the strongest vibration.
+	\item If \(I = 0\), no voltage is applied, and the motor remains idle.
+	\item Intermediate values of \(I\) produce proportional vibrations, enhancing the user's ability to gauge obstacle proximity.
+\end{itemize}
+
+This method allows for precise and efficient control of the vibration motors, leveraging the ESP32's PWM capabilities to convert digital intensity values into analog feedback.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{example-image-a}
+	\caption{Schematics of ESP32 and Vibration Motors}
+	\label{fig:schematic_esp_vibration}
+\end{figure}
+
+The communication channel between the mobile application and the ESP32 microcontrollers is designed to be flexible, allowing additional hardware to be integrated easily. For instance, other types of sensors could be added to the system, with the mobile leveraging its processing power to analyze and act on the new data.
