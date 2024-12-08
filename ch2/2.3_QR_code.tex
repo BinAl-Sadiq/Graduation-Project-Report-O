@@ -37,7 +37,7 @@ These patterns assist the scanning device in rapidly locating and orienting the 
 See \cite{Tiwari2016}, for more information.
 
 \subsection{QR Code Versions and Types}
-QR codes come in 40 versions, each representing a different size and data capacity. Version 1 contains 21 × 21 modules, while Version 40 has 177 × 177 modules. As the version number increases, so does the data capacity and the complexity of the code, making it capable of storing more information or supporting higher levels of error correction \cite{Tiwari2016}. 
+QR codes come in 40 versions, each representing a different size and data capacity. Version 1 contains 21 × 21 modules, while Version 40 has 177 × 177 modules. As the version number increases, so does the data capacity and the complexity of the code, making it capable of storing more information or supporting higher levels of error correction. 
 
 \begin{figure}[h]
 	\centering
@@ -52,11 +52,13 @@ There are also specialized QR code types designed for specific applications:
 \begin{itemize}
 	\item \textbf{QR Code Model 1 and 2}:
 	Model 1 is the original version of the QR code, developed in 1994 by Denso Wave. While model 2 is an improved version of model 1, and it is the one most commonly used today. These models are used for daily basis.
-	\item \textbf{Micro QR Code}: Designed to be smaller and simpler, it uses only one Finder Pattern, making it more compact than traditional QR codes. It is often used when space is limited \cite{Tiwari2016}.
-	\item \textbf{Logo QR Code}: Allows logos or images to be embedded within the QR code, enhancing the code's visual appeal for marketing or branding purposes \cite{Tiwari2016}.
-	\item \textbf{iQR Code}: A flexible matrix-type QR code capable of being printed in various sizes and configurations, from small, high-capacity codes to large codes. It can store more data than standard QR codes and can be inverted or turned into dot patterns for direct part marking \cite{Tiwari2016}.
-	\item \textbf{Encrypted QR Code}: Uses encryption techniques to secure the information encoded within, making it suitable for applications requiring data confidentiality \cite{Tiwari2016}.
+	\item \textbf{Micro QR Code}: Designed to be smaller and simpler, it uses only one Finder Pattern, making it more compact than traditional QR codes. It is often used when space is limited.
+	\item \textbf{Logo QR Code}: Allows logos or images to be embedded within the QR code, enhancing the code's visual appeal for marketing or branding purposes.
+	\item \textbf{iQR Code}: A flexible matrix-type QR code capable of being printed in various sizes and configurations, from small, high-capacity codes to large codes. It can store more data than standard QR codes and can be inverted or turned into dot patterns for direct part marking.
+	\item \textbf{Encrypted QR Code}: Uses encryption techniques to secure the information encoded within, making it suitable for applications requiring data confidentiality.
 \end{itemize}
+
+See \cite{Tiwari2016} for more information.
 
 \begin{figure}
 	\centering
@@ -97,7 +99,6 @@ For decoding programmatically, useful libraries include:
 	\item \textbf{Python - Segno}: A versatile Python library for generating and reading both QR and Micro QR codes \cite{Segno2024}.
 	\item \textbf{Java - ZXing}: Provides decoding functionality along with encoding, and is widely used for mobile and web apps \cite{ZXing2024}.
 	\item \textbf{iOS - AVFoundation}: iOS provides native support for scanning QR codes using the `AVCaptureMetadataOutput` class in the AVFoundation framework \cite{AVFoundation2024}.
-	\item \textbf{Google ML Kit}:
-	\color{red}temporarily empty...\color{black}
+	\item \textbf{Google ML Kit}:Machine Learning package developed by google and supports both Android and iOS devices. This package is easy to use, and it provides some important tools such as face detection, text recognition, and QR code detecting and decoding \cite{GoogleMLKit}.
 \end{itemize}
  

@@ -1,6 +1,9 @@
 \section{Obstacle Detection}
+\label{Obstacle Detection Methodology Section}
 
-The obstacle detection system is designed to enhance the safety and navigation capabilities of visually impaired users by alerting them to nearby obstacles in real time. This system combines ultrasonic sensors, vibration motors, and the mobile application, enabling a seamless flow of information between hardware components and the app. By utilizing the processing capabilities of the mobile application, the system can also be expanded to include additional hardware in the future.
+The obstacle detection system is designed to enhance the safety and navigation capabilities of visually impaired users by alerting them to nearby obstacles in real time. This system combines ultrasonic sensors, vibration motors, ESP32 MCUs, and the mobile application, enabling a seamless flow of information between hardware components and the app. By utilizing the capabilities of mobile phones, the system can also be expanded to include additional hardware in the future.
+
+The Obstacle Detection also examines the system's capabilities of scaling and integrating with different kinds of hardware. As will be shown next, the obstacle detection system is composed out of 8 sensors from 2 different types, each type is connected to a CPU running on a MCU. This illustrates how easily can the system be integrated with lots of different hardware.
 
 \subsection{System Overview}
 
@@ -9,25 +12,19 @@ The obstacle detection system comprises the following components:
 \begin{itemize}
 	\item Four ultrasonic sensors, each facing a specific direction: forward, backward, right, and left.
 	\item Four vibration motors, placed in corresponding positions: forward, backward, right, and left.
+	\item Two MCUs, one for the sensors and the other for the motors.
 	\item Mobile application to process the sensor data and control vibration feedback.
 \end{itemize}
 
 \subsection{Ultrasonic Sensor Data Collection}
 
-The ultrasonic sensors are positioned to monitor one direction each (forward, backward, right, and left). These sensors measure the time it takes for an ultrasonic pulse to travel to an obstacle and reflect back. This raw time-of-flight data is sent directly to the mobile application for processing.
+The ultrasonic sensors are positioned to monitor one direction each (forward, backward, right, and left). These sensors are connected to an ESP32 MCU, which in turns measure the time it takes for an ultrasonic pulse to travel to an obstacle and reflect back. This raw time-of-flight data is sent directly to the mobile application for processing using the Bluetooth of the ESP32.
 
 This approach ensures that the mobile can leverage its processing power to calculate distances and perform additional analyses if required.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{example-image-a}
-	\caption{Schematics of Ultrasonic Sensors and Mobile Application Integration}
-	\label{fig:schematic_ultrasonic}
-\end{figure}
-
 \subsection{Data Processing and Mobile Application}
 
-Upon receiving the raw time-of-flight data from the sensors, the mobile application processes the data to compute the distance to obstacles in each direction. The distance is calculated using the following equation:
+Upon receiving the raw time-of-flight data from the MCU, the mobile application processes the data to compute the distance to obstacles in each direction. The distance is calculated using the following equation:
 
 \[
 d = \frac{v \cdot t}{2}
@@ -67,17 +64,17 @@ This ensures that:
 	\item When \(d > 2 \, \text{m}\), no voltage is applied (\(I = 0\)), and the motor remains idle.
 \end{itemize}
 
-The application sends these calculated intensity values to the vibration motors for tactile feedback.
+The application sends these calculated intensity values to the MCU connected with the vibration motors through Bluetooth for tactile feedback.
 
 \subsection{Vibration Feedback Mechanism}
 
-The vibration motors receive the calculated intensity values, which are mapped to an analog voltage ranging from 2.7 to 3.3V using Pulse Width Modulation (PWM). The voltage controls the vibration intensity, ensuring a proportional response based on the proximity of obstacles.
+The MCU of the vibration motors receive the calculated intensity values, which are mapped to an analog voltage ranging from 2.7 to 3.3V using Pulse Width Modulation (PWM). The voltage controls the vibration intensity, ensuring a proportional response based on the proximity of obstacles.
 
 \[
 \text{Analog Voltage} = I \quad \text{(where \(2.7 \leq I \leq 3.3\))}.
 \]
 
-Using PWM, the mobile application controls the vibration motors as follows:
+Using PWM, the MCU controls the vibration motors as follows:
 \begin{itemize}
 	\item If \(I = 3.3\), the PWM signal generates the maximum voltage, resulting in the strongest vibration.
 	\item If \(I = 2.7\), the PWM signal generates the minimum voltage required for vibration, providing low-intensity feedback.
@@ -85,12 +82,5 @@ Using PWM, the mobile application controls the vibration motors as follows:
 \end{itemize}
 
 This method ensures that the vibration motors are only activated when necessary and provides a clear indication of the obstacle's distance.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{example-image-a}
-	\caption{Schematics of Vibration Motors and PWM Control}
-	\label{fig:schematic_vibration}
-\end{figure}
 
 The communication channel between the mobile application and the ESP32 microcontrollers is designed to be flexible, allowing additional hardware to be integrated easily. For instance, other types of sensors could be added to the system, with the mobile leveraging its processing power to analyze and act on the new data.

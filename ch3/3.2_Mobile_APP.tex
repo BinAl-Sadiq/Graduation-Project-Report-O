@@ -1,20 +1,31 @@
 \section{Mobile Application}
+\label{Mobile Application Methodology Section}
 
-The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application performs core tasks of localization, guidance, and real-time feedback, integrating seamlessly with backend services and onboard device features. The application is designed to use the mobile device's native camera, speakers, and microphone, ensuring simplicity and ease of use.
+The Mobile Application serves as the central component for visually impaired users, providing essential functionalities for navigation assistance in indoor environments. Designed with accessibility in mind, the application performs core tasks of localization, guidance, and real-time feedback, integrating seamlessly with backend services and onboard device features. The application is designed enable users to use any IO component(camera, microphone, and speaker) that is connected to the mobile, ensuring simplicity and ease of use. For example, users connect a wearable glasses camera to the mobile using Bluetooth, and then all they need to do is to select their desired camera from the app's settings.
 
 The application’s functionality includes:
 
 \begin{itemize}
-	\item \textbf{QR Code Scanning and Camera Processing:} The mobile application uses the phone's integrated camera to capture frames and detect QR codes in real time. Upon detecting a QR code, the app decodes its unique ID and retrieves corresponding navigation instructions from the backend database.
+	\item \textbf{Supports Customized IO Components:}
+	Users are allowed to choose the IO Components(camera, microphone, and speaker) they want to use. For example, a user can choose to use a camera embedded at a smart glasses, or a headphone to hear the audio. Any kind of camera, microphone, and speaker can be used as long as they are connected to the mobile phone and selected from the settings, otherwise the phone's components are used by default.
 	
-	\item \textbf{Localization and Guidance System Implementation:} The mobile application determines the user’s position by analyzing the data from detected QR codes. Based on this information, the app provides step-by-step navigation guidance to assist users in navigating indoor spaces effectively.
+	\item \textbf{QR Code Scanning:} 
+	The mobile app takes frames at real time from the selected camera and scan them in order to detect any QR codes. Then after it detects a QR code, it will decode its contents.
 	
-	\item \textbf{Backend Connectivity:} The application connects to a backend server to retrieve necessary data, such as navigation instructions and location updates. This ensures users receive accurate and up-to-date directions in real time.
+	\item \textbf{Holding The Building's Data:} \label{Database connection from mobile}
+	After detecting and decoding any QR code in a building for the first time, the application will be able to connect to the database server and download all the building's data at once, and store the data at the mobile's RAM. This means that the internet connection is only needed once. After getting all the needed data, any system that needs some data will not connect to the database server directly, instead it will retrieve what it need from the RAM. This is much faster and more efficient.
 	
-	\item \textbf{Objects Avoidance Alerts:} The application integrates with an obstacle detection system that uses ultrasonic sensors. Alerts are generated as vibration feedback when nearby obstacles are detected, enabling users to avoid collisions and navigate safely.
+	\item \textbf{Localization System Implementation:} 
+	The mobile will be able to calculate the user's precise pose at real time as described in details at \ref{Localization System Methodology}.
+	
+	\item \textbf{Customizable Guidance System Implementation:}
+	The mobile will read the instructions to users through their selected speaker. See \ref{Customizable Guidance Methodology Section} for more details about this system.
+	
+	\item \textbf{Obstacle Detection System Implementation:}
+	This extra hardware examine the systems ability of easily scaling and integrating additional hardware. As it described at \ref{Obstacle Detection Methodology Section}, this is composed out of two different MCU, each connected to the mobile app via Bluetooth. Notice how the system is able to deal with several external hardware each with its own processing unit. This gives the system the ability of integration with more complex hardware.
 	
 	\item \textbf{User-Friendly Interface:} The application interface is designed to be accessible for visually impaired users, incorporating features like TalkBack compatibility. The app provides audio feedback for navigation and tactile feedback for alerts. It ensures intuitive interaction by using larger buttons, high-contrast visual elements, and minimal manual input requirements. All critical features are accessible via simple touch-based navigation, supporting ease of use for individuals with visual impairments.
 	
 \end{itemize}
 
-This design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application serves as the core processing unit, coordinating localization, guidance, backend connectivity, and proximity-based vibration alerts, while leveraging accessible design principles to maximize usability.
+This design ensures that visually impaired users can navigate indoor environments confidently and independently. The mobile application serves as the core processing unit - while other processing units can still be integrated and used with it -, coordinating localization, guidance, backend connectivity, and proximity-based vibration alerts, while leveraging accessible design principles to maximize usability.

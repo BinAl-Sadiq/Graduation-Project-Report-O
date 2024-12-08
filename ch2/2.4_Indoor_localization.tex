@@ -12,7 +12,7 @@ Indoor localization using QR codes enables position determination by detecting Q
 
 \subsubsection{QR Code Placement}
 
-The placement of QR codes plays a critical role in ensuring effective indoor localization. Codes can be positioned in various locations:
+The placement of QR codes plays a critical role in ensuring effective indoor localization. Codes can be positioned in various ways, here some examples:
 
 
 \begin{itemize}
@@ -25,26 +25,9 @@ The placement of QR codes plays a critical role in ensuring effective indoor loc
 	\item \textbf{Hanging Panels}: In environments where flexibility is needed, QR codes can be placed on hanging panels suspended from the ceiling. This allows for better visibility while keeping the codes elevated from foot traffic or other obstacles.
 \end{itemize}
 
+See Appendix \ref{appendix:QR Codes Setup And Appearance} where it discuss the appearance and different setups.
+
 A standardized placement of QR codes across buildings is essential to ensure consistency and usability for visually impaired individuals. If each building adopts a different placement strategy, users may face difficulties adjusting their camera orientation for detection, leading to inefficiencies in navigation. To address this, it's recommended to standardizing QR code placement on walls and hanging panels at a uniform height, which offers the most practical balance between accessibility and ease of detection.
-
-
-
-
-
-
-\subsubsection{Data Encoding in QR Codes}
-
-Each QR code encodes essential information for localization purposes, including:
-
-\begin{itemize}
-	\item \textbf{Coordinates}: The most important data that QR codes can encode are the precise coordinates of their position within the environment. These coordinates are predefined and allow the system to accurately calculate the user’s or object’s location when the QR code is detected. The coordinates might be in terms of x, y, z positions or based on a grid system specific to the environment.
-	
-	\item \textbf{Unique Identifier (ID)}: In addition to coordinates, each QR code will have a unique ID that differentiates it from others in the system. The ID can be referenced in the system’s database to retrieve additional information, such as the room name or floor level.
-	
-	\item \textbf{Orientation Data}: QR codes can also encode information about their orientation, which helps in determining the user’s orientation in relation to the environment (e.g., the angle of the code in reference to a global axis).
-	
-	\item \textbf{Additional Metadata}: If needed, QR codes can encode further metadata, such as room names, nearby landmarks, or points of interest. This is especially useful in environments where additional contextual information enhances the user’s navigation experience.
-\end{itemize}
 
 \subsubsection{Approaches to Localization with QR Codes}
 
@@ -56,8 +39,13 @@ In the divided environment method, the space is partitioned into distinct pieces
 
 To illustrate this method, consider a room measuring 4 meters in both width and height, divided into 16 equal squares, each with an area of 1m$^2$. If we customized a hat for example, that embeds a camera in its top, if we put the QR codes at the ceiling, then the user’s position will get determined while navigating in the room wearing the hat.
 
-Although this method is computationally efficient, it has limitations. The position values are discrete, which may not provide the continuous and precise localization required in certain applications. Nonetheless, this method can be highly effective for specific use cases, as discussed in Appendix A.
+Although this method is computationally efficient, it has limitations. The position values are discrete, which may not provide the continuous and precise localization required in certain applications. Nonetheless, this method can be highly effective for specific use cases, as discussed in Appendix \ref{appendix:The divided environment method}.
 
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{assets/ch2/Divided room for QR Codes.png}
+	\caption{ This image illustrates how a room can be divided into squares each with its own QR Code. At this image, the QR Codes are put at the floor as an example. }
+	\label{Divided room illustrative figure}
+\end{figure}
 
 \paragraph{Pose Estimation Method}
 \label{Pose Estimation with QR Codes BG}
@@ -220,7 +208,7 @@ There are several libraries for cameras in Android devices, such as Camera2, and
 \end{itemize}
 \begin{itemize}
 	\item \textbf{Computer Vision Libraries}:
-	\color{green}temporarily empty...\color{black}
+	There are various computer vision libraries that support Android devices, such as CameraX, Google's ML Kit, and OpenCV. These libraries provide different useful features, such as image processing, object detection, facial recognition, augmented reality capabilities, camera calibration, and QR code pose estimation. The most famous one is OpenCV, which is very easy to use, and it provides a real-time computer vision tasks with high performance \cite{OpenCV}.
 \end{itemize}
 
 While the pose estimation approach offers significantly higher accuracy, it requires greater computational resources due to additional processes, such as camera calibration to determine intrinsic parameters. This increased complexity makes the method more resource-intensive compared to the divided environment approach. However, it is suitable for applications where continuous and precise localization is essential.

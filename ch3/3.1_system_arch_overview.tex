@@ -7,11 +7,11 @@ This section provides an overview of the architecture of our indoor navigation s
 The system comprises four main components, each explained briefly below. Detailed descriptions of each component are provided in subsequent sections.
 
 \begin{itemize}
-	\item \textbf{Mobile Application}: The mobile application acts as the central interface for users and the processing unit for the system. It facilitates QR code scanning, provides navigation instructions via TalkBack, processes obstacle detection data, and communicates with the backend server to retrieve location-specific data.
+	\item \textbf{Mobile Application}: The mobile application acts as the central interface for users and the processing unit for the system. It facilitates QR code scanning, provides navigation instructions via TalkBack, processes obstacle detection data, and communicates with the backend server to retrieve location-specific data. The app also enables users to connect the IO components they want. This is done by choosing th desired camera, microphone, and sound output devices from the settings. The default devices will be the ones on the phone.
 	
 	\item \textbf{Localization System}: The localization system determines the user’s global position and orientation within the environment. It uses QR code scanning and positional data retrieval from the backend to calculate the user’s current position relative to the environment.
 	
-	\item \textbf{Guidance System}: The guidance system provides real-time navigation assistance by retrieving and delivering location-based instructions. It allows users to select destinations and offers step-by-step guidance through TalkBack, dynamically updating as the user progresses along the path.
+	\item \textbf{Customizable Guidance System}: The guidance system provides real-time navigation assistance by retrieving and delivering location-based instructions. It allows users to select destinations and offers step-by-step guidance through TalkBack, dynamically updating as the user progresses along the path.
 	
 	\item \textbf{Obstacle Detection System}: The obstacle detection system ensures safety by alerting users to nearby obstacles. Using four ultrasonic sensors and vibration motors, it delivers tactile feedback proportional to the proximity of detected obstacles, enhancing the user's awareness of their surroundings.
 \end{itemize}
