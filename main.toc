@@ -1,6 +1,6 @@
 \contentsline {chapter}{List of Tables}{v}{}%
-\contentsline {chapter}{List of Figures}{vi}{}%
-\contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
+\contentsline {chapter}{List of Figures}{v}{}%
+\contentsline {chapter}{Glossary and List of Abbreviations}{vi}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -44,34 +44,35 @@
 \contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{26}{}%
 \contentsline {subsection}{\numberline {3.1.3}System Architecture Diagram}{26}{}%
 \contentsline {section}{\numberline {3.2}Database System}{27}{}%
-\contentsline {section}{\numberline {3.3}Building Management Dashboard}{27}{}%
+\contentsline {section}{\numberline {3.3}Building Management Dashboard}{28}{}%
 \contentsline {section}{\numberline {3.4}Mobile Application}{29}{}%
 \contentsline {section}{\numberline {3.5}Localization System}{30}{}%
 \contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{31}{}%
-\contentsline {subparagraph}{Params:}{31}{}%
 \contentsline {subparagraph}{Params:}{32}{}%
-\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{32}{}%
+\contentsline {subparagraph}{Params:}{32}{}%
+\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{33}{}%
 \contentsline {subparagraph}{Params:}{33}{}%
-\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{33}{}%
+\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{34}{}%
 \contentsline {section}{\numberline {3.7}Customizable Guidance}{34}{}%
 \contentsline {subsection}{\numberline {3.7.1}Location-Based Instructions and Information}{34}{}%
 \contentsline {subparagraph}{Destination Path Guidance}{35}{}%
-\contentsline {section}{\numberline {3.8}Obstacle Detection}{35}{}%
+\contentsline {section}{\numberline {3.8}Obstacle Detection}{36}{}%
 \contentsline {subsection}{\numberline {3.8.1}System Overview}{36}{}%
 \contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{36}{}%
-\contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{36}{}%
+\contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{37}{}%
 \contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{38}{}%
 \contentsline {section}{\numberline {3.9}Experiment Setup}{38}{}%
-\contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{38}{}%
+\contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{39}{}%
 \contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{39}{}%
 \contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{39}{}%
 \contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{39}{}%
 \contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{40}{}%
 \contentsline {section}{\numberline {3.10}Test \& Evaluation}{40}{}%
-\contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{40}{}%
+\contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{41}{}%
 \contentsline {subsection}{\numberline {3.10.2}Evaluation of Localization System}{41}{}%
 \contentsline {chapter}{\numberline {4}Results and Discussion}{42}{}%
 \contentsline {section}{\numberline {4.1}Results}{43}{}%
+\contentsline {section}{\numberline {4.2}Discussion}{43}{}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{44}{}%
 \contentsline {section}{\numberline {5.1}Conclusion and Future Work}{45}{}%
 \contentsline {chapter}{References}{46}{}%
