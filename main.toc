@@ -61,22 +61,22 @@
 \contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{36}{}%
 \contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{37}{}%
 \contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{38}{}%
-\contentsline {section}{\numberline {3.9}Experiment Setup}{38}{}%
+\contentsline {section}{\numberline {3.9}Experiment Setup}{39}{}%
 \contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{39}{}%
 \contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{39}{}%
 \contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{39}{}%
 \contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{39}{}%
 \contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{40}{}%
-\contentsline {section}{\numberline {3.10}Test \& Evaluation}{40}{}%
+\contentsline {section}{\numberline {3.10}Test \& Evaluation}{41}{}%
 \contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{41}{}%
 \contentsline {subsection}{\numberline {3.10.2}Evaluation of Localization System}{41}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{42}{}%
-\contentsline {section}{\numberline {4.1}Results}{43}{}%
-\contentsline {section}{\numberline {4.2}Discussion}{43}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{44}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{45}{}%
-\contentsline {chapter}{References}{46}{}%
-\contentsline {chapter}{Appendices}{49}{}%
-\contentsline {chapter}{\numberline {A}}{49}{}%
-\contentsline {chapter}{\numberline {B}}{50}{}%
-\contentsline {chapter}{\numberline {C}}{51}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{43}{}%
+\contentsline {section}{\numberline {4.1}Results}{44}{}%
+\contentsline {section}{\numberline {4.2}Discussion}{44}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{45}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{46}{}%
+\contentsline {chapter}{References}{47}{}%
+\contentsline {chapter}{Appendices}{50}{}%
+\contentsline {chapter}{\numberline {A}}{50}{}%
+\contentsline {chapter}{\numberline {B}}{51}{}%
+\contentsline {chapter}{\numberline {C}}{52}{}%
