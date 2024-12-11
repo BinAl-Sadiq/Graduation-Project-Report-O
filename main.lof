@@ -1,20 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}}{6}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces QR codes Versions (adapted from \cite {Tiwari2016}).}}{7}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{8}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces This image illustrates how a room can be divided into squares each with its own QR Code. At this image, the QR Codes are put at the floor as an example. }}{12}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Projection of 3D points into a 2D image (Adopted from \cite {SingleCamera3D})}}{13}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{14}{}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{15}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{16}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{18}{}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces HC-SR04 Module}}{20}{}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces C1026B Series Coin Vibration Motor}}{21}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}}{7}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces QR codes Versions (adapted from \cite {Tiwari2016}).}}{8}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{9}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces This image illustrates how a room can be divided into squares each with its own QR Code. At this image, the QR Codes are put at the floor as an example. }}{13}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Projection of 3D points into a 2D image (Adopted from \cite {SingleCamera3D})}}{14}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{15}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{16}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{17}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{19}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces HC-SR04 Module}}{21}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces C1026B Series Coin Vibration Motor}}{22}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram of Mosaned System}}{26}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture Diagram of Mosaned System}}{27}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{28}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram of Mosaned System}}{27}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture Diagram of Mosaned System}}{28}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{29}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

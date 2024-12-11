@@ -7,76 +7,76 @@
 \contentsline {section}{\numberline {1.3}Problem Statement}{3}{}%
 \contentsline {section}{\numberline {1.4}Project Objectives}{3}{}%
 \contentsline {section}{\numberline {1.5}Project Outline}{3}{}%
-\contentsline {chapter}{\numberline {2}Background}{4}{}%
-\contentsline {section}{\numberline {2.1}Introduction}{5}{}%
-\contentsline {section}{\numberline {2.2}Landmarks (Natural \& Artificial)}{5}{}%
-\contentsline {section}{\numberline {2.3}QR code}{5}{}%
-\contentsline {subsection}{\numberline {2.3.1}QR Structure}{6}{}%
-\contentsline {subsection}{\numberline {2.3.2}QR Code Versions and Types}{7}{}%
-\contentsline {subsection}{\numberline {2.3.3}QR Code Encoding}{8}{}%
-\contentsline {subsection}{\numberline {2.3.4}QR Code Decoding}{9}{}%
-\contentsline {section}{\numberline {2.4}Indoor Localization}{10}{}%
-\contentsline {subsection}{\numberline {2.4.1}Indoor Localization with QR Codes}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.1.1}QR Code Placement}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.1.2}Approaches to Localization with QR Codes}{11}{}%
-\contentsline {paragraph}{The Divided Environment Method}{11}{}%
-\contentsline {paragraph}{Pose Estimation Method}{12}{}%
-\contentsline {subparagraph}{Where:}{12}{}%
-\contentsline {subparagraph}{With:}{13}{}%
-\contentsline {subparagraph}{PnP}{16}{}%
-\contentsline {subparagraph}{Camera Calibration}{16}{}%
-\contentsline {subparagraph}{Libraries:}{16}{}%
-\contentsline {section}{\numberline {2.5}Android Platform}{17}{}%
-\contentsline {section}{\numberline {2.6}TalkBack: Accessibility on Android}{18}{}%
-\contentsline {section}{\numberline {2.7}ESP32}{18}{}%
-\contentsline {subsection}{\numberline {2.7.1}ESP Series Overview}{19}{}%
-\contentsline {subsection}{\numberline {2.7.2}Key Features of ESP Modules}{19}{}%
-\contentsline {section}{\numberline {2.8}Ultrasonic Ranging Module}{20}{}%
-\contentsline {paragraph}{Working Principle}{20}{}%
-\contentsline {section}{\numberline {2.9}Coin Vibration Motor}{20}{}%
-\contentsline {paragraph}{Operating Conditions}{21}{}%
+\contentsline {chapter}{\numberline {2}Background}{5}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{6}{}%
+\contentsline {section}{\numberline {2.2}Landmarks (Natural \& Artificial)}{6}{}%
+\contentsline {section}{\numberline {2.3}QR code}{6}{}%
+\contentsline {subsection}{\numberline {2.3.1}QR Structure}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}QR Code Versions and Types}{8}{}%
+\contentsline {subsection}{\numberline {2.3.3}QR Code Encoding}{9}{}%
+\contentsline {subsection}{\numberline {2.3.4}QR Code Decoding}{10}{}%
+\contentsline {section}{\numberline {2.4}Indoor Localization}{11}{}%
+\contentsline {subsection}{\numberline {2.4.1}Indoor Localization with QR Codes}{11}{}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}QR Code Placement}{11}{}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Approaches to Localization with QR Codes}{12}{}%
+\contentsline {paragraph}{The Divided Environment Method}{12}{}%
+\contentsline {paragraph}{Pose Estimation Method}{13}{}%
+\contentsline {subparagraph}{Where:}{13}{}%
+\contentsline {subparagraph}{With:}{14}{}%
+\contentsline {subparagraph}{PnP}{17}{}%
+\contentsline {subparagraph}{Camera Calibration}{17}{}%
+\contentsline {subparagraph}{Libraries:}{17}{}%
+\contentsline {section}{\numberline {2.5}Android Platform}{18}{}%
+\contentsline {section}{\numberline {2.6}TalkBack: Accessibility on Android}{19}{}%
+\contentsline {section}{\numberline {2.7}ESP32}{19}{}%
+\contentsline {subsection}{\numberline {2.7.1}ESP Series Overview}{20}{}%
+\contentsline {subsection}{\numberline {2.7.2}Key Features of ESP Modules}{20}{}%
+\contentsline {section}{\numberline {2.8}Ultrasonic Ranging Module}{21}{}%
 \contentsline {paragraph}{Working Principle}{21}{}%
-\contentsline {paragraph}{Performance Characteristics}{21}{}%
-\contentsline {section}{\numberline {2.10}Related Work}{21}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{24}{}%
-\contentsline {section}{\numberline {3.1}System Architecture Overview}{25}{}%
-\contentsline {subsection}{\numberline {3.1.1}High-Level View of Components}{25}{}%
-\contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{26}{}%
-\contentsline {subsection}{\numberline {3.1.3}System Architecture Diagram}{26}{}%
-\contentsline {section}{\numberline {3.2}Database System}{27}{}%
-\contentsline {section}{\numberline {3.3}Building Management Dashboard}{28}{}%
-\contentsline {section}{\numberline {3.4}Mobile Application}{29}{}%
-\contentsline {section}{\numberline {3.5}Localization System}{30}{}%
-\contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{31}{}%
-\contentsline {subparagraph}{Params:}{32}{}%
-\contentsline {subparagraph}{Params:}{32}{}%
-\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{33}{}%
+\contentsline {section}{\numberline {2.9}Coin Vibration Motor}{21}{}%
+\contentsline {paragraph}{Operating Conditions}{22}{}%
+\contentsline {paragraph}{Working Principle}{22}{}%
+\contentsline {paragraph}{Performance Characteristics}{22}{}%
+\contentsline {section}{\numberline {2.10}Related Work}{22}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{25}{}%
+\contentsline {section}{\numberline {3.1}System Architecture Overview}{26}{}%
+\contentsline {subsection}{\numberline {3.1.1}High-Level View of Components}{26}{}%
+\contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{27}{}%
+\contentsline {subsection}{\numberline {3.1.3}System Architecture Diagram}{27}{}%
+\contentsline {section}{\numberline {3.2}Database System}{28}{}%
+\contentsline {section}{\numberline {3.3}Building Management Dashboard}{29}{}%
+\contentsline {section}{\numberline {3.4}Mobile Application}{30}{}%
+\contentsline {section}{\numberline {3.5}Localization System}{31}{}%
+\contentsline {subsection}{\numberline {3.5.1}Camera Calibration}{32}{}%
 \contentsline {subparagraph}{Params:}{33}{}%
-\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{34}{}%
-\contentsline {section}{\numberline {3.7}Customizable Guidance}{34}{}%
-\contentsline {subsection}{\numberline {3.7.1}Location-Based Instructions and Information}{34}{}%
-\contentsline {subparagraph}{Destination Path Guidance}{35}{}%
-\contentsline {section}{\numberline {3.8}Obstacle Detection}{36}{}%
-\contentsline {subsection}{\numberline {3.8.1}System Overview}{36}{}%
-\contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{36}{}%
-\contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{37}{}%
-\contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{38}{}%
-\contentsline {section}{\numberline {3.9}Experiment Setup}{39}{}%
-\contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{39}{}%
-\contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{39}{}%
-\contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{39}{}%
-\contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{39}{}%
-\contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{40}{}%
-\contentsline {section}{\numberline {3.10}Test \& Evaluation}{41}{}%
-\contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{41}{}%
-\contentsline {subsection}{\numberline {3.10.2}Evaluation of Localization System}{41}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{43}{}%
-\contentsline {section}{\numberline {4.1}Results}{44}{}%
-\contentsline {section}{\numberline {4.2}Discussion}{44}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{45}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{46}{}%
-\contentsline {chapter}{References}{47}{}%
-\contentsline {chapter}{Appendices}{50}{}%
-\contentsline {chapter}{\numberline {A}}{50}{}%
-\contentsline {chapter}{\numberline {B}}{51}{}%
-\contentsline {chapter}{\numberline {C}}{52}{}%
+\contentsline {subparagraph}{Params:}{33}{}%
+\contentsline {subsection}{\numberline {3.5.2}Camera's Relative Pose}{34}{}%
+\contentsline {subparagraph}{Params:}{34}{}%
+\contentsline {section}{\numberline {3.6}QR Code Placement \& Camera Orientation}{35}{}%
+\contentsline {section}{\numberline {3.7}Customizable Guidance}{35}{}%
+\contentsline {subsection}{\numberline {3.7.1}Location-Based Instructions and Information}{35}{}%
+\contentsline {subparagraph}{Destination Path Guidance}{36}{}%
+\contentsline {section}{\numberline {3.8}Obstacle Detection}{37}{}%
+\contentsline {subsection}{\numberline {3.8.1}System Overview}{37}{}%
+\contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{38}{}%
+\contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{38}{}%
+\contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{39}{}%
+\contentsline {section}{\numberline {3.9}Experiment Setup}{40}{}%
+\contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{40}{}%
+\contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{40}{}%
+\contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{40}{}%
+\contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{41}{}%
+\contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{41}{}%
+\contentsline {section}{\numberline {3.10}Test \& Evaluation}{42}{}%
+\contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{42}{}%
+\contentsline {subsection}{\numberline {3.10.2}Evaluation of Localization System}{42}{}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{44}{}%
+\contentsline {section}{\numberline {4.1}Results}{45}{}%
+\contentsline {section}{\numberline {4.2}Discussion}{45}{}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{46}{}%
+\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{47}{}%
+\contentsline {chapter}{References}{48}{}%
+\contentsline {chapter}{Appendices}{51}{}%
+\contentsline {chapter}{\numberline {A}}{51}{}%
+\contentsline {chapter}{\numberline {B}}{52}{}%
+\contentsline {chapter}{\numberline {C}}{53}{}%
