@@ -1,4 +1,3 @@
-\contentsline {chapter}{List of Tables}{v}{}%
 \contentsline {chapter}{List of Figures}{v}{}%
 \contentsline {chapter}{Glossary and List of Abbreviations}{vi}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
@@ -17,8 +16,8 @@
 \contentsline {subsection}{\numberline {2.3.4}QR Code Decoding}{10}{}%
 \contentsline {section}{\numberline {2.4}Indoor Localization}{11}{}%
 \contentsline {subsection}{\numberline {2.4.1}Indoor Localization with QR Codes}{11}{}%
-\contentsline {subsubsection}{\numberline {2.4.1.1}QR Code Placement}{11}{}%
-\contentsline {subsubsection}{\numberline {2.4.1.2}Approaches to Localization with QR Codes}{12}{}%
+\contentsline {subsubsection}{QR Code Placement}{11}{}%
+\contentsline {subsubsection}{Approaches to Localization with QR Codes}{12}{}%
 \contentsline {paragraph}{The Divided Environment Method}{12}{}%
 \contentsline {paragraph}{Pose Estimation Method}{13}{}%
 \contentsline {subparagraph}{Where:}{13}{}%
@@ -58,14 +57,14 @@
 \contentsline {subparagraph}{Destination Path Guidance}{36}{}%
 \contentsline {section}{\numberline {3.8}Obstacle Detection}{37}{}%
 \contentsline {subsection}{\numberline {3.8.1}System Overview}{37}{}%
-\contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{38}{}%
+\contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{37}{}%
 \contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{38}{}%
 \contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{39}{}%
 \contentsline {section}{\numberline {3.9}Experiment Setup}{40}{}%
 \contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{40}{}%
 \contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{40}{}%
 \contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{40}{}%
-\contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{41}{}%
+\contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{40}{}%
 \contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{41}{}%
 \contentsline {section}{\numberline {3.10}Test \& Evaluation}{42}{}%
 \contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{42}{}%

@@ -17,20 +17,14 @@
 
 
 
-% Format chapter titles
-\titleformat{\chapter}[display]
-{\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{18pt} % Set the first number to 0pt for top spacing
-
-
 % Set up spacing
 \onehalfspacing
 
+% Ensure the ToC includes subsections but not deeper levels
+\setcounter{tocdepth}{1}
 
 
 
-% let it number up to subsubsection
-\setcounter{secnumdepth}{3}
 
 % Make sure chapter titles appear correctly in the header
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
@@ -53,10 +47,6 @@
 
 
 
-\clearpage
-\addcontentsline{toc}{chapter}{List of Tables}
-%\listoftables
-\color{black}
 
 
 \clearpage
@@ -84,10 +74,13 @@
 \fancyfoot[C]{\thepage} % Centered page number in the footer
 \renewcommand{\headrulewidth}{0.4pt} % Line below the header
 
+
+
 % Format chapter titles
 \titleformat{\chapter}[display]
 {\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{180pt}{18pt}
+
 
 \chapter{Introduction}
 
@@ -138,6 +131,11 @@
 \newpage
 \input{ch5/5.1_Conclusion}
 
+
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
 
 \input{references}
 
