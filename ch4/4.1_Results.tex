@@ -3,8 +3,80 @@ To be obtained at the next semester.
 
 
 
+
+\subsection{Localization System Evaluation Results}
+
+The localization system was evaluated in a controlled meter indoor environment to assess its accuracy and reliability. The system estimated the user’s position based on a single QR code placed at a fixed location, using known relative angles and distances between the QR code and the camera as illustrated in the experiment setup 39.9.9
+
+
+\subsubsection*{Results}
+The evaluation results are summarized in Table~\ref{tab:localization_results}. The mean localization error was found to be \textbf{TBD} cm, with a maximum error of \textbf{TBD} cm. The standard deviation was \textbf{TBD}, indicating \textbf{(low/high) variation} in accuracy. The average processing time per estimation was \textbf{TBD} ms.
+
+\begin{table}[h]
+	\centering
+	\caption{Localization System Error Metrics}
+	\label{tab:localization_results}
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Metric} & \textbf{Value} \\ 
+		\hline
+		Mean Localization Error (cm) & TBD \\ 
+		\hline
+		Maximum Localization Error (cm) & TBD \\ 
+		\hline
+		Standard Deviation (cm) & TBD \\ 
+		\hline
+		Processing Time (ms) & TBD \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+To further analyze accuracy, Figure~\ref{fig:error_distribution} shows the distribution of localization errors. The majority of errors were within \textbf{TBD} cm, demonstrating that the system provides \textbf{(highly/moderately) reliable positioning}. Additionally, Figure~\ref{fig:error_vs_distance} illustrates how localization error varied with the user’s distance from the QR code.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{example-image-a} % Replace with actual file name
+	\caption{Distribution of Localization Errors}
+	\label{fig:error_distribution}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{example-image-a} % Replace with actual file name
+	\caption{Localization Error vs. Distance from QR Code}
+	\label{fig:error_vs_distance}
+\end{figure}
+
+\subsubsection*{Discussion}
+The results indicate that the system \textbf{(performed well/showed some limitations)} in estimating user positions based on a single QR code. The localization error remained within an acceptable range for most test cases, though deviations were observed in \textbf{(specific conditions such as extreme angles or large distances from the QR code)}.
+
+\textbf{Potential Improvements:}
+\begin{itemize}
+	\item Enhancing QR code detection under varying lighting conditions.
+	\item Refining pose estimation algorithms for improved accuracy.
+	\item Investigating additional computational techniques to reduce localization error at larger distances.
+\end{itemize}
+
+Overall, the system demonstrated \textbf{(strong/moderate) potential} in providing accurate indoor positioning using a single reference point, with opportunities for further optimization.
+
+
+
 \section{Discussion}
-To be discussed at the next semester.
+\paragraph{overall}
+
+\paragraph{Localization System with QR code}
+The results indicate that the system \textbf{(performed well/showed some limitations)} in estimating user positions based on a single QR code. The localization error remained within an acceptable range for most test cases, though deviations were observed in \textbf{(specific conditions such as extreme angles or large distances from the QR code)}.
+
+\textbf{Potential Improvements:}
+\begin{itemize}
+	\item Enhancing QR code detection under varying lighting conditions.
+	\item Refining pose estimation algorithms for improved accuracy.
+	\item Investigating additional computational techniques to reduce localization error at larger distances.
+\end{itemize}
+
+Overall, the system demonstrated \textbf{(strong/moderate) potential} in providing accurate indoor positioning using a single reference point, with opportunities for further optimization.
+
+
 
 
 

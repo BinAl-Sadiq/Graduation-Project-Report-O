@@ -1,0 +1,89 @@
+\section{Localization System Evaluation}
+
+\subsection{Experiment Design}
+
+The experiment was conducted in a rectangular indoor room with an approximate size of 5 meters by 4 meters. The room was selected for its simplicity and controlled conditions, which are ideal for testing the core functionality of the localization system.
+
+\textbf{Lighting Conditions:}  
+The room had stable and sufficient lighting provided by ceiling-mounted fluorescent fixtures, ensuring clear visibility for QR code detection throughout the experiment.
+
+\textbf{Room Layout:}  
+The QR code was placed flat on the floor at a known fixed position near one corner of the room. Predefined reference points were marked across the floor at varying distances and angles from the QR code, ranging from 0.5 meters to 3.5 meters and angles up to approximately 60 degrees off-axis.
+
+\textbf{Camera Mounting Setup:}  
+The mobile phone used for scanning was mounted on a fixed-height stand simulating chest-level wear. This ensured consistency in camera positioning and orientation across all test cases, reflecting the real-world usage scenario of a wearable system.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{example-image-a}
+	\caption{Top-down layout of the test room, showing QR code position and user reference points (placeholder).}
+	\label{fig:room_layout}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{example-image-a}
+	\caption{Mobile phone mounted on a fixed-height stand at simulated chest level (placeholder).}
+	\label{fig:camera_mount}
+\end{figure}
+
+
+
+\subsection{Procedure}
+
+At each reference point, the user scanned the QR code using the mobile camera. The system detected the QR code and computed the relative pose of the camera to the code using image processing and pose estimation algorithms. Using this pose and the known global position of the QR code, the system calculated the user’s estimated global coordinates. These were then compared to the actual reference point coordinates to compute localization accuracy.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{example-image-a}
+	\caption{Example of user standing at a marked reference point while scanning the QR code (placeholder).}
+	\label{fig:procedure_scan}
+\end{figure}
+
+\subsection{Evaluation Metrics}
+
+To evaluate the accuracy and responsiveness of the localization system, the following metrics were used:
+
+\begin{itemize}
+	\item \textbf{Mean Localization Error:} Average distance between estimated and actual positions.
+	\item \textbf{Maximum Localization Error:} The highest observed error during testing.
+	\item \textbf{Standard Deviation:} Measures the variation in accuracy across different test points.
+	\item \textbf{Processing Time:} Average time required to detect the QR code and estimate the pose.
+\end{itemize}
+\subsection{Results}
+
+The results obtained from the localization system evaluation are summarized in Table~\ref{tab:localization_metrics}. The values presented represent the average performance metrics computed across all tested reference points in the room. Each metric was aggregated from multiple scans at various distances and angles relative to the QR code.
+
+\begin{table}[h]
+	\centering
+	\caption{Average Localization Performance Across All Reference Points}
+	\label{tab:localization_metrics}
+	\begin{tabular}{|l|c|}
+		\hline
+		\textbf{Metric} & \textbf{Value} \\
+		\hline
+		Mean Localization Error (cm) & \textit{[TBD]} \\
+		Maximum Localization Error (cm) & \textit{[TBD]} \\
+		Standard Deviation (cm) & \textit{[TBD]} \\
+		Processing Time (ms) & \textit{[TBD]} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+To provide deeper insight, Figure~\ref{fig:error_distribution} illustrates how the localization error varied with distance from the QR code. It shows the trend in localization accuracy as the user’s distance from the QR code increases, capturing both mean and maximum error distributions.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{example-image-a}
+	\caption{Mean and maximum localization errors versus distance from the QR code (placeholder).}
+	\label{fig:error_distribution}
+\end{figure}
+
+Additionally, Figure~\ref{fig:processing_time_trend} presents the average processing time per scan at varying distances. This helps evaluate the system’s computational efficiency and responsiveness in real-time scenarios.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{example-image-a}
+	\caption{Processing time versus distance from the QR code (placeholder).}
+	\label{fig:processing_time_trend}
+\end{figure}

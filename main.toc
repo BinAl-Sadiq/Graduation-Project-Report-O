@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{v}{}%
-\contentsline {chapter}{Glossary and List of Abbreviations}{vi}{}%
+\contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -60,22 +60,26 @@
 \contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{37}{}%
 \contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{38}{}%
 \contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{39}{}%
-\contentsline {section}{\numberline {3.9}Experiment Setup}{40}{}%
-\contentsline {subsection}{\numberline {3.9.1}Mobile Phone Holder}{40}{}%
-\contentsline {subsection}{\numberline {3.9.2}QR Code Placement}{40}{}%
-\contentsline {subsection}{\numberline {3.9.3}Wearable Obstacle Detection System}{40}{}%
-\contentsline {subsection}{\numberline {3.9.4}Back-end Infrastructure Hosting}{40}{}%
-\contentsline {subsection}{\numberline {3.9.5}Power Supply and Connectivity}{41}{}%
-\contentsline {section}{\numberline {3.10}Test \& Evaluation}{42}{}%
-\contentsline {subsection}{\numberline {3.10.1}Evaluation of Overall Experience}{42}{}%
-\contentsline {subsection}{\numberline {3.10.2}Evaluation of Localization System}{42}{}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{44}{}%
-\contentsline {section}{\numberline {4.1}Results}{45}{}%
-\contentsline {section}{\numberline {4.2}Discussion}{45}{}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{46}{}%
-\contentsline {section}{\numberline {5.1}Conclusion and Future Work}{47}{}%
-\contentsline {chapter}{References}{48}{}%
-\contentsline {chapter}{Appendices}{51}{}%
-\contentsline {chapter}{\numberline {A}}{51}{}%
-\contentsline {chapter}{\numberline {B}}{52}{}%
-\contentsline {chapter}{\numberline {C}}{53}{}%
+\contentsline {chapter}{\numberline {4}Experiment \& Result}{40}{}%
+\contentsline {section}{\numberline {4.1}Experiment Design}{41}{}%
+\contentsline {section}{\numberline {4.2}Localization System Evaluation}{41}{}%
+\contentsline {subsection}{\numberline {4.2.1}Experiment Design}{41}{}%
+\contentsline {subsection}{\numberline {4.2.2}Procedure}{41}{}%
+\contentsline {subsection}{\numberline {4.2.3}Evaluation Metrics}{42}{}%
+\contentsline {subsection}{\numberline {4.2.4}Results}{42}{}%
+\contentsline {section}{\numberline {4.3}Overall System Evaluation}{43}{}%
+\contentsline {subsection}{\numberline {4.3.1}Experiment Design}{43}{}%
+\contentsline {subsection}{\numberline {4.3.2}Procedure}{44}{}%
+\contentsline {subsection}{\numberline {4.3.3}Evaluation Metrics}{44}{}%
+\contentsline {subsection}{\numberline {4.3.4}Results}{45}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{48}{}%
+\contentsline {section}{\numberline {5.1}Discussion}{49}{}%
+\contentsline {paragraph}{Localization System with QR code}{49}{}%
+\contentsline {paragraph}{Mosaned System}{49}{}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{50}{}%
+\contentsline {section}{\numberline {6.1}Conclusion and Future Work}{51}{}%
+\contentsline {chapter}{References}{52}{}%
+\contentsline {chapter}{Appendices}{55}{}%
+\contentsline {chapter}{\numberline {A}}{55}{}%
+\contentsline {chapter}{\numberline {B}}{56}{}%
+\contentsline {chapter}{\numberline {C}}{57}{}%
