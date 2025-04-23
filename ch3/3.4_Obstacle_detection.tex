@@ -92,3 +92,30 @@ Using PWM, the MCU controls the vibration motors as follows:
 This mechanism ensures that the vibration motors are activated only when necessary, providing clear feedback that is both meaningful and easy to interpret.
 
 The communication channel between the mobile application and the ESP32 microcontrollers is designed to be flexible, allowing for the integration of additional hardware. For example, other types of sensors could be added to the system, with the mobile leveraging its processing power to analyze and act on the new data.
+
+\section{Evaluation Metrics}
+\label{sec:evaluation_metrics}
+
+To ensure a rigorous assessment of both the localization subsystem and the overall wearable navigation system, specific evaluation metrics were defined and applied consistently throughout all experiments. These metrics were selected to quantitatively and qualitatively assess both technical performance and user experience.
+
+\subsection{Localization System Metrics}
+The technical performance of the localization system was evaluated using the following quantitative metrics:
+\begin{itemize}
+	\item \textbf{Mean Localization Error:} The average Euclidean distance between the estimated and actual user positions across all reference points.
+	\item \textbf{Maximum Localization Error:} The highest observed localization error during testing.
+	\item \textbf{Standard Deviation:} The variation in localization error across the different test points.
+	\item \textbf{Processing Time:} The average time required for QR code detection and pose estimation per scan.
+\end{itemize}
+
+\subsection{Overall System Usability Metrics}
+To assess the effectiveness and usability of the system from the user perspective, a 5-point Likert scale survey was conducted, evaluating the following dimensions:
+\begin{itemize}
+	\item \textbf{Confidence in Navigation:} The participant’s perceived independence and confidence while navigating.
+	\item \textbf{Obstacle Awareness:} Ability to detect and avoid physical obstacles.
+	\item \textbf{Instruction Clarity:} The clarity and helpfulness of the audio guidance provided.
+	\item \textbf{Comfort of Use:} General comfort and usability of the wearable system.
+	\item \textbf{Willingness to Recommend:} Likelihood of recommending the system to other individuals with visual impairments.
+\end{itemize}
+
+All metrics and calculation methods are described here to ensure transparency and reproducibility of the evaluation process.
+

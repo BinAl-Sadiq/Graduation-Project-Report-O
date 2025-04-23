@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.30)  10 APR 2025 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.30)  23 APR 2025 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1169,7 +1169,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[38]) (ch3/3.6_sys_setup.tex) (ch3/3.7_Test_Eval.tex)
+[38]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1177,9 +1177,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[39]
+[39]) (ch3/3.6_sys_setup.tex) (ch3/3.7_Test_Eval.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[40]
 Chapter 4.
-[40
+[41
 
 ] (ch/experiment_design.tex) (ch/localization.tex
 Overfull \hbox (10.2904pt too wide) in paragraph at lines 13--15
@@ -1187,7 +1195,7 @@ Overfull \hbox (10.2904pt too wide) in paragraph at lines 13--15
 ed for scan-ning was mounted
  []
 
-<example-image-a.pdf, id=247, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=251, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 18.
@@ -1216,14 +1224,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[41]
+[42]
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+Package pdftex.def Info: example-image-a.pdf  used on input line 71.
+(pdftex.def)             Requested size: 284.69934pt x 213.52914pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 77.
-(pdftex.def)             Requested size: 284.69934pt x 213.52914pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1231,27 +1240,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[42 <C:/Users/Alhar/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a
+[43 <C:/Users/Alhar/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a
 .pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 86.
+Package pdftex.def Info: example-image-a.pdf  used on input line 80.
 (pdftex.def)             Requested size: 284.69934pt x 213.52914pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (ch/overall.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[43]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 18.
@@ -1277,13 +1276,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [44]
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 54.
+Package pdftex.def Info: example-image-a.pdf  used on input line 47.
 (pdftex.def)             Requested size: 284.69934pt x 213.52914pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (ch/analysis.tex) (ch/summary.tex)
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1291,7 +1290,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[45]
+[45] (ch/analysis.tex) (ch/summary.tex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1308,8 +1307,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [47]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[48]
 Chapter 5.
-[48
+[49
 
 ] (ch4/discussion.tex)
 
@@ -1319,9 +1326,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[49]
+[50]
 Chapter 6.
-[50
+[51
 
 ] (ch5/5.1_Conclusion.tex) (references.tex
 
@@ -1331,7 +1338,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[51] [52
+[52] [53
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
@@ -1405,7 +1412,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 85--87
 []\OT1/cmr/m/n/12 https://www.youtube.com/watch?v=-L-WgKMFuhE&list= PLFt
  []
@@ -1418,17 +1425,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[54] (appendices.tex
+[55] (appendices.tex
 Appendix A.
-[55
-
-]
-Appendix B.
 [56
 
 ]
-Appendix C.
+Appendix B.
 [57
+
+]
+Appendix C.
+[58
 
 ])
 
@@ -1438,17 +1445,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[58] (main.aux)
+[59] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17796 strings out of 474486
- 354902 string characters out of 5743755
+ 17797 strings out of 474486
+ 353046 string characters out of 5743755
  1940542 words of memory out of 5000000
- 39667 multiletter control sequences out of 15000+600000
+ 39668 multiletter control sequences out of 15000+600000
  569249 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,93p,1416b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1468,9 +1475,9 @@ m/cmti12.pfb><C:/Users/Alhar/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb><C:/Users/Alhar/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/lm/lmss17.pfb><C:/Users/Alhar/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmb8a.pfb>
-Output written on main.pdf (66 pages, 6803968 bytes).
+Output written on main.pdf (67 pages, 6805427 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
+ 377 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

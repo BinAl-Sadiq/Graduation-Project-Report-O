@@ -60,26 +60,29 @@
 \contentsline {subsection}{\numberline {3.8.2}Ultrasonic Sensor Data Collection}{37}{}%
 \contentsline {subsection}{\numberline {3.8.3}Data Processing and Mobile Application}{38}{}%
 \contentsline {subsection}{\numberline {3.8.4}Vibration Feedback Mechanism}{39}{}%
-\contentsline {chapter}{\numberline {4}Experiment \& Result}{40}{}%
-\contentsline {section}{\numberline {4.1}Experiment Design}{41}{}%
-\contentsline {section}{\numberline {4.2}Localization System Evaluation}{41}{}%
-\contentsline {subsection}{\numberline {4.2.1}Experiment Design}{41}{}%
-\contentsline {subsection}{\numberline {4.2.2}Procedure}{41}{}%
-\contentsline {subsection}{\numberline {4.2.3}Evaluation Metrics}{42}{}%
-\contentsline {subsection}{\numberline {4.2.4}Results}{42}{}%
-\contentsline {section}{\numberline {4.3}Overall System Evaluation}{43}{}%
-\contentsline {subsection}{\numberline {4.3.1}Experiment Design}{43}{}%
-\contentsline {subsection}{\numberline {4.3.2}Procedure}{44}{}%
-\contentsline {subsection}{\numberline {4.3.3}Evaluation Metrics}{44}{}%
+\contentsline {section}{\numberline {3.9}Evaluation Metrics}{40}{}%
+\contentsline {subsection}{\numberline {3.9.1}Localization System Metrics}{40}{}%
+\contentsline {subsection}{\numberline {3.9.2}Overall System Usability Metrics}{40}{}%
+\contentsline {chapter}{\numberline {4}Experiment \& Result}{41}{}%
+\contentsline {section}{\numberline {4.1}Experiment Design}{42}{}%
+\contentsline {section}{\numberline {4.2}Localization System Evaluation}{42}{}%
+\contentsline {subsection}{\numberline {4.2.1}Experiment Design}{42}{}%
+\contentsline {subsection}{\numberline {4.2.2}Procedure}{42}{}%
+\contentsline {subsection}{\numberline {4.2.3}Evaluation Metrics}{43}{}%
+\contentsline {subsection}{\numberline {4.2.4}Results}{43}{}%
+\contentsline {section}{\numberline {4.3}Overall System Evaluation}{44}{}%
+\contentsline {subsection}{\numberline {4.3.1}Experiment Design}{44}{}%
+\contentsline {subsection}{\numberline {4.3.2}Procedure}{45}{}%
+\contentsline {subsection}{\numberline {4.3.3}Evaluation Metrics}{45}{}%
 \contentsline {subsection}{\numberline {4.3.4}Results}{45}{}%
-\contentsline {chapter}{\numberline {5}Discussion}{48}{}%
-\contentsline {section}{\numberline {5.1}Discussion}{49}{}%
-\contentsline {paragraph}{Localization System with QR code}{49}{}%
-\contentsline {paragraph}{Mosaned System}{49}{}%
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{50}{}%
-\contentsline {section}{\numberline {6.1}Conclusion and Future Work}{51}{}%
-\contentsline {chapter}{References}{52}{}%
-\contentsline {chapter}{Appendices}{55}{}%
-\contentsline {chapter}{\numberline {A}}{55}{}%
-\contentsline {chapter}{\numberline {B}}{56}{}%
-\contentsline {chapter}{\numberline {C}}{57}{}%
+\contentsline {chapter}{\numberline {5}Discussion}{49}{}%
+\contentsline {section}{\numberline {5.1}Discussion}{50}{}%
+\contentsline {paragraph}{Localization System with QR code}{50}{}%
+\contentsline {paragraph}{Mosaned System}{50}{}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{51}{}%
+\contentsline {section}{\numberline {6.1}Conclusion and Future Work}{52}{}%
+\contentsline {chapter}{References}{53}{}%
+\contentsline {chapter}{Appendices}{56}{}%
+\contentsline {chapter}{\numberline {A}}{56}{}%
+\contentsline {chapter}{\numberline {B}}{57}{}%
+\contentsline {chapter}{\numberline {C}}{58}{}%
