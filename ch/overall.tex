@@ -1,52 +1,88 @@
 \section{Overall System Evaluation}
 
-\subsection{Experiment Design}
+\subsection{Experiment Setup}
+This experiment will be deducted at the student Firas house, since it is very suitable because it contains multiple floors, and filed with obstacles, representing the average indoor environments.
 
-The overall system evaluation was conducted in a multi-room indoor facility simulating a real-world public building. The space included hallways, turns, open areas, and furniture that introduced natural obstacles and navigation challenges.
+Figure~\ref{overall_system_experiment_setup} illustrates the experimental house structure.
 
-\textbf{Lighting Conditions:}  
-The room had stable and sufficient lighting provided by ceiling-mounted fluorescent fixtures, ensuring clear visibility for QR code detection throughout the experiment.
-
-\textbf{Building Layout:}  
-A predefined navigation route was selected that included multiple turns, obstacle zones, and doorways. The total length of the route was approximately 15 meters and included four direction changes and several static obstacles, such as tables and chairs.
-
-\textbf{Participant Setup:}  
-Six participants took part in the evaluation. Each participant was blindfolded to simulate visual impairment. The mobile phone running the navigation system was mounted on a chest harness, while vibration feedback devices were worn around the waist. Participants also wore a pair of wireless earphones to receive audio instructions.
-
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Floor plan of the building showing the test navigation route and obstacle locations (placeholder).}
-	\label{fig:building_layout}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Participant navigating the route using the wearable system (placeholder).}
-	\label{fig:overall_experiment_procedure}
+	\caption{This figure illustrates the three distinct lighting conditions}
+	\label{overall_system_experiment_setup}
 \end{figure}
 
 \subsection{Procedure}
+The starts by the user being standing at the souse entry at the ground floor, then the system will guide him/her to the selected destination. In this experiment, the user want to go to Firas room at the first floor.
 
-Participants were randomly divided into two groups of three. The first group used the complete Mosaned system, which included QR-based localization, real-time audio guidance, and obstacle detection via vibration feedback. The second group relied on traditional navigation methods such as verbal instructions from a human assistant.
+The system must read instructions to the user informing him/her about the surrounding sections, and it also must guide the user reaching to the selected destination.
 
-Each participant was asked to navigate independently from the starting point to the destination along the defined path. Observers recorded behavioral observations, including navigation errors, assistance required, and time taken. At the end of the experiment, participants completed a Likert-scale survey evaluating their experience.
+At each milestone, the system must provide guidance and informative instructions as it described at \ref{Customizable Guidance Methodology Section}. All instructions for a specific milestone will be logged along with the user current location to ease following the experiment progress.
+
+Finally, the experiment must end after the user being at the selected destination by, and only by, following the system instructions.
 
 \subsection{Evaluation Metrics}
-
 The evaluation metrics applied in this study are described in detail in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses presented here are based on those metrics.
 
 
 \subsection{Results}
+\textbf{Milestone 1:}\\
+\textbf{Instructions:}\\
+This is the house of Firas Ghazi AlSadiq. You are welcome here.\\
+\color{green}Then after 1.5s:\color{black}\\
+This is the ground floor. It contains the gusts room, the gusts path room, the living room, and the kitchen.\\
+\color{green}Then after 1.5s:\color{black}\\
+This is the entry of the house. From here, you will be able to access the gusts room, the gusts path room, and the living room.\\
+\textbf{Guidance:}\\
+Walk 5.5 meters\\
+\textbf{Milestone position:} (0, 0)\\
+\\
+\textbf{Milestone 2:}\\
+\textbf{Instructions:}\\
+\textbf{Guidance:}\\
+Walk 2.7 meters\\
+\textbf{Milestone position:} (0, 5.5)\\
+\\
+\textbf{Milestone 3:}\\
+\textbf{Instructions:}\\
+This is the living room. It is connected with the house entry, and the kitchen.\\
+\textbf{Guidance:}\\
+Walk 3 meters\\
+\textbf{Milestone position:} (0, 8.2)\\
+\\
+\textbf{Milestone 4:}\\
+\textbf{Instructions:}\\
+\textbf{Guidance:}\\
+Walk 2.4 meters at 33\textdegree to the right\\
+\textbf{Milestone position:} (0, 11.2)\\
+\\
+\textbf{Milestone 5:}\\
+\textbf{Instructions:}\\
+\textbf{Guidance:}\\
+You reached the stairs\\
+\textbf{Milestone position:} (1.3, 13.2)\\
+\\
+\textbf{Milestone 6:}\\
+\textbf{Instructions:}\\
+This is the first floor. It contains Firas room, his path room, his sister room, and her path room.\\
+\color{green}Then after 1.5s:\color{black}\\
+This is a corridor that leads to Firas room, and his sister room.\\
+\textbf{Guidance:}\\
+Walk 4 meters\\
+\textbf{Milestone position:} (0, 0)\\
+\\
+\textbf{Milestone 7:}\\
+\textbf{Instructions:}\\
+\textbf{Guidance:}\\
+Walk 1.5 meters at 90\textdegree to the left\\
+\textbf{Milestone position:} (0, 4)\\
+\\
+\textbf{Milestone 8:}\\
+\textbf{Instructions:}\\
+This is Firas room which is connected to Firas path room, and to the corridor.\\
+\textbf{Guidance:}\\
+You reached your destination\\
+\textbf{Milestone position:} (-1.5, 4)\\
 
-The results of the user survey are presented in Figure~\ref{fig:user_survey}, which compares average ratings between the group using the proposed system and those using traditional methods. Each bar represents a category scored from 1 (Strongly Disagree) to 5 (Strongly Agree).
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{comparison of average user ratings between Mosaned system and traditional navigation (placeholder).}
-	\label{fig:user_survey}
-\end{figure}
-
-Participants who used the Mosaned system reported .... (Complete based on the survey)
+\subsection{Results Discussion}
+The system managed to inform the user by all the sections important information and provided the needed guidance to the selected destination.

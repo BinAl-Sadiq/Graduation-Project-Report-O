@@ -1,83 +1,230 @@
 \section{Localization System Evaluation}
 
-\subsection{Experiment Design}
+\subsection{Experiment Setup}
 
-The experiment was conducted in a rectangular indoor room with an approximate size of 5 meters by 4 meters. The room was selected for its simplicity and controlled conditions, which are ideal for testing the core functionality of the localization system.
+The experiment is simply hanging a QR code on a wall, then calculate the user pose relative to it using the proposed localization system from different angles and distances and using different light conditions. Here more details for the setup:
 
-\textbf{Lighting Conditions:}  
-The room had stable and sufficient lighting provided by ceiling-mounted fluorescent fixtures, ensuring clear visibility for QR code detection throughout the experiment.
+\textbf{Used Cameras:}\\
+This experiment will be deducted using The rear camera of Honor ALI-NX1.
 
-\textbf{Room Layout:}  
-The QR code was placed flat on the floor at a known fixed position near one corner of the room. Predefined reference points were marked across the floor at varying distances and angles from the QR code, ranging from 0.5 meters to 3.5 meters and angles up to approximately 60 degrees off-axis.
+\textbf{Cameras Calibration:}\\
+The camera was calibrated using our implementation. It took 15 pictures of the calibration pattern at arbitrary angles and distances. We got the following re-projection errors for the camera: 0.073705403872446
 
-\textbf{Camera Mounting Setup:}  
-The mobile phone used for scanning was mounted on a fixed-height stand simulating chest-level wear. This ensured consistency in camera positioning and orientation across all test cases, reflecting the real-world usage scenario of a wearable system.
+This is a great value, especially that the pictures were totally random.
 
-\begin{figure}[h]
+\textbf{QR Code Setup:}\\
+The QR code will be placed on the wall(See figure \ref{Localization-Experiment-QR-Setup}) at a fixed height to simplify the measuring process.
+
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Top-down layout of the test room, showing QR code position and user reference points (placeholder).}
-	\label{fig:room_layout}
+	\includegraphics[width=0.7\linewidth]{assets/ch4/QR on a wall.jpg}
+	\caption{A picture illustrates the QR code setup}
+	\label{Localization-Experiment-QR-Setup}
 \end{figure}
 
-\begin{figure}[h]
+\textbf{Lighting Conditions:}\\
+The localization performance of the camera will be tested at three distinct lighting conditions(See figure \ref{Localization-Experiment-Lighting-Conditions}):
+\begin{itemize}
+	\item \textbf{Perfect Lighting}
+	\item \textbf{Poor Lighting}
+	\item \textbf{No Lighting At All(Dark):} Here the camera's built in flash light will be used.
+\end{itemize}
+
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Mobile phone mounted on a fixed-height stand at simulated chest level (placeholder).}
-	\label{fig:camera_mount}
+	\includegraphics[width=0.7\linewidth]{assets/ch4/Three lighting conditions/Three lighting conditions.png}
+	\caption{This figure illustrates the three distinct lighting conditions. The one on the left is at the perfect lighting conditions, the one on the middle is at poor lighting conditions, the one on the right is at dark.}
+	\label{Localization-Experiment-Lighting-Conditions}
 \end{figure}
 
+\textbf{Measuring Tools:}
+\begin{itemize}
+	\item \textbf{Tape Measuring:} This will be used to measure the camera's x and y position relative to the QR code.
+\end{itemize}
+The measured x and y values will be used to calculate the camera's angle and distance relative to the QR code. This measuring way will give an accuracy of ±5mm, which is good enough for our application.
 
+\subsection{Procedure}\label{sec:procedure}
+The experiment will be executed three times for each lighting condition. First the localization system will be tested at a distance of 1.41 m three times for each of the following angles: 0\textdegree, +45\textdegree, and -45\textdegree. Then the same thing will be repeated for a distance of 0.707 m.
 
-\subsection{Procedure}
-
-At each reference point, the user scanned the QR code using the mobile camera. The system detected the QR code and computed the relative pose of the camera to the code using image processing and pose estimation algorithms. Using this pose and the known global position of the QR code, the system calculated the user’s estimated global coordinates. These were then compared to the actual reference point coordinates to compute localization accuracy.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Example of user standing at a marked reference point while scanning the QR code (placeholder).}
-	\label{fig:procedure_scan}
-\end{figure}
+This way of testing will illustrates very well how angles, distances, and lighting conditions can or can not affect the localization performance.
 
 \subsection{Evaluation Metrics}
 
-The evaluation metrics applied in this study are described in detail in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses presented here are based on those metrics.
+The evaluation metrics applied in this experiment are described in details in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses presented here are based on those metrics.
 
 \subsection{Results}
+The experiment results are stored in tables \ref{table:localization_exp_res_A}, \ref{table:localization_exp_res_B}, and \ref{table:localization_exp_res_C} each holding the results of the localization system estimated values with their corresponding real values for each lighting condition. The experiment results are evaluated using the metrics mentioned at Section~\ref{sec:evaluation_metrics}, and the evaluation results are stored at Table \ref{table:localization_eval}.
 
-The results obtained from the localization system evaluation are summarized in Table~\ref{tab:localization_metrics}. The values presented represent the average performance metrics computed across all tested reference points in the room. Each metric was aggregated from multiple scans at various distances and angles relative to the QR code.
-
-\begin{table}[h]
-	\centering
-	\caption{Average Localization Performance Across All Reference Points}
-	\label{tab:localization_metrics}
-	\begin{tabular}{|l|c|}
+\begin{table}[h!]
+	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the perfect lighting condition.}
+	
+	\begin{tabularx}{0.8\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\raggedleft\arraybackslash}X | }
 		\hline
-		\textbf{Metric} & \textbf{Value} \\
+		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
 		\hline
-		Mean Localization Error (cm) & \textit{[TBD]} \\
-		Maximum Localization Error (cm) & \textit{[TBD]} \\
-		Standard Deviation (cm) & \textit{[TBD]} \\
-		Processing Time (ms) & \textit{[TBD]} \\
+		
+		0.960 m & -2.4\textdegree & 1.41 m & 0\textdegree\\
 		\hline
-	\end{tabular}
+		0.989 m & +43.2\textdegree & 1.41 m & +45\textdegree\\
+		\hline
+		0.981 m & -42.6\textdegree & 1.41 m & -45\textdegree\\
+		\hline
+		
+		0.481 m & +3.1\textdegree & 0.707 m & 0\textdegree\\
+		\hline
+		0.496 m & +47.3\textdegree & 0.707 m & +45\textdegree\\
+		\hline
+		0.476 m & -42.6\textdegree & 0.707 m & -45\textdegree\\
+		\hline
+	\end{tabularx}
+	\label{table:localization_exp_res_A}
 \end{table}
 
-To provide deeper insight, Figure~\ref{fig:error_distribution} illustrates how the localization error varied with distance from the QR code. It shows the trend in localization accuracy as the user’s distance from the QR code increases, capturing both mean and maximum error distributions.
+\begin{table}[h!]
+	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the poor lighting condition.}
+	
+	\begin{tabularx}{0.8\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\raggedleft\arraybackslash}X | }
+		\hline
+		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
+		\hline
+		
+		0.984 m & -3.0\textdegree & 1.41 m & 0\textdegree\\
+		\hline
+		0.972 m & +44.5\textdegree & 1.41 m & +45\textdegree\\
+		\hline
+		0.946 m & -45.6\textdegree & 1.41 m & -45\textdegree\\
+		\hline
+		
+		0.511 m & -4.3\textdegree & 0.707 m & 0\textdegree\\
+		\hline
+		0.485 m & +43.3\textdegree & 0.707 m & +45\textdegree\\
+		\hline
+		0.516 m & -47.8\textdegree & 0.707 m & -45\textdegree\\
+		\hline
+	\end{tabularx}
+	\label{table:localization_exp_res_B}
+\end{table}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Mean and maximum localization errors versus distance from the QR code (placeholder).}
-	\label{fig:error_distribution}
-\end{figure}
+\begin{table}[h!]
+	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the dark using flash light.}
+	
+	\begin{tabularx}{0.8\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\raggedleft\arraybackslash}X | }
+		\hline
+		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
+		\hline
+		
+		0.992 m & +4.2\textdegree & 1.41 m & 0\textdegree\\
+		\hline
+		1.014 m & +44.2\textdegree & 1.41 m & +45\textdegree\\
+		\hline
+		0.998 m & -44.8\textdegree & 1.41 m & -45\textdegree\\
+		\hline
+		
+		0.501 m & +3.1\textdegree & 0.707 m & 0\textdegree\\
+		\hline
+		0.500 m & +42.7\textdegree & 0.707 m & +45\textdegree\\
+		\hline
+		0.526 m & -48\textdegree & 0.707 m & -45\textdegree\\
+		\hline
+	\end{tabularx}
+	\label{table:localization_exp_res_C}
+\end{table}
 
-Additionally, Figure~\ref{fig:processing_time_trend} presents the average processing time per scan at varying distances. This helps evaluate the system’s computational efficiency and responsiveness in real-time scenarios.
+\begin{table}[h!]
+	\caption{Evaluation results.}
+	
+	\begin{tabularx}{0.8\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\raggedleft\arraybackslash}X | }
+			
+		\hline
+		Lighting Condition
+		&
+		Distance Mean Absolute Error
+		&
+		Angle Mean Absolute Error
+		&
+		Distance Standard Deviation
+		&
+		Angle Standard Deviation\\
+		\hline
+		
+		\hline
+		Perfect
+		&
+		0.328
+		&
+		2.4
+		&
+		0.246392
+		&
+		35.92218
+		\\
+		\hline
+		
+		\hline
+		Poor
+		&
+		0.323
+		&
+		2.15
+		&
+		0.232137
+		&
+		37.01147
+		\\
+		\hline
+		
+		\hline
+		Dark
+		&
+		0.30333
+		&
+		2.2666
+		&
+		0.246401
+		&
+		36.77611
+		\\
+		\hline
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{example-image-a}
-	\caption{Processing time versus distance from the QR code (placeholder).}
-	\label{fig:processing_time_trend}
-\end{figure}
+	\end{tabularx}
+	\label{table:localization_eval}
+\end{table}
+
+\subsection{Results Discussion}
+As it clear from Table~\ref{table:localization_eval} the lighting conditions made no affect on the accuracy at all. Another interesting thing to notice is the fact that the angles were almost perfect unlike the distances. Actually, this is exactly what we need. Angles are needed to be close to perfection since users will be directed and a small deviation in the direction would lead to a wrong place. Meanwhile, the estimated distances will not affect the system that much. As it described at \ref{Location-Based Instructions and Information}, the system relies on both the estimated distance and the calculated distance between the current and the next milestones. For example, if the estimated distance between the user and the QR code was 2m while it is actually 2.6m, the error percentage is 23\%. But in the implementation, 2m is added to the distance between the current and the next milestones, for example 3m\footnote{In our experiments, we found that this is the average value of the distance between the current and the next milestones. Thus, we will use this value for illustration proposes assuming that it is always the average value.}, thus, the error percentage becomes 10.714\%. Table \ref{table:real_estimated_distance_error_effect} shows the real effect of the estimated distance error.
+
+\begin{table}[h!]
+	\caption{This table illustrates the actual effect of the estimated distance value errors to the system. Assuming an average milestones distance of 3m.}
+	
+	\begin{tabularx}{0.8\textwidth} { 
+			| >{\raggedright\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\centering\arraybackslash}X 
+			| >{\raggedleft\arraybackslash}X | }
+		\hline
+		Estimated Distance & Real Distance & Fake Error Effect & Real Error Effect\\
+		\hline
+		0.511 m & 0.707 m & 27.722\% & 5.287\%\\
+		\hline
+		1.014 m & 1.41 m & 28.085\% & 8.98\%\\
+		\hline
+	\end{tabularx}
+	\label{table:real_estimated_distance_error_effect}
+\end{table}

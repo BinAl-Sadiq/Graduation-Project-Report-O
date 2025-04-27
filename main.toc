@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{v}{}%
-\contentsline {chapter}{Glossary and List of Abbreviations}{vii}{}%
+\contentsline {chapter}{Glossary and List of Abbreviations}{vi}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}Overview}{2}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -66,15 +66,17 @@
 \contentsline {chapter}{\numberline {4}Experiment \& Result}{41}{}%
 \contentsline {section}{\numberline {4.1}Experiment Design}{42}{}%
 \contentsline {section}{\numberline {4.2}Localization System Evaluation}{42}{}%
-\contentsline {subsection}{\numberline {4.2.1}Experiment Design}{42}{}%
-\contentsline {subsection}{\numberline {4.2.2}Procedure}{42}{}%
-\contentsline {subsection}{\numberline {4.2.3}Evaluation Metrics}{43}{}%
-\contentsline {subsection}{\numberline {4.2.4}Results}{43}{}%
-\contentsline {section}{\numberline {4.3}Overall System Evaluation}{44}{}%
-\contentsline {subsection}{\numberline {4.3.1}Experiment Design}{44}{}%
-\contentsline {subsection}{\numberline {4.3.2}Procedure}{45}{}%
-\contentsline {subsection}{\numberline {4.3.3}Evaluation Metrics}{45}{}%
-\contentsline {subsection}{\numberline {4.3.4}Results}{45}{}%
+\contentsline {subsection}{\numberline {4.2.1}Experiment Setup}{42}{}%
+\contentsline {subsection}{\numberline {4.2.2}Procedure}{43}{}%
+\contentsline {subsection}{\numberline {4.2.3}Evaluation Metrics}{44}{}%
+\contentsline {subsection}{\numberline {4.2.4}Results}{44}{}%
+\contentsline {subsection}{\numberline {4.2.5}Results Discussion}{44}{}%
+\contentsline {section}{\numberline {4.3}Overall System Evaluation}{46}{}%
+\contentsline {subsection}{\numberline {4.3.1}Experiment Setup}{46}{}%
+\contentsline {subsection}{\numberline {4.3.2}Procedure}{46}{}%
+\contentsline {subsection}{\numberline {4.3.3}Evaluation Metrics}{47}{}%
+\contentsline {subsection}{\numberline {4.3.4}Results}{47}{}%
+\contentsline {subsection}{\numberline {4.3.5}Results Discussion}{48}{}%
 \contentsline {chapter}{\numberline {5}Discussion}{49}{}%
 \contentsline {section}{\numberline {5.1}Discussion}{50}{}%
 \contentsline {paragraph}{Localization System with QR code}{50}{}%
