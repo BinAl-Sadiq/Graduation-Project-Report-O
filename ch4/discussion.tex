@@ -1,7 +1,42 @@
+
+
 \section{Discussion}
 
-This section provides insights into the significance of the experimental results and highlights potential areas for improvement.
+This chapter reflects on the main objectives of the Mosaned system and evaluates the outcomes of the conducted experiments in light of those objectives. The discussion highlights the strengths of the proposed solution, addresses its limitations, and considers its broader impact and future potential.
 
-\paragraph{Localization System with QR code}
+\subsection{Achievement of Project Objectives}
 
-\paragraph{Mosaned System}
+The primary objectives set for the Mosaned project were: to provide a low-cost, user-friendly, and wearable indoor navigation system for visually impaired individuals; to enhance their independence; to exploit commonly accessible technology for cost-effective deployment; to enable real-time feedback and spatial awareness; and to facilitate seamless integration and management for building administrators.
+
+The experimental results demonstrate that the system largely meets these objectives:
+
+\begin{itemize}
+	\item \textbf{Low-cost and Accessibility:} By leveraging QR codes and smartphones, the system avoids reliance on expensive, specialized hardware. This approach not only reduces costs but also increases accessibility for users, as most people already own smartphones capable of running the Mosaned application.
+	\item \textbf{User-Friendliness and Independence:} The use of a mobile application with accessible features (e.g., TalkBack support), customizable IO components, and straightforward guidance ensures that visually impaired users can interact with the system autonomously. The integration of tactile and auditory feedback also contributes to ease of use and minimizes the need for external assistance.
+	\item \textbf{Real-Time Localization and Guidance:} The experiments with the localization subsystem confirmed the system’s ability to determine a user’s position and orientation accurately under various lighting conditions. The results indicated that while minor errors in estimated distances exist, angular estimates (critical for navigation instructions) remained consistently precise. This level of performance is sufficient to support the step-by-step guidance functionality as outlined in the project goals.
+	\item \textbf{Scalability and Manageability:} The management dashboard, coupled with the database system, allows building administrators to generate and manage QR codes, edit instructions, and perform bulk updates efficiently. This satisfies the objective of simplifying deployment and maintenance across diverse building types.
+\end{itemize}
+
+\subsection{Analysis of Experimental Results}
+
+The two primary experiments—the localization evaluation and the overall system usability test—provide valuable insights:
+
+\begin{itemize}
+	\item \textbf{Localization Performance:} Across all lighting scenarios, the mean angular error was consistently low (close to 2 degrees), ensuring reliable directional guidance. Distance estimation showed a higher relative error, but as discussed in the results section, this does not significantly impair the system’s usability since guidance relies more heavily on angular precision and the cumulative error is minimized over multi-step navigation. The robustness under different lighting conditions further confirms the practicality of the chosen approach.
+	\item \textbf{System Usability:} The navigation experiment in a multi-floor, obstacle-rich environment demonstrated that the system can provide effective and context-aware instructions, guiding the user accurately to their destination. The combination of localized instructions, customizable milestones, and obstacle detection with tactile feedback resulted in a smooth and safe user experience.
+\end{itemize}
+
+\subsection{Limitations}
+
+Despite the notable strengths of the Mosaned system, several limitations were identified during the design and experimentation phases:
+
+\begin{itemize}
+	\item \textbf{Wiring and Wearability:} The current prototype for obstacle detection relies on wired connections between components, which can be inconvenient and uncomfortable for users in everyday scenarios. This may hinder the practicality of the device as a wearable solution for visually impaired individuals.
+	\item \textbf{QR Code Placement Standardization:} The effectiveness of the localization and guidance systems is highly dependent on the standardized placement of QR codes within buildings. Variations in placement strategies across different environments could reduce usability and consistency of user experience.
+
+	\item \textbf{Limited Real-World Testing:} The experiments conducted were in controlled or semi-controlled environments. More extensive testing in a wider variety of real-world settings and with diverse user groups is needed to fully assess system robustness and user acceptance.
+\end{itemize}
+
+
+In summary, the Mosaned system effectively addresses the main project objectives, demonstrates solid experimental performance, and opens new avenues for future development in assistive indoor navigation technology.
+

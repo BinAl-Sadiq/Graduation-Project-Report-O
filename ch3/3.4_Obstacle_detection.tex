@@ -1,97 +1,51 @@
 \section{Obstacle Detection}
 \label{Obstacle Detection Methodology Section}
 
-The obstacle detection system is designed to enhance the safety and navigation capabilities of visually impaired users by alerting them to nearby obstacles in real time. This system combines ultrasonic sensors, vibration motors, ESP32 MCUs, and a mobile application, enabling a seamless flow of information between hardware components and the app. By utilizing the capabilities of mobile phones, the system can also be expanded to include additional hardware in the future.
-
-As described below, the system is composed of 8 sensors of 2 different types, each connected to a CPU running on an MCU. This setup illustrates how easily the system can be integrated with various hardware. This system can be disabled from the settings on the mobile App, giving users the flexibility of using the App without any other external hardware.
+The obstacle detection system is designed to enhance the safety and navigation capabilities of visually impaired users by providing real-time alerts for nearby obstacles. The design focuses on simplicity, reliability, and user autonomy by performing all processing on the ESP32 microcontroller and supporting straightforward configuration through the mobile application only at startup.
 
 \subsection{System Overview}
 
 The obstacle detection system comprises the following components:
 
 \begin{itemize}
-	\item Four ultrasonic sensors, each facing a specific direction: forward, backward, right, and left.
-	\item Four vibration motors, placed in corresponding positions: forward, backward, right, and left.
-	\item Two MCUs, one for the sensors and the other for the motors.
-	\item A mobile application to process the sensor data and control vibration feedback.
+	\item Two ultrasonic sensors, each facing one direction: forward and backward.
+	\item Two vibration motors, placed to correspond with the forward and backward directions.
+	\item One ESP32 microcontroller, responsible for both sensor data processing and motor control.
+	\item A mobile application, used solely for configuring the detection range during device startup.
 \end{itemize}
 
-\subsection{Ultrasonic Sensor Data Collection}
+This setup minimizes hardware complexity while maintaining effective functionality for safe and independent navigation.
 
-The ultrasonic sensors are positioned to monitor one direction each (forward, backward, right, and left). These sensors are connected to an ESP32 MCU, which measures the time it takes for an ultrasonic pulse to travel to an obstacle and reflect back. This raw time-of-flight data is sent directly to the mobile application for processing using the Bluetooth capabilities of the ESP32.
+\subsection{Sensor Data Processing and Workflow}
 
-This approach ensures that the mobile phone can leverage its processing power to calculate distances and perform additional analyses if required.
+At startup, the ESP32 microcontroller enables a configuration window of 15 seconds. During this time, the user may adjust the obstacle detection range via the mobile application. If the user does not update the range, the ESP32 automatically loads the last configured value from its flash memory.
 
-\subsection{Data Processing and Mobile Application}
-
-Upon receiving the raw time-of-flight data from the MCU, the mobile application processes the data to compute the distance to obstacles in each direction. The distance is calculated using the following equation:
+After the configuration window, the ESP32 continuously monitors the environment using the ultrasonic sensors. For each direction (forward and backward), the microcontroller calculates the distance to any detected object based on the time-of-flight measurement of ultrasonic pulses:
 
 \[
 d = \frac{v \cdot t}{2}
 \]
 
-Where:
+where:
 \begin{itemize}
-	\item \(d\): Distance to the obstacle (in meters).
-	\item \(v\): Speed of sound in air (approximately \(343 \, \text{m/s}\)).
-	\item \(t\): Round-trip time of the ultrasonic pulse (in seconds).
+	\item $d$: Distance to the obstacle (in meters).
+	\item $v$: Speed of sound in air (approximately $343~\mathrm{m/s}$).
+	\item $t$: Round-trip time of the ultrasonic pulse (in seconds).
 \end{itemize}
 
-The division by 2 accounts for the fact that the pulse travels to the obstacle and back.
-
-The application determines whether the obstacle meets the actionable conditions. An obstacle is considered actionable if:
+An obstacle is considered actionable if:
 \begin{enumerate}
-	\item The distance is less than 2 meters (\(d < 2\)).
-	\item The obstacle has been continuously within the 2-meter range for at least 2 seconds.
+	\item The distance $d$ is less than the configured threshold (default or user-set value).
+	\item The obstacle remains within this range continuously for at least 2 seconds.
 \end{enumerate}
 
-This persistence check ensures that transient obstacles do not trigger the vibration feedback unnecessarily.
-
-If both conditions are met, the application calculates the intensity level for the corresponding vibration motors. The intensity \(I\) is adjusted based on the vibration motor's operating voltage threshold of 2.7V, as follows:
-
-\[
-I = 
-\begin{cases} 
-	2.7 + (0.6 \cdot (1 - \frac{d}{2})), & \text{if } d \leq 2 \text{ and persistence} \geq 2 \text{ seconds} \\ 
-	0, & \text{otherwise.}
-\end{cases}
-\]
-
-Where:
-\begin{itemize}
-	\item \(I\): Intensity of vibration (ranges from 2.7 to 3.3V for actionable distances).
-	\item \(d\): Distance to the obstacle (in meters).
-	\item \(3.3\): Maximum vibration intensity.
-	\item \(2.7\): Minimum voltage required for motor activation.
-\end{itemize}
-
-This ensures:
-\begin{itemize}
-	\item When the obstacle is at the minimum measurable distance of \(d = 0.03 \, \text{m}\), the vibration intensity is at its maximum: \(I = 3.3\).
-	\item When the obstacle is at \(d = 2 \, \text{m}\), the vibration intensity is \(I = 2.7\), which is just enough to activate the vibration motor.
-	\item When \(d > 2 \, \text{m}\) or the persistence condition is not met, no voltage is applied (\(I = 0\)), and the motor remains idle.
-\end{itemize}
-
-The application sends these calculated intensity values to the MCU connected to the vibration motors through Bluetooth for tactile feedback.
+This persistence requirement ensures that only sustained obstacles trigger a warning, minimizing false positives from transient objects.
 
 \subsection{Vibration Feedback Mechanism}
 
-The MCU for the vibration motors receives the calculated intensity values, which are mapped to an analog voltage ranging from 2.7 to 3.3V using Pulse Width Modulation (PWM). The voltage controls the vibration intensity, ensuring a proportional response based on the proximity and persistence of obstacles.
+Once both conditions are met for either direction, the ESP32 activates the corresponding vibration motor to provide haptic feedback. The vibration intensity is fixed—either on or off. The vibration continues as long as the obstacle remains within the specified range, ceasing once the path is clear.
 
-\[
-\text{Analog Voltage} = I \quad \text{(where \(2.7 \leq I \leq 3.3\))}.
-\]
 
-Using PWM, the MCU controls the vibration motors as follows:
-\begin{itemize}
-	\item If \(I = 3.3\), the PWM signal generates the maximum voltage, resulting in the strongest vibration.
-	\item If \(I = 2.7\), the PWM signal generates the minimum voltage required for vibration, providing low-intensity feedback.
-	\item Intermediate values of \(I\) produce proportional vibrations, allowing the user to intuitively gauge obstacle proximity.
-\end{itemize}
-
-This mechanism ensures that the vibration motors are activated only when necessary, providing clear feedback that is both meaningful and easy to interpret.
-
-The communication channel between the mobile application and the ESP32 microcontrollers is designed to be flexible, allowing for the integration of additional hardware. For example, other types of sensors could be added to the system, with the mobile leveraging its processing power to analyze and act on the new data.
 
 \section{Evaluation Metrics}
 \label{sec:evaluation_metrics}
@@ -116,4 +70,3 @@ To assess the effectiveness and usability of the system from the user perspectiv
 \end{itemize}
 
 All metrics and calculation methods are described here to ensure transparency and reproducibility of the evaluation process.
-

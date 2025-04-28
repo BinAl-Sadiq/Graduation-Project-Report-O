@@ -2,218 +2,133 @@
 
 \subsection{Experiment Setup}
 
-The experiment is simply hanging a QR code on a wall, then calculate the user pose relative to it using the proposed localization system from different angles and distances and using different light conditions. Here more details for the setup:
+To evaluate the proposed localization system, a QR code was mounted on a wall, and the user's pose relative to it was estimated using the system at different angles, distances, and lighting conditions.
 
-\textbf{Used Cameras:}\\
-This experiment will be deducted using The rear camera of Honor ALI-NX1.
+\textbf{Camera Used:}\\
+The rear camera of the Honor ALI-NX1 smartphone was used for all experiments.
 
-\textbf{Cameras Calibration:}\\
-The camera was calibrated using our implementation. It took 15 pictures of the calibration pattern at arbitrary angles and distances. We got the following re-projection errors for the camera: 0.073705403872446
-
-This is a great value, especially that the pictures were totally random.
+\textbf{Camera Calibration:}\\
+The camera was calibrated using our implementation. Fifteen images of a calibration pattern were taken at random angles and distances. The reprojection error was found to be 0.0737, demonstrating excellent calibration even with random sampling.
 
 \textbf{QR Code Setup:}\\
-The QR code will be placed on the wall(See figure \ref{Localization-Experiment-QR-Setup}) at a fixed height to simplify the measuring process.
+The QR code was placed on a wall at a fixed height to simplify measurements (see Figure~\ref{Localization-Experiment-QR-Setup}).
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{assets/ch4/QR on a wall.jpg}
-	\caption{A picture illustrates the QR code setup}
+	\caption{A picture illustrating the QR code setup.}
 	\label{Localization-Experiment-QR-Setup}
 \end{figure}
 
 \textbf{Lighting Conditions:}\\
-The localization performance of the camera will be tested at three distinct lighting conditions(See figure \ref{Localization-Experiment-Lighting-Conditions}):
+Localization was tested under three distinct lighting conditions (see Figure~\ref{Localization-Experiment-Lighting-Conditions}):
 \begin{itemize}
 	\item \textbf{Perfect Lighting}
 	\item \textbf{Poor Lighting}
-	\item \textbf{No Lighting At All(Dark):} Here the camera's built in flash light will be used.
+	\item \textbf{No Lighting at All (Dark):} Here, the camera's built-in flash was used.
 \end{itemize}
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{assets/ch4/Three lighting conditions/Three lighting conditions.png}
-	\caption{This figure illustrates the three distinct lighting conditions. The one on the left is at the perfect lighting conditions, the one on the middle is at poor lighting conditions, the one on the right is at dark.}
+	\caption{The three distinct lighting conditions: left—perfect, middle—poor, right—dark.}
 	\label{Localization-Experiment-Lighting-Conditions}
 \end{figure}
 
-\textbf{Measuring Tools:}
-\begin{itemize}
-	\item \textbf{Tape Measuring:} This will be used to measure the camera's x and y position relative to the QR code.
-\end{itemize}
-The measured x and y values will be used to calculate the camera's angle and distance relative to the QR code. This measuring way will give an accuracy of ±5mm, which is good enough for our application.
+\textbf{Measuring Tools:}\\
+A tape measure was used to measure the camera's $x$ and $y$ positions relative to the QR code, allowing calculation of both angle and distance. This method achieves an accuracy of $\pm5$~mm.
 
 \subsection{Procedure}\label{sec:procedure}
-The experiment will be executed three times for each lighting condition. First the localization system will be tested at a distance of 1.41 m three times for each of the following angles: 0\textdegree, +45\textdegree, and -45\textdegree. Then the same thing will be repeated for a distance of 0.707 m.
-
-This way of testing will illustrates very well how angles, distances, and lighting conditions can or can not affect the localization performance.
+For each lighting condition, the experiment was conducted three times. The system was evaluated at distances of 1.410~m and 0.707~m, each at angles of $0.00^\circ$, $+45.00^\circ$, and $-45.00^\circ$.
 
 \subsection{Evaluation Metrics}
-
-The evaluation metrics applied in this experiment are described in details in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses presented here are based on those metrics.
+The evaluation metrics applied in this experiment are described in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses in this section are based on those metrics.
 
 \subsection{Results}
-The experiment results are stored in tables \ref{table:localization_exp_res_A}, \ref{table:localization_exp_res_B}, and \ref{table:localization_exp_res_C} each holding the results of the localization system estimated values with their corresponding real values for each lighting condition. The experiment results are evaluated using the metrics mentioned at Section~\ref{sec:evaluation_metrics}, and the evaluation results are stored at Table \ref{table:localization_eval}.
+
+The results for all lighting conditions are summarized in Table~\ref{table:localization_exp_res_combined}. Each row presents the estimated and real values of distance and angle for each combination of conditions.
 
 \begin{table}[h!]
-	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the perfect lighting condition.}
-	
-	\begin{tabularx}{0.8\textwidth} { 
-			| >{\raggedright\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\raggedleft\arraybackslash}X | }
+	\caption{Estimated and real distances/angles under all lighting conditions.}
+	\begin{tabularx}{0.95\textwidth} { 
+			| >{\raggedright\arraybackslash}X
+			| >{\centering\arraybackslash}X
+			| >{\centering\arraybackslash}X
+			| >{\centering\arraybackslash}X
+			| >{\centering\arraybackslash}X
+			| >{\centering\arraybackslash}X | }
 		\hline
-		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
+		Lighting & Estimated Distance & Estimated Angle & Real Distance & Real Angle \\
 		\hline
-		
-		0.960 m & -2.4\textdegree & 1.41 m & 0\textdegree\\
+		Perfect  & 0.960 m & -2.40$^\circ$  & 1.410 m & 0.00$^\circ$ \\
+		Perfect  & 0.989 m & +43.20$^\circ$ & 1.410 m & +45.00$^\circ$ \\
+		Perfect  & 0.981 m & -42.60$^\circ$ & 1.410 m & -45.00$^\circ$ \\
+		Perfect  & 0.481 m & +3.10$^\circ$  & 0.707 m & 0.00$^\circ$ \\
+		Perfect  & 0.496 m & +47.30$^\circ$ & 0.707 m & +45.00$^\circ$ \\
+		Perfect  & 0.476 m & -42.60$^\circ$ & 0.707 m & -45.00$^\circ$ \\
 		\hline
-		0.989 m & +43.2\textdegree & 1.41 m & +45\textdegree\\
+		Poor     & 0.984 m & -3.00$^\circ$  & 1.410 m & 0.00$^\circ$ \\
+		Poor     & 0.972 m & +44.50$^\circ$ & 1.410 m & +45.00$^\circ$ \\
+		Poor     & 0.946 m & -45.60$^\circ$ & 1.410 m & -45.00$^\circ$ \\
+		Poor     & 0.511 m & -4.30$^\circ$  & 0.707 m & 0.00$^\circ$ \\
+		Poor     & 0.485 m & +43.30$^\circ$ & 0.707 m & +45.00$^\circ$ \\
+		Poor     & 0.516 m & -47.80$^\circ$ & 0.707 m & -45.00$^\circ$ \\
 		\hline
-		0.981 m & -42.6\textdegree & 1.41 m & -45\textdegree\\
-		\hline
-		
-		0.481 m & +3.1\textdegree & 0.707 m & 0\textdegree\\
-		\hline
-		0.496 m & +47.3\textdegree & 0.707 m & +45\textdegree\\
-		\hline
-		0.476 m & -42.6\textdegree & 0.707 m & -45\textdegree\\
+		Dark     & 0.992 m & +4.20$^\circ$  & 1.410 m & 0.00$^\circ$ \\
+		Dark     & 1.014 m & +44.20$^\circ$ & 1.410 m & +45.00$^\circ$ \\
+		Dark     & 0.998 m & -44.80$^\circ$ & 1.410 m & -45.00$^\circ$ \\
+		Dark     & 0.501 m & +3.10$^\circ$  & 0.707 m & 0.00$^\circ$ \\
+		Dark     & 0.500 m & +42.70$^\circ$ & 0.707 m & +45.00$^\circ$ \\
+		Dark     & 0.526 m & -48.00$^\circ$   & 0.707 m & -45.00$^\circ$ \\
 		\hline
 	\end{tabularx}
-	\label{table:localization_exp_res_A}
+	\label{table:localization_exp_res_combined}
 \end{table}
 
-\begin{table}[h!]
-	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the poor lighting condition.}
-	
-	\begin{tabularx}{0.8\textwidth} { 
-			| >{\raggedright\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\raggedleft\arraybackslash}X | }
-		\hline
-		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
-		\hline
-		
-		0.984 m & -3.0\textdegree & 1.41 m & 0\textdegree\\
-		\hline
-		0.972 m & +44.5\textdegree & 1.41 m & +45\textdegree\\
-		\hline
-		0.946 m & -45.6\textdegree & 1.41 m & -45\textdegree\\
-		\hline
-		
-		0.511 m & -4.3\textdegree & 0.707 m & 0\textdegree\\
-		\hline
-		0.485 m & +43.3\textdegree & 0.707 m & +45\textdegree\\
-		\hline
-		0.516 m & -47.8\textdegree & 0.707 m & -45\textdegree\\
-		\hline
-	\end{tabularx}
-	\label{table:localization_exp_res_B}
-\end{table}
+Evaluation results, including mean absolute error and standard deviation for each lighting condition, are presented in Table~\ref{table:localization_eval}.
 
 \begin{table}[h!]
-	\caption{This tables holds the estimated values of the distances and angles with their corresponding real values in the dark using flash light.}
-	
-	\begin{tabularx}{0.8\textwidth} { 
-			| >{\raggedright\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\centering\arraybackslash}X 
-			| >{\raggedleft\arraybackslash}X | }
-		\hline
-		Estimated Distance & Estimated Angle & Real Distance & Real Angle\\
-		\hline
-		
-		0.992 m & +4.2\textdegree & 1.41 m & 0\textdegree\\
-		\hline
-		1.014 m & +44.2\textdegree & 1.41 m & +45\textdegree\\
-		\hline
-		0.998 m & -44.8\textdegree & 1.41 m & -45\textdegree\\
-		\hline
-		
-		0.501 m & +3.1\textdegree & 0.707 m & 0\textdegree\\
-		\hline
-		0.500 m & +42.7\textdegree & 0.707 m & +45\textdegree\\
-		\hline
-		0.526 m & -48\textdegree & 0.707 m & -45\textdegree\\
-		\hline
-	\end{tabularx}
-	\label{table:localization_exp_res_C}
-\end{table}
-
-\begin{table}[h!]
-	\caption{Evaluation results.}
-	
-	\begin{tabularx}{0.8\textwidth} { 
+	\caption{Evaluation results for each lighting condition.}
+	\begin{tabularx}{0.95\textwidth} { 
 			| >{\raggedright\arraybackslash}X 
 			| >{\centering\arraybackslash}X 
 			| >{\centering\arraybackslash}X 
 			| >{\centering\arraybackslash}X 
-			| >{\raggedleft\arraybackslash}X | }
-			
+			| >{\centering\arraybackslash}X | }
 		\hline
-		Lighting Condition
-		&
-		Distance Mean Absolute Error
-		&
-		Angle Mean Absolute Error
-		&
-		Distance Standard Deviation
-		&
-		Angle Standard Deviation\\
+		Lighting Condition & Distance Mean Abs. Error & Angle Mean Abs. Error & Distance Std. Dev. & Angle Std. Dev. \\
 		\hline
-		
+		Perfect & 0.328 & 2.40    & 0.246 & 35.92 \\
+		Poor    & 0.323 & 2.15   & 0.232 & 37.01 \\
+		Dark    & 0.303 & 2.26 & 0.246 & 36.77 \\
 		\hline
-		Perfect
-		&
-		0.328
-		&
-		2.4
-		&
-		0.246392
-		&
-		35.92218
-		\\
-		\hline
-		
-		\hline
-		Poor
-		&
-		0.323
-		&
-		2.15
-		&
-		0.232137
-		&
-		37.01147
-		\\
-		\hline
-		
-		\hline
-		Dark
-		&
-		0.30333
-		&
-		2.2666
-		&
-		0.246401
-		&
-		36.77611
-		\\
-		\hline
-
 	\end{tabularx}
 	\label{table:localization_eval}
 \end{table}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{assets/ch4/distacneerro.pdf}
+	\caption{Absolute distance error ($|\mathrm{Estimated} - \mathrm{Real}|$) for each sample under different lighting conditions. Lower values indicate higher distance accuracy.}
+	\label{fig:localization_absolute_distance_error}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{assets/ch4/angleerro.pdf}
+	\caption{Absolute angle error ($|\mathrm{Estimated} - \mathrm{Real}|$) for each sample under different lighting conditions. Lower values indicate higher angular accuracy.}
+	\label{fig:localization_absolute_angle_error}
+\end{figure}
+
 \subsection{Results Discussion}
-As it clear from Table~\ref{table:localization_eval} the lighting conditions made no affect on the accuracy at all. Another interesting thing to notice is the fact that the angles were almost perfect unlike the distances. Actually, this is exactly what we need. Angles are needed to be close to perfection since users will be directed and a small deviation in the direction would lead to a wrong place. Meanwhile, the estimated distances will not affect the system that much. As it described at \ref{Location-Based Instructions and Information}, the system relies on both the estimated distance and the calculated distance between the current and the next milestones. For example, if the estimated distance between the user and the QR code was 2m while it is actually 2.6m, the error percentage is 23\%. But in the implementation, 2m is added to the distance between the current and the next milestones, for example 3m\footnote{In our experiments, we found that this is the average value of the distance between the current and the next milestones. Thus, we will use this value for illustration proposes assuming that it is always the average value.}, thus, the error percentage becomes 10.714\%. Table \ref{table:real_estimated_distance_error_effect} shows the real effect of the estimated distance error.
+
+As shown in Table~\ref{table:localization_eval}, lighting conditions had negligible impact on accuracy. Notably, the angle estimates were consistently very close to the real values, which is desirable, as precise angles are crucial for user navigation—small deviations could result in significant guidance errors. In contrast, errors in estimated distance are less critical, as the system logic mitigates their effect.
+
+For example, if the estimated distance to a QR code is 2~m while the real value is 2.6~m (a 23\% error), the application adds this to the average distance between milestones (e.g., 3~m), reducing the overall error effect to just 10.7\%. Table~\ref{table:real_estimated_distance_error_effect} illustrates this for typical cases.
 
 \begin{table}[h!]
-	\caption{This table illustrates the actual effect of the estimated distance value errors to the system. Assuming an average milestones distance of 3m.}
-	
-	\begin{tabularx}{0.8\textwidth} { 
+	\caption{Actual impact of estimated distance errors, assuming an average milestone distance of 3~m.}
+	\begin{tabularx}{0.75\textwidth} { 
 			| >{\raggedright\arraybackslash}X 
 			| >{\centering\arraybackslash}X 
 			| >{\centering\arraybackslash}X 
@@ -222,8 +137,7 @@ As it clear from Table~\ref{table:localization_eval} the lighting conditions mad
 		Estimated Distance & Real Distance & Fake Error Effect & Real Error Effect\\
 		\hline
 		0.511 m & 0.707 m & 27.722\% & 5.287\%\\
-		\hline
-		1.014 m & 1.41 m & 28.085\% & 8.98\%\\
+		1.014 m & 1.410 m & 28.085\% & 8.98\%\\
 		\hline
 	\end{tabularx}
 	\label{table:real_estimated_distance_error_effect}

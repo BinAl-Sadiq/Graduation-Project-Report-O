@@ -1,24 +1,33 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}}{7}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces QR codes Versions (adapted from \cite {Tiwari2016}).}}{8}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{9}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces This image illustrates how a room can be divided into squares each with its own QR Code. At this image, the QR Codes are put at the floor as an example. }}{13}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Projection of 3D points into a 2D image (Adopted from \cite {SingleCamera3D})}}{14}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{15}{}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{16}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{17}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{19}{}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces HC-SR04 Module}}{21}{}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces C1026B Series Coin Vibration Motor}}{22}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces These are three QR Codes that store texts. The texts’ lengths get larger going from the left to the right. Notice that the alignment pattern only appears at the bigger QR Codes, and there are multiple ones at the biggest QR Code.}}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces QR codes Versions (adapted from \cite {Tiwari2016}).}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces QR code types (adapted from \cite {Tiwari2016}).}}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces This image illustrates how a room can be divided into squares each with its own QR Code. At this image, the QR Codes are put at the floor as an example. }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Projection of 3D points into a 2D image (Adopted from \cite {SingleCamera3D})}}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Simple illustration for the camera's projection matrix made by Aqeel Anwar \cite {Aqeel Anwar}.1}}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces This is a picture of a QR code that has the width/height of 16.8cm and its four corners points in the image coordinate system in pixels are known as it appears.}}{16}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The left image represents the calibration pattern's real world inner points locations. While on the other hand, the right image shows the estimated inner points locations. }}{17}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces ESP32-WROOM Development board}}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces HC-SR04 Module}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces C1026B Series Coin Vibration Motor}}{22}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram of Mosaned System}}{27}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces System Architecture Diagram of Mosaned System}}{28}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{29}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Architecture Diagram of Mosaned System}}{27}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{28}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A picture illustrates the QR code setup}}{43}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces This figure illustrates the three distinct lighting conditions. The one on the left is at the perfect lighting conditions, the one on the middle is at poor lighting conditions, the one on the right is at dark.}}{43}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces This figure illustrates the three distinct lighting conditions}}{46}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Login screen of the Mosaned management dashboard, ensuring secure access for authorized administrators.}}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Main dashboard interface showing the list of managed buildings, with options for adding new buildings or editing existing ones.}}{41}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces QR code management page, enabling administrators to generate, edit, and assign instructions to QR codes for specific locations within a building.}}{42}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Home screen of the Mosaned mobile application, providing quick access to navigation and settings.}}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces QR code scanning interface, allowing the user to localize themselves within the building and retrieve contextual instructions.}}{44}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Assembled obstacle detection module showing the ESP32 board, connected ultrasonic sensors, and coin vibration motors.}}{45}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Wearable setup of the obstacle detection system, designed for user comfort and mobility.}}{46}{figure.caption.40}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A picture illustrating the QR code setup.}}{49}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The three distinct lighting conditions: left—perfect, middle—poor, right—dark.}}{49}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Absolute distance error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher distance accuracy.}}{51}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Absolute angle error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher angular accuracy.}}{51}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces This figure illustrates the three distinct lighting conditions}}{52}{figure.caption.48}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
