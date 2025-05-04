@@ -8,10 +8,12 @@ To evaluate the proposed localization system, a QR code was mounted on a wall, a
 The rear camera of the Honor ALI-NX1 smartphone was used for all experiments.
 
 \textbf{Camera Calibration:}\\
-The camera was calibrated using our implementation. Fifteen images of a calibration pattern were taken at random angles and distances. The reprojection error was found to be 0.0737, demonstrating excellent calibration even with random sampling.
+The camera was calibrated using our implementation. Fifteen images of a calibration pattern were taken at random angles and distances. The re-projection error was found to be 0.0737 using the mobile implantation of camera calibration explained at Section \ref{sec:camera_calibration}, demonstrating excellent calibration even with random sampling.
 
 \textbf{QR Code Setup:}\\
-The QR code was placed on a wall at a fixed height to simplify measurements (see Figure~\ref{Localization-Experiment-QR-Setup}).
+The QR code was mounted on a wall at a fixed height, matching the vertical height of the mobile camera. This alignment ensured both were on the same level, reducing vertical parallax and allowing for more accurate distance estimation (see Figure~\ref{Localization-Experiment-QR-Setup}).
+
+
 
 \begin{figure}[h!]
 	\centering
@@ -23,10 +25,13 @@ The QR code was placed on a wall at a fixed height to simplify measurements (see
 \textbf{Lighting Conditions:}\\
 Localization was tested under three distinct lighting conditions (see Figure~\ref{Localization-Experiment-Lighting-Conditions}):
 \begin{itemize}
-	\item \textbf{Perfect Lighting}
-	\item \textbf{Poor Lighting}
-	\item \textbf{No Lighting at All (Dark):} Here, the camera's built-in flash was used.
+	\item \textbf{Perfect Lighting:} The environment is brightly lit with consistent lighting across the scanned surface. No shadows or reflections interfere with camera visibility.
+	
+	\item \textbf{Poor Lighting:} The environment has limited or uneven lighting, with noticeable shadows or dim areas that may partially obscure QR code visibility.
+	
+	\item \textbf{No Lighting at All (Dark):} The environment is completely dark or nearly so, making it impossible to see the QR code without activating the camera's built-in flash.
 \end{itemize}
+
 
 \begin{figure}[h!]
 	\centering
@@ -35,18 +40,21 @@ Localization was tested under three distinct lighting conditions (see Figure~\re
 	\label{Localization-Experiment-Lighting-Conditions}
 \end{figure}
 
-\textbf{Measuring Tools:}\\
-A tape measure was used to measure the camera's $x$ and $y$ positions relative to the QR code, allowing calculation of both angle and distance. This method achieves an accuracy of $\pm5$~mm.
 
 \subsection{Procedure}\label{sec:procedure}
-For each lighting condition, the experiment was conducted three times. The system was evaluated at distances of 1.410~m and 0.707~m, each at angles of $0.00^\circ$, $+45.00^\circ$, and $-45.00^\circ$.
+
+The camera's $x$ and $y$ positions relative to the QR code were measured manually with an estimated accuracy of $\pm5$~mm. These measurements were used to calculate the actual distance and angle between the camera and the QR code.
+
+For each lighting condition, the localization experiment was repeated six times. The mobile device was positioned at two distances: 1.410~m and 0.707~m. At each distance, it was placed at three different angles relative to the QR code: $0.00^\circ$, $+45.00^\circ$, and $-45.00^\circ$ as illustrated in Table \ref{table:localization_exp_res_combined}.
+
 
 \subsection{Evaluation Metrics}
 The evaluation metrics applied in this experiment are described in Section~\ref{sec:evaluation_metrics} of the Methodology chapter. All results and analyses in this section are based on those metrics.
 
 \subsection{Results}
 
-The results for all lighting conditions are summarized in Table~\ref{table:localization_exp_res_combined}. Each row presents the estimated and real values of distance and angle for each combination of conditions.
+Table~\ref{table:localization_exp_res_combined} shows the results for all lighting conditions. Each row lists the estimated and actual distance and angle for a specific test case.
+
 
 \begin{table}[h!]
 	\caption{Estimated and real distances/angles under all lighting conditions.}

@@ -12,22 +12,23 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces HC-SR04 Module}}{21}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces C1026B Series Coin Vibration Motor}}{22}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces System Architecture Diagram of Mosaned System}}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{28}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System Architecture Diagram of Mosaned System}}{28}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Entity-Relationship Diagram (ERD) of the Mosaned Database System}}{29}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Login screen of the Mosaned management dashboard, ensuring secure access for authorized administrators.}}{40}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Main dashboard interface showing the list of managed buildings, with options for adding new buildings or editing existing ones.}}{41}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces QR code management page, enabling administrators to generate, edit, and assign instructions to QR codes for specific locations within a building.}}{42}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Home screen of the Mosaned mobile application, providing quick access to navigation and settings.}}{43}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces QR code scanning interface, allowing the user to localize themselves within the building and retrieve contextual instructions.}}{44}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Assembled obstacle detection module showing the ESP32 board, connected ultrasonic sensors, and coin vibration motors.}}{45}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Wearable setup of the obstacle detection system, designed for user comfort and mobility.}}{46}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Login screen of the Mosaned management dashboard, ensuring secure access for authorized administrators.}}{41}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Main dashboard interface showing the list of managed buildings, with options for adding new buildings or editing existing ones.}}{42}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces QR code management page, enabling administrators to generate, edit, and assign instructions to QR codes for specific locations within a building.}}{42}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Home screen of the Mosaned mobile application, providing quick access to navigation and settings.}}{43}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces QR code scanning interface, allowing the user to localize themselves within the building and retrieve contextual instructions.}}{44}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Assembled obstacle detection module showing the ESP32 board, connected ultrasonic sensors, and coin vibration motors.}}{45}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Wearable setup of the obstacle detection system, designed for user comfort and mobility.}}{46}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mobile application screen for setting the obstacle detection range during system startup.}}{47}{figure.caption.43}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A picture illustrating the QR code setup.}}{49}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The three distinct lighting conditions: left—perfect, middle—poor, right—dark.}}{49}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Absolute distance error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher distance accuracy.}}{51}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Absolute angle error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher angular accuracy.}}{51}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces This figure illustrates the three distinct lighting conditions}}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A picture illustrating the QR code setup.}}{50}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The three distinct lighting conditions: left—perfect, middle—poor, right—dark.}}{50}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Absolute distance error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher distance accuracy.}}{52}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Absolute angle error ($|\mathrm {Estimated} - \mathrm {Real}|$) for each sample under different lighting conditions. Lower values indicate higher angular accuracy.}}{52}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces This figure illustrates the three distinct lighting conditions}}{53}{figure.caption.51}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

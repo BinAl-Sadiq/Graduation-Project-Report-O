@@ -20,6 +20,41 @@ The system comprises four main components, each explained briefly below. Detaile
 	
 \end{itemize}
 
+\subsection{Constraints and Standards}
+
+During the design and implementation of the Mosaned system, several constraints and standards were considered to ensure feasibility, compatibility, usability, and compliance with best practices.
+
+\subsubsection{Constraints}
+
+\begin{itemize}
+	\item \textbf{Hardware Constraints:} The system was constrained by the need to use low-cost and widely available components, such as the ESP32 microcontroller, HC-SR04 ultrasonic sensor, and C1026B coin vibration motor. This influenced performance capabilities, especially in processing and communication speed.
+	
+	\item \textbf{Power Constraints:} The wearable nature of the system necessitated low power consumption. All hardware components were selected and configured to optimize battery life.
+	
+	\item \textbf{Environmental Constraints:} The system had to operate under varying lighting conditions and within different indoor layouts. Robustness to light variations was achieved through camera calibration and reliable QR code detection.
+	
+	\item \textbf{User Constraints:} Since the target users are visually impaired individuals, the system was designed with minimal manual input, using accessible Android features like TalkBack and haptic feedback for interaction.
+	
+	\item \textbf{Connectivity Constraints:} Some features such as downloading building metadata required an internet connection only once. Thereafter, offline functionality was mandatory to support real-world usage without dependency on constant connectivity.
+	
+	\item \textbf{Deployment Constraints:} QR code placement within buildings needed standardization to ensure consistent detection. A uniform placement policy (e.g., on walls or hanging panels at a consistent height) was considered essential.
+\end{itemize}
+
+\subsubsection{Standards}
+
+\begin{itemize}
+	\item \textbf{QR Code Standards:} The system complies with ISO/IEC 18004:2015 standards for QR code structure and encoding, ensuring compatibility with open-source libraries like ZXing and OpenCV.
+	
+	\item \textbf{Accessibility Standards:} The mobile application adheres to Android Accessibility Guidelines, incorporating TalkBack compatibility, high contrast UI, and minimal touch navigation.
+	
+	
+	\item \textbf{Communication Protocols:} Bluetooth Low Energy (BLE) was used for connecting the ESP32 modules, complying with Bluetooth specifications to ensure interoperability and low power consumption.
+	
+	\item \textbf{Data Privacy and Security:} The management dashboard uses secure user authentication (e.g., hashed passwords) and access control, ensuring that only authorized administrators manage building data.
+\end{itemize}
+
+These constraints and standards were foundational in shaping a system that is not only functional and user-centered but also practical for deployment and scaling.
+
 
 
 \subsection{System Architecture Diagram}

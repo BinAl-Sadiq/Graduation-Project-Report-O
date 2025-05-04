@@ -8,7 +8,7 @@ As we just mentioned, the QR code's global position is stored at a server so the
 
 Everything related to the localization will be running at a separate thread from the main thread. This enables the System to perform other tasks simultaneously and independently.
 
-\subsection{Camera Calibration}
+\subsection{Camera Calibration} \label{sec:camera_calibration}
 We mentioned at \ref{Mobile Application Methodology Section} that users can chose the camera they want to use from the settings after connecting it to the phone. This approach rise the need of calibration system that users can use since the cameras' parameters are distinct and not known. Each camera need to be calibrated at least once at the first time. Then the camera parameters will be stored at the phone storage for reusing in the future. At first, users need to specify the number of rows and columns at the pattern and the width/height of each square in real world units. Then they need to take multiple photos to the pattern at different angles and distances and start the calibration process. After this point, everything else will be done automatically without the need of the users actions no more. 
 
 The camera calibration system's implementation is the same as what was mentioned previously at section \ref{Camera Calibration Background}. First the program will iterate through each photo trying to estimate their inner corners points locations using the following OpenCV function:
